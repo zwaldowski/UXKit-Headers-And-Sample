@@ -37,7 +37,6 @@
 - (void)applyLayoutAttributes:(id)arg1;
 - (void)prepareForReuse;
 - (BOOL)wantsUpdateLayer;
-- (void)dealloc;
 - (void)encodeWithCoder:(id)arg1;
 - (id)initWithCoder:(id)arg1;
 - (id)initWithFrame:(struct CGRect)arg1;

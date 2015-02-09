@@ -37,7 +37,6 @@
 - (void)_addIndexPathsSet:(id)arg1;
 - (id)description;
 - (BOOL)isEqual:(id)arg1;
-- (void)dealloc;
 - (id)initWithIndexPathsSet:(id)arg1;
 - (id)initWithIndexPaths:(id)arg1;
 - (id)initWithIndexPath:(id)arg1;

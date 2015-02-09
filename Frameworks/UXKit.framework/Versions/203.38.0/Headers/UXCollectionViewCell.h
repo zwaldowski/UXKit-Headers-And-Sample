@@ -20,7 +20,6 @@
 - (void)prepareForReuse;
 - (void)resizeSubviewsWithOldSize:(struct CGSize)arg1;
 - (BOOL)wantsUpdateLayer;
-- (void)dealloc;
 - (id)initWithCoder:(id)arg1;
 - (id)initWithFrame:(struct CGRect)arg1;
 - (id)_accessibilityIndexPath;

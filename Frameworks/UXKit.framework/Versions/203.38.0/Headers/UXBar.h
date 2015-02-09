@@ -29,7 +29,6 @@
 @property(nonatomic) double height; // @synthesize height=_height;
 @property(nonatomic) double interitemSpacing; // @synthesize interitemSpacing=_interitemSpacing;
 @property(retain, nonatomic) NSColor *barTintColor; // @synthesize barTintColor=_barTintColor;
-- (void)cxx_destruct;
 - (void)_updateBarPostion;
 @property(readonly, nonatomic) long long barPosition;
 - (struct CGSize)intrinsicContentSize;

@@ -27,7 +27,6 @@
 - (void)_invalidateSupplementaryElementsOfKind:(id)arg1 atIndexPaths:(id)arg2;
 - (void)_setInvalidatedSupplementaryViews:(id)arg1;
 - (id)_invalidatedSupplementaryViews;
-- (void)dealloc;
 
 @end
 

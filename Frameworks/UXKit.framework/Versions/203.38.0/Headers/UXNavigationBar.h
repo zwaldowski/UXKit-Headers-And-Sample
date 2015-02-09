@@ -50,7 +50,6 @@
 @property(nonatomic) struct NSEdgeInsets edgeInsets; // @synthesize edgeInsets=_edgeInsets;
 @property(nonatomic, getter=isTranslucent) BOOL translucent; // @synthesize translucent=_translucent;
 @property(nonatomic) __weak id <UXNavigationBarDelegate> delegate; // @synthesize delegate=_delegate;
-- (void)cxx_destruct;
 - (void)setNeedsRecalcuateWindowKeyViewLoop;
 - (void)recalculateKeyViewLoop;
 - (void)_completeInteractiveTransition:(BOOL)arg1;
@@ -75,7 +74,6 @@
 - (void)layout;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (long long)barPosition;
-- (void)dealloc;
 - (id)initWithFrame:(struct CGRect)arg1;
 
 @end

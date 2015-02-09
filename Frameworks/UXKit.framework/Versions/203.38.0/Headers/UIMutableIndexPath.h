@@ -19,7 +19,6 @@
 - (long long)compare:(id)arg1;
 - (void)getIndexes:(unsigned long long *)arg1;
 - (unsigned long long)indexAtPosition:(unsigned long long)arg1;
-- (void)dealloc;
 - (id)initWithIndexes:(const unsigned long long *)arg1 length:(unsigned long long)arg2;
 
 @end

@@ -18,13 +18,11 @@
 @property(readonly, nonatomic) NSSegmentedControl *segmentedControl; // @synthesize segmentedControl=_segmentedControl;
 @property(nonatomic) __weak UXViewController *selectedViewController; // @synthesize selectedViewController=_selectedViewController;
 @property(copy, nonatomic) NSArray *viewControllers; // @synthesize viewControllers=_viewControllers;
-- (void)cxx_destruct;
 @property(nonatomic) unsigned long long selectedIndex;
 - (void)viewDidLoad;
 - (void)keyDown:(id)arg1;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (void)segmentChanged:(id)arg1;
-- (void)dealloc;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 
 @end

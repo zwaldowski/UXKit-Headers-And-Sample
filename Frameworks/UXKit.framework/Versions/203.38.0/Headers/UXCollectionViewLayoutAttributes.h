@@ -66,7 +66,6 @@
 - (BOOL)_isClone;
 - (void)_setIsClone:(BOOL)arg1;
 @property(nonatomic, getter=isHidden) BOOL hidden;
-- (void)dealloc;
 - (id)init;
 
 @end

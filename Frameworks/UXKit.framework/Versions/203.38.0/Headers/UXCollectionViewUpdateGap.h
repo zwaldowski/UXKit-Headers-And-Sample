@@ -29,7 +29,6 @@
 @property(readonly, nonatomic) NSArray *updateItems;
 @property(readonly, nonatomic) BOOL hasInserts;
 @property(readonly, nonatomic) BOOL isDeleteBasedGap;
-- (void)dealloc;
 - (void)addUpdateItem:(id)arg1;
 - (id)description;
 - (id)init;

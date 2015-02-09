@@ -19,7 +19,6 @@
 
 + (id)defaultWindow;
 @property __weak NSToolbarItem *navigationBarToolbarItem; // @synthesize navigationBarToolbarItem=_navigationBarToolbarItem;
-- (void)cxx_destruct;
 - (void)windowDidBecomeFirstResponder:(id)arg1;
 - (void)windowDidRecalculateKeyViewLoop:(id)arg1;
 - (void)windowWillRecalculateKeyViewLoop:(id)arg1;
@@ -43,7 +42,6 @@
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (void)_tearDownViewControllerHierarchyForViewController:(id)arg1;
 - (void)teardownViewControllerHierarchy;
-- (void)dealloc;
 - (id)initWithWindow:(id)arg1;
 - (id)initWithRootViewController:(id)arg1;
 

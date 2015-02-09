@@ -14,7 +14,6 @@
 }
 
 - (void)setAccessibilityVisibleChildren:(id)arg1;
-- (void)cxx_destruct;
 - (id)description;
 - (BOOL)accessibilityPerformScrollToVisible;
 - (void)accessibilityPerformAction:(id)arg1;

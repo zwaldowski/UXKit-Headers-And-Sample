@@ -71,7 +71,6 @@
 - (void)validateSupplementaryViews;
 - (void)invalidateSupplementaryViews:(id)arg1;
 - (id)description;
-- (void)dealloc;
 - (id)initWithCollectionView:(id)arg1 layout:(id)arg2;
 
 @end

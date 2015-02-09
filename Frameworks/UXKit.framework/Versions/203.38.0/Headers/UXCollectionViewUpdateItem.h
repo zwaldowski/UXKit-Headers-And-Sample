@@ -29,7 +29,6 @@
 - (id)description;
 - (void)_setNewIndexPath:(id)arg1;
 - (id)_newIndexPath;
-- (void)dealloc;
 - (id)initWithOldIndexPath:(id)arg1 newIndexPath:(id)arg2;
 - (id)initWithAction:(long long)arg1 forIndexPath:(id)arg2;
 - (id)initWithInitialIndexPath:(id)arg1 finalIndexPath:(id)arg2 updateAction:(long long)arg3;

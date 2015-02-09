@@ -39,7 +39,6 @@
 @property(readonly, nonatomic) BOOL deleteAfterAnimation;
 @property(readonly, nonatomic) BOOL animateFromCurrentPosition;
 - (id)description;
-- (void)dealloc;
 - (id)initWithView:(id)arg1 viewType:(unsigned long long)arg2 finalLayoutAttributes:(id)arg3 startFraction:(double)arg4 endFraction:(double)arg5 animateFromCurrentPosition:(BOOL)arg6 deleteAfterAnimation:(BOOL)arg7 customAnimations:(CDUnknownBlockType)arg8;
 
 @end

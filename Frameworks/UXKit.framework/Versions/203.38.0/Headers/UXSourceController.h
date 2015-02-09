@@ -42,7 +42,6 @@
 @property(copy, nonatomic) NSArray *rootViewControllers; // @synthesize rootViewControllers=_rootViewControllers;
 @property(nonatomic) long long style; // @synthesize style=_style;
 @property(nonatomic) long long preferredStyle; // @synthesize preferredStyle=_preferredStyle;
-- (void)cxx_destruct;
 - (void)_setupDelegateForNavigationController:(id)arg1 operation:(long long)arg2 fromViewController:(id)arg3 toViewController:(id)arg4;
 - (BOOL)navigationController:(id)arg1 shouldBeginInteractivePopFromViewController:(id)arg2 toViewController:(id)arg3;
 - (id)navigationController:(id)arg1 animationControllerForOperation:(long long)arg2 fromViewController:(id)arg3 toViewController:(id)arg4;
@@ -99,7 +98,6 @@
 - (void)removeRootViewControllerAtIndex:(long long)arg1;
 - (void)insertRootViewController:(id)arg1 atIndex:(long long)arg2;
 - (void)addRootViewController:(id)arg1;
-- (void)dealloc;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 
 // Remaining properties

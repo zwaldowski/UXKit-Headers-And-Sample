@@ -17,7 +17,6 @@
 + (Class)cellClass;
 @property(readonly, nonatomic) NSLayoutConstraint *widthConstraint; // @synthesize widthConstraint=_widthConstraint;
 @property(nonatomic) BOOL hidesTitle; // @synthesize hidesTitle=_hidesTitle;
-- (void)cxx_destruct;
 - (void)setTitle:(id)arg1;
 - (id)init;
 

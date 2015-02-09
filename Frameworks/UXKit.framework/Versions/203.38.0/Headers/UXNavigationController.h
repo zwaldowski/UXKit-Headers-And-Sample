@@ -89,7 +89,6 @@
 @property(nonatomic, getter=isToolbarHidden) BOOL toolbarHidden; // @synthesize toolbarHidden=_toolbarHidden;
 @property(nonatomic, getter=isNavigationBarDetached) BOOL navigationBarDetached; // @synthesize navigationBarDetached=_navigationBarDetached;
 @property(nonatomic, getter=isNavigationBarHidden) BOOL navigationBarHidden; // @synthesize navigationBarHidden=_navigationBarHidden;
-- (void)cxx_destruct;
 - (long long)positionForBar:(id)arg1;
 - (void)_endObservingTopViewController;
 - (void)_beginObservingTopViewController;
@@ -145,7 +144,6 @@
 - (void)scrollWheel:(id)arg1;
 - (BOOL)wantsForwardedScrollEventsForAxis:(long long)arg1;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
-- (void)dealloc;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 - (id)initWithRootViewController:(id)arg1;
 
