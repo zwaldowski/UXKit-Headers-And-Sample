@@ -8,6 +8,9 @@
 
 @class NSMutableArray, NSMutableDictionary;
 
+// TODO get a definition for this
+@protocol UXCollectionViewDelegateFlowLayout;
+
 @interface UXTableLayout : UXCollectionViewFlowLayout
 {
     struct {
@@ -38,7 +41,7 @@
 @property(nonatomic) BOOL showsSectionFooterForSingleSection;
 @property(nonatomic) BOOL showsSectionHeaderForSingleSection;
 @property(nonatomic) BOOL floatingHeadersDisabled;
-//@property(readonly, nonatomic) id <UXCollectionViewDelegateFlowLayout> delegateFlowLayout;
+@property(readonly, nonatomic) id <UXCollectionViewDelegateFlowLayout> delegateFlowLayout;
 - (void)_setCollectionView:(id)arg1;
 - (id)init;
 

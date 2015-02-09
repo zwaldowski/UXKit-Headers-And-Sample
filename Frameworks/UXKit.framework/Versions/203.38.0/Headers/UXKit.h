@@ -1,5 +1,5 @@
 //
-//  Test.h
+//  UXKit.h
 //  UXKitTest
 //
 //  Created by Michał Kałużny on 06.02.2015.
@@ -17,7 +17,6 @@
 #import "UXControl.h"
 #import "UXViewControllerTransitionCoordinatorContext-Protocol.h"
 #import "UXDragEventTracker.h"
-//#import "UXViewControllerWindowTransition.h"
 #import "UIMutableIndexPath.h"
 #import "UXEventTracker.h"
 #import "UXWindowController.h"
@@ -62,7 +61,7 @@
 #import "UXCollectionView.h"
 #import "UXPopover.h"
 #import "UXCollectionViewAnimation.h"
-//#import "UXPopoverController.h"
+#import "UXPopoverController.h"
 #import "NSNull-NSAccessibility.h"
 #import "UXCollectionViewCell.h"
 #import "UXProxyViewController.h"
@@ -101,11 +100,11 @@
 #import "NSView-Compatibility.h"
 #import "UXCollectionViewLayoutSectionAccessibility.h"
 #import "UXViewAnimationContext.h"
-//#import "NSView-UXCollectionViewRearrangingCoordinator.h"
+#import "NSView-UXCollectionViewRearrangingCoordinator.h"
 #import "UXCollectionViewMutableIndexPathsSet.h"
 #import "UXViewController.h"
 #import "NSView-UXKit.h"
-//#import "UXCollectionViewRearrangingCoordinatorDragRecognizer.h"
+#import "UXCollectionViewRearrangingCoordinatorDragRecognizer.h"
 #import "UXViewControllerAnimatedTransitioning-Protocol.h"
 #import "NSView-UXKitAppearance.h"
 #import "UXCollectionViewUpdate.h"

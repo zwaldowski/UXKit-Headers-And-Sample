@@ -6,10 +6,6 @@
 
 @import  AppKit;
 
-//#import "NSTextInputTraits.h"
-
-@class NSString;
-
 @interface NSTextField (Compatibility) <UITextInputTraits>
 @property(nonatomic) unsigned long long textAlignment;
 @property(copy, nonatomic) NSString *placeholder;

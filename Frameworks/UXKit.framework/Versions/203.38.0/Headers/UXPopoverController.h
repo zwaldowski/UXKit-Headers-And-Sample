@@ -5,7 +5,7 @@
 //
 
 #import "UXViewController.h"
-//#import "UXPopoverControllerDelegate-Protocol.h"
+#import "UXPopoverControllerDelegate-Protocol.h"
 
 @import  AppKit;
 
@@ -43,4 +43,3 @@
 @property(readonly) Class superclass;
 
 @end
-
