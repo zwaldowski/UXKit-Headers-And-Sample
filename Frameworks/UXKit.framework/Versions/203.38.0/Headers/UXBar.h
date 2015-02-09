@@ -4,12 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UXView.h"
-
-@import  AppKit;
+@import Cocoa;
+#import <UXKit/UXView.h>
 #import "UXBarPositioning-Protocol.h"
-#import "_UXBarItemsContainer-Protocol.h"
-#import "_UXSinglePixelLine.h"
 
 @class NSColor, NSString, _UXSinglePixelLine;
 
@@ -20,15 +17,15 @@
     NSColor *_barTintColor;
     double _interitemSpacing;
     double _height;
-    UXView<_UXBarItemsContainer> *_barItemsContainer;
+    UXView *_barItemsContainer;
     double _percent;
-    UXView<_UXBarItemsContainer> *_nextItemContainer;
+    UXView *_nextItemContainer;
 }
 
-@property(retain, nonatomic) UXView<_UXBarItemsContainer> *nextItemContainer; // @synthesize nextItemContainer=_nextItemContainer;
+@property(retain, nonatomic) UXView *nextItemContainer; // @synthesize nextItemContainer=_nextItemContainer;
 @property(nonatomic) double percent; // @synthesize percent=_percent;
 @property(nonatomic) BOOL isInteractiveTransitioning; // @synthesize isInteractiveTransitioning=_isInteractiveTransitioning;
-@property(retain, nonatomic) UXView<_UXBarItemsContainer> *barItemsContainer; // @synthesize barItemsContainer=_barItemsContainer;
+@property(retain, nonatomic) UXView *barItemsContainer; // @synthesize barItemsContainer=_barItemsContainer;
 @property(nonatomic) double height; // @synthesize height=_height;
 @property(nonatomic) double interitemSpacing; // @synthesize interitemSpacing=_interitemSpacing;
 @property(retain, nonatomic) NSColor *barTintColor; // @synthesize barTintColor=_barTintColor;

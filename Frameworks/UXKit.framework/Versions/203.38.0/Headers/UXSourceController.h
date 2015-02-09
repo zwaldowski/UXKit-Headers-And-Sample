@@ -5,13 +5,11 @@
 //
 
 #import "UXViewController.h"
-
 #import "UXNavigationControllerDelegate-Protocol.h"
-#import "_UXSourceSplitViewDelegate-Protocol.h"
 
 @class NSArray, NSMapTable, NSOperationQueue, NSSegmentedControl, NSString, NSView, UXTransitionController, _UXSourceSplitView, _UXViewControllerOneToOneTransitionContext;
 
-@interface UXSourceController : UXViewController <UXNavigationControllerDelegate, _UXSourceSplitViewDelegate>
+@interface UXSourceController : UXViewController <UXNavigationControllerDelegate>
 {
     NSView *_tabBarView;
     BOOL _isTransitioning;
