@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 justmaku. All rights reserved.
 //
 
-#import "UXTableViewController.h"
+#import <UXKit/UXKit.h>
 
 @interface JMKTableViewController : UXTableViewController
 

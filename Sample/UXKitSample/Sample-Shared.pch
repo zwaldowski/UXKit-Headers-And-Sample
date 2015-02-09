@@ -9,6 +9,6 @@
 #ifndef UXKitSample_Sample_Shared_h
 #define UXKitSample_Sample_Shared_h
 
-#import "UXKit.h"
+#import <UXKit/UXKit.h>
 
 #endif

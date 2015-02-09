@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 justmaku. All rights reserved.
 //
 
-#import "UXNavigationController.h"
+#import <UXKit/UXKit.h>
 
 @interface JMKNavigationViewController : UXNavigationController
 
