@@ -70,7 +70,7 @@
 #import "UXSlideTransitionController.h"
 #import "NSObject-UXCollectionView.h"
 #import "UXCollectionViewData.h"
-//#import "UXSourceController.h"
+#import "UXSourceController.h"
 #import "UXCollectionViewDataSource-Protocol.h"
 #import "UXTabBarController.h"
 #import "NSProgressIndicator-Compatibility.h"
@@ -113,7 +113,4 @@
 #import "NSViewAnimationContext.h"
 #import "UXCollectionViewUpdateGap.h"
 #import "UXViewControllerInteractiveTransitioning-Protocol.h"
-
-@interface Test : NSObject
-
-@end
+#import "UXSourceList-Protocol.h"
