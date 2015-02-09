@@ -260,7 +260,7 @@
 - (void)scrollWheel:(id)arg1;
 - (void)setContentOffset:(struct CGPoint)arg1 animated:(BOOL)arg2;
 - (void)setContentOffset:(struct CGPoint)arg1;
-@property(nonatomic) struct CGSize contentSize;
+@property (atomic, readwrite) struct CGSize contentSize;
 - (void)setDocumentBounds:(struct CGRect)arg1;
 - (struct CGRect)documentBounds;
 - (struct CGSize)documentSize;
