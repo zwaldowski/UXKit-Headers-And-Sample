@@ -11,11 +11,6 @@
 @property (nonatomic, readonly) long long updateAction;
 @property (nonatomic, strong, readonly) NSIndexPath *indexPathAfterUpdate;
 @property (nonatomic, strong, readonly) NSIndexPath *indexPathBeforeUpdate;
-- (long long)inverseCompareIndexPaths:(id)arg1;
-- (long long)compareIndexPaths:(id)arg1;
-- (id)initWithOldIndexPath:(id)arg1 newIndexPath:(id)arg2;
-- (id)initWithAction:(long long)arg1 forIndexPath:(id)arg2;
-- (id)initWithInitialIndexPath:(id)arg1 finalIndexPath:(id)arg2 updateAction:(long long)arg3;
 
 @end
 
