@@ -9,7 +9,7 @@
 #ifndef UXKitTest_MissingTypes_h
 #define UXKitTest_MissingTypes_h
 
-#import "UXBarPositioningDelegate-Protocol.h"
+#import <UXKit/UXBarPositioningDelegate-Protocol.h>
 
 @protocol UXNavigationBarDelegate <UXBarPositioningDelegate>
 @optional

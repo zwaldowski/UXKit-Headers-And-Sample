@@ -4,16 +4,16 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-@import AppKit;
+#import <Cocoa/Cocoa.h>
 
-#import "UXCollectionViewLayout.h"
-#import "UXCollectionViewIndexPathsSet.h"
-#import "UXCollectionViewData.h"
-#import "UXCollectionViewUpdate.h"
-#import "UXCollectionViewDelegate-Protocol.h"
-#import "UXCollectionViewDataSource-Protocol.h"
-#import "UXCollectionDocumentView.h"
-#import "UXCollectionViewMutableIndexPathsSet.h"
+#import <UXKit/UXCollectionViewLayout.h>
+#import <UXKit/UXCollectionViewIndexPathsSet.h>
+#import <UXKit/UXCollectionViewData.h>
+#import <UXKit/UXCollectionViewUpdate.h>
+#import <UXKit/UXCollectionViewDelegate-Protocol.h>
+#import <UXKit/UXCollectionViewDataSource-Protocol.h>
+#import <UXKit/UXCollectionDocumentView.h>
+#import <UXKit/UXCollectionViewMutableIndexPathsSet.h>
 
 
 @class CALayer, NSArray, NSIndexPath, NSMutableArray, NSMutableDictionary, NSMutableSet, UXCollectionDocumentView, UXCollectionViewData, UXCollectionViewIndexPathsSet, UXCollectionViewLayout, UXCollectionViewMutableIndexPathsSet, UXCollectionViewUpdate, _UXCollectionViewRearrangingCoordinator;

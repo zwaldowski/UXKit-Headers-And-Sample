@@ -4,9 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UXBar.h"
+#import <UXKit/UXBar.h>
 
-#import "UXNavigationControllerDelegate-Protocol.h"
+#import <UXKit/UXNavigationControllerDelegate-Protocol.h>
 
 @class NSArray, NSImage, NSMutableArray, NSView, UXNavigationItem, _UXNavigationItemContainerView;
 

@@ -6,7 +6,7 @@
 
 
 
-@import  AppKit;
+#import <Cocoa/Cocoa.h>
 
 @class NSMutableDictionary, NSString, UXSourceController;
 

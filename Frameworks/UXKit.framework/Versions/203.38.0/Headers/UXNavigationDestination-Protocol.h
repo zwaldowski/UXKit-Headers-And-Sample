@@ -5,7 +5,7 @@
 //
 
 
-@import  AppKit;
+#import <Cocoa/Cocoa.h>
 
 @class NSString, UXAuxiliaryNavigationStore;
 

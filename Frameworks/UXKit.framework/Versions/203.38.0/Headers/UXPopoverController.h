@@ -4,10 +4,10 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UXViewController.h"
-#import "UXPopoverControllerDelegate-Protocol.h"
+#import <UXKit/UXViewController.h>
+#import <UXKit/UXPopoverControllerDelegate-Protocol.h>
 
-@import  AppKit;
+#import <Cocoa/Cocoa.h>
 
 @class NSArray, NSString, UXPopover;
 

@@ -4,10 +4,10 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import "UXViewController.h"
+#import <UXKit/UXViewController.h>
 
-#import "UXCollectionViewDataSource-Protocol.h"
-#import "UXCollectionViewDelegate-Protocol.h"
+#import <UXKit/UXCollectionViewDataSource-Protocol.h>
+#import <UXKit/UXCollectionViewDelegate-Protocol.h>
 
 @class NSString, UXCollectionView, UXCollectionViewLayout;
 

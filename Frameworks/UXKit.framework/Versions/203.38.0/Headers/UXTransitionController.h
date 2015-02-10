@@ -6,8 +6,8 @@
 
 
 
-#import "UXViewControllerAnimatedTransitioning-Protocol.h"
-#import "UXViewControllerInteractiveTransitioning-Protocol.h"
+#import <UXKit/UXViewControllerAnimatedTransitioning-Protocol.h>
+#import <UXKit/UXViewControllerInteractiveTransitioning-Protocol.h>
 
 @class NSString;
 

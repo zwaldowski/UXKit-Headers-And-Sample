@@ -4,9 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-@import AppKit;
+#import <Cocoa/Cocoa.h>
 
-#import "UXLayoutSupport-Protocol.h"
+#import <UXKit/UXLayoutSupport-Protocol.h>
 #import "CDStructures.h"
 
 @class NSArray, NSResponder, NSString, UXNavigationController, UXNavigationItem, UXSourceController, UXTabBarItem, UXView;
