@@ -21,7 +21,6 @@
 #import <UXKit/UITextInputTraits-Protocol.h>
 #import <UXKit/UXIdentityTransitionController.h>
 #import <UXKit/UXZoomingCrossfadeTransitionController.h>
-#import <UXKit/UXAccessoryBarContainerProtocol.h>
 #import <UXKit/UXImageView.h>
 #import <UXKit/NSColor-Compatibility.h>
 #import <UXKit/UXAuxiliaryNavigationStore.h>

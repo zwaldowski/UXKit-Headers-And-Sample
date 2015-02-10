@@ -5,11 +5,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <UXKit/UXAccessoryBarContainerProtocol.h>
 
 @class UXToolbar, UXViewController;
 
-@interface UXWindowController : NSWindowController <NSToolbarDelegate, UXAccessoryBarContainer, NSWindowDelegate>
+@interface UXWindowController : NSWindowController <NSToolbarDelegate, NSWindowDelegate>
 
 + (id)defaultWindow;
 @property (weak) NSToolbarItem *navigationBarToolbarItem; // @synthesize navigationBarToolbarItem=_navigationBarToolbarItem;
