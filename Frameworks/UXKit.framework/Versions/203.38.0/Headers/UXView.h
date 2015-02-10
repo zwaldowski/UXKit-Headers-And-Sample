@@ -18,7 +18,6 @@
 + (long long)_contentModeForLayerContentsGravity:(id)arg1;
 + (Class)layerClass;
 @property (nonatomic, strong) NSMutableArray *internalTrackers; // @synthesize internalTrackers=_internalTrackers;
-@property (nonatomic, weak)  UXViewController *viewControllerProxy; // @synthesize viewControllerProxy=_viewControllerProxy;
 @property (nonatomic) BOOL accessibilityChildrenHidden; // @synthesize accessibilityChildrenHidden=_accessibilityChildrenHidden;
 @property (nonatomic) BOOL userInteractionEnabled; // @synthesize userInteractionEnabled=_userInteractionEnabled;
 @property (nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch; // @synthesize exclusiveTouch=_exclusiveTouch;

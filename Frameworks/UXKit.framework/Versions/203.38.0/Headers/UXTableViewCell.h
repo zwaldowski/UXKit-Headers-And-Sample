@@ -29,7 +29,6 @@
 @property (nonatomic, readonly) UXView *lowerSpace;
 @property (nonatomic, readonly) UXView *upperSpace;
 @property (nonatomic, readonly) UXView *defaultSelectedBackgroundView;
-@property (nonatomic, readonly) _UXButton *internalAccessoryView;
 - (void)prepareForReuse;
 - (void)setSelected:(BOOL)arg1;
 - (void)updateConstraints;

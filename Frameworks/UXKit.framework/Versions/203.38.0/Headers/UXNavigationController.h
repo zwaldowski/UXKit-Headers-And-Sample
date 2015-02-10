@@ -17,7 +17,6 @@
 @property (nonatomic, weak)  UXViewController *observedViewController; // @synthesize observedViewController=_observedViewController;
 @property (nonatomic, strong) UXTransitionController *defaultTransitionController; // @synthesize defaultTransitionController=_defaultTransitionController;
 @property (nonatomic) long long currentOperation; // @synthesize currentOperation=_currentOperation;
-@property (nonatomic, strong) _UXViewControllerOneToOneTransitionContext *currentTransitionContext; // @synthesize currentTransitionContext=_currentTransitionContext;
 @property (nonatomic, strong) NSArray *topViewControllerOtherConstraints; // @synthesize topViewControllerOtherConstraints=_topViewControllerOtherConstraints;
 @property (nonatomic, strong) NSLayoutConstraint *topViewControllerLeftConstraint; // @synthesize topViewControllerLeftConstraint=_topViewControllerLeftConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *toolbarLeftConstraint; // @synthesize toolbarLeftConstraint=_toolbarLeftConstraint;
@@ -27,7 +26,6 @@
 @property (nonatomic, strong) NSLayoutConstraint *bottomConstraint; // @synthesize bottomConstraint=_bottomConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *topConstraint; // @synthesize topConstraint=_topConstraint;
 @property (nonatomic, strong) NSMutableArray *addedConstraints; // @synthesize addedConstraints=_addedConstraints;
-@property (nonatomic, strong) _UXContainerView *containerView; // @synthesize containerView=_containerView;
 @property (nonatomic, strong) NSMutableArray *internalViewControllers; // @synthesize internalViewControllers=_internalViewControllers;
 @property (nonatomic, readonly) BOOL isInteractive; // @synthesize isInteractive=_isInteractive;
 @property (nonatomic, readonly) BOOL isTransitioning; // @synthesize isTransitioning=_isTransitioning;

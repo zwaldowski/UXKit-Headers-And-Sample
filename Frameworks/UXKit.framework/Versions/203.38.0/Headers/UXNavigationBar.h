@@ -16,7 +16,6 @@
 @property (nonatomic) BOOL recalculatingWindowKeyViewLoop; // @synthesize recalculatingWindowKeyViewLoop=_recalculatingWindowKeyViewLoop;
 @property (nonatomic, strong) UXNavigationItem *transitioningItem; // @synthesize transitioningItem=_transitioningItem;
 @property (nonatomic) long long currentOperation; // @synthesize currentOperation=_currentOperation;
-@property (nonatomic, strong) _UXNavigationItemContainerView *topItemContainer; // @synthesize topItemContainer=_topItemContainer;
 @property (nonatomic, strong) NSMutableArray *internalItems; // @synthesize internalItems=_internalItems;
 @property (nonatomic) double centerYOffset; // @synthesize centerYOffset=_centerYOffset;
 @property (nonatomic) double rightInteritemSpacing; // @synthesize rightInteritemSpacing=_rightInteritemSpacing;

@@ -22,7 +22,6 @@
 @property (nonatomic, strong) NSView *customView; // @synthesize customView=_customView;
 @property (nonatomic) double width; // @synthesize width=_width;
 @property (nonatomic) long long style; // @synthesize style=_style;
-@property (nonatomic, readonly) NSView *_view;
 - (void)setImage:(id)arg1;
 - (void)setEnabled:(BOOL)arg1;
 - (void)setTitle:(id)arg1;

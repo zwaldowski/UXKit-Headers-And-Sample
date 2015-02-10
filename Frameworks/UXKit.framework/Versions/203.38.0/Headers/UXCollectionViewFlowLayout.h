@@ -49,7 +49,6 @@
 - (id)initialLayoutAttributesForHeaderInInsertedSection:(long long)arg1;
 - (id)initialLayoutAttributesForInsertedItemAtIndexPath:(id)arg1;
 - (void)finalizeCollectionViewUpdates;
-@property (nonatomic, strong, setter=_setRowAlignmentsOptions:) NSDictionary *_rowAlignmentOptions;
 
 @end
 
