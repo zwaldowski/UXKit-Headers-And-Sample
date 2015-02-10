@@ -10,7 +10,7 @@
 
 @interface UXAuxiliaryNavigationStore : NSObject <NSSecureCoding>
 
-@property (nonatomic, weak)  UXSourceController *sourceController; // @synthesize sourceController=_sourceController;
+@property (nonatomic, weak) UXSourceController *sourceController;
 - (id)nextActionForNamespace:(id)arg1;
 - (void)setNextAction:(id)arg1 forNamespace:(id)arg2;
 - (id)valueForKey:(id)arg1 inNamespace:(id)arg2;

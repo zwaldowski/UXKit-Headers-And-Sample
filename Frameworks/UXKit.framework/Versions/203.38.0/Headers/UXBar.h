@@ -10,13 +10,13 @@
 
 @interface UXBar : UXView <NSAccessibilityGroup, UXBarPositioning>
 
-@property (nonatomic, strong) UXView *nextItemContainer; // @synthesize nextItemContainer=_nextItemContainer;
-@property (nonatomic) double percent; // @synthesize percent=_percent;
-@property (nonatomic) BOOL isInteractiveTransitioning; // @synthesize isInteractiveTransitioning=_isInteractiveTransitioning;
-@property (nonatomic, strong) UXView *barItemsContainer; // @synthesize barItemsContainer=_barItemsContainer;
-@property (nonatomic) double height; // @synthesize height=_height;
-@property (nonatomic) double interitemSpacing; // @synthesize interitemSpacing=_interitemSpacing;
-@property (nonatomic, strong) NSColor *barTintColor; // @synthesize barTintColor=_barTintColor;
+@property (nonatomic, strong) UXView *nextItemContainer;
+@property (nonatomic) double percent;
+@property (nonatomic) BOOL isInteractiveTransitioning;
+@property (nonatomic, strong) UXView *barItemsContainer;
+@property (nonatomic) double height;
+@property (nonatomic) double interitemSpacing;
+@property (nonatomic, strong) NSColor *barTintColor;
 @property (nonatomic, readonly) long long barPosition;
 - (CGSize)intrinsicContentSize;
 @property (nonatomic, strong) NSColor *borderColor;

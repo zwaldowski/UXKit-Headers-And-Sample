@@ -12,11 +12,11 @@
 @interface UXViewController : NSViewController
 
 + (Class)viewClass;
-@property (nonatomic, strong) UXView *presentedViewControllerContainerView; // @synthesize presentedViewControllerContainerView=_presentedViewControllerContainerView;
-@property (nonatomic) BOOL automaticallyAdjustsScrollViewInsets; // @synthesize automaticallyAdjustsScrollViewInsets=_automaticallyAdjustsScrollViewInsets;
-@property (nonatomic) unsigned long long edgesForExtendedLayout; // @synthesize edgesForExtendedLayout=_edgesForExtendedLayout;
-@property (nonatomic) long long modalPresentationStyle; // @synthesize modalPresentationStyle=_modalPresentationStyle;
-@property (nonatomic) BOOL isEditing; // @synthesize isEditing=_isEditing;
+@property (nonatomic, strong) UXView *presentedViewControllerContainerView;
+@property (nonatomic) BOOL automaticallyAdjustsScrollViewInsets;
+@property (nonatomic) unsigned long long edgesForExtendedLayout;
+@property (nonatomic) long long modalPresentationStyle;
+@property (nonatomic) BOOL isEditing;
 - (id)menuForEvent:(id)arg1;
 - (id)bottomLayoutGuide;
 - (id)topLayoutGuide;

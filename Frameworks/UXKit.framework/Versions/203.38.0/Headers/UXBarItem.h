@@ -8,11 +8,11 @@
 
 @interface UXBarItem : NSObject
 
-@property (nonatomic) long long tag; // @synthesize tag=_tag;
-@property (nonatomic, strong) NSImage *image; // @synthesize image=_image;
-@property (nonatomic, copy) NSString *accessibilityLabel; // @synthesize accessibilityLabel=_accessibilityLabel;
-@property (nonatomic, strong) NSString *title; // @synthesize title=_title;
-@property (nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
+@property (nonatomic) long long tag;
+@property (nonatomic, strong) NSImage *image;
+@property (nonatomic, copy) NSString *accessibilityLabel;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, getter=isEnabled) BOOL enabled;
 
 @end
 

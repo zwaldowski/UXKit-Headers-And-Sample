@@ -8,8 +8,8 @@
 
 @interface UXDragEventTracker : UXEventTracker
 
-@property (nonatomic, readonly) CGPoint initialPoint; // @synthesize initialPoint=_initialPoint;
-@property (nonatomic) double trackingThreshold; // @synthesize trackingThreshold=_trackingThreshold;
+@property (nonatomic, readonly) CGPoint initialPoint;
+@property (nonatomic) double trackingThreshold;
 @property (nonatomic, readonly) CGPoint zeroingDelta;
 @property (nonatomic, readonly) CGPoint delta;
 - (void)mouseUp:(id)arg1;

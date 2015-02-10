@@ -11,7 +11,7 @@
 @interface UXTableViewController : UXCollectionViewController
 
 + (Class)collectionViewClass;
-@property (nonatomic, readonly) id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;
+@property (nonatomic, readonly) id <UXTableViewDelegate> tableViewDelegate;
 - (id)preferredFirstResponder;
 - (void)viewDidAppear;
 - (void)viewWillAppear;

@@ -9,7 +9,7 @@
 
 @interface UXTabBarItem : UXBarItem
 
-@property (nonatomic, copy) NSSet *possibleTitles; // @synthesize possibleTitles=_possibleTitles;
+@property (nonatomic, copy) NSSet *possibleTitles;
 - (id)initWithTitle:(id)arg1;
 
 @end

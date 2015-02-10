@@ -9,8 +9,8 @@
 
 @interface UXCollectionViewCell : UXCollectionReusableView
 
-@property (nonatomic, readonly) NSView *contentView; // @synthesize contentView=_contentView;
-@property (nonatomic, getter=isSelected) BOOL selected; // @synthesize selected=_selected;
+@property (nonatomic, readonly) NSView *contentView;
+@property (nonatomic, getter=isSelected) BOOL selected;
 - (void)prepareForReuse;
 - (void)resizeSubviewsWithOldSize:(CGSize)arg1;
 - (BOOL)wantsUpdateLayer;

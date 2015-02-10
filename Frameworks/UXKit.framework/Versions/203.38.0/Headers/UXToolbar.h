@@ -8,7 +8,7 @@
 
 @interface UXToolbar : UXBar
 
-@property (nonatomic, weak)  id <UXToolbarDelegate> delegate; // @synthesize delegate=_delegate;
+@property (nonatomic, weak) id <UXToolbarDelegate> delegate;
 - (long long)barPosition;
 - (void)setItems:(id)arg1 animated:(BOOL)arg2;
 - (void)mouseDown:(id)arg1;

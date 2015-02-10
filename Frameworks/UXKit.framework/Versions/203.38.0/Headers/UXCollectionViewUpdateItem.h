@@ -8,9 +8,9 @@
 
 @interface UXCollectionViewUpdateItem : NSObject
 
-@property (nonatomic, readonly) long long updateAction; // @synthesize updateAction=_updateAction;
-@property (nonatomic, strong, readonly) NSIndexPath *indexPathAfterUpdate; // @synthesize indexPathAfterUpdate=_finalIndexPath;
-@property (nonatomic, strong, readonly) NSIndexPath *indexPathBeforeUpdate; // @synthesize indexPathBeforeUpdate=_initialIndexPath;
+@property (nonatomic, readonly) long long updateAction;
+@property (nonatomic, strong, readonly) NSIndexPath *indexPathAfterUpdate;
+@property (nonatomic, strong, readonly) NSIndexPath *indexPathBeforeUpdate;
 - (long long)inverseCompareIndexPaths:(id)arg1;
 - (long long)compareIndexPaths:(id)arg1;
 - (id)initWithOldIndexPath:(id)arg1 newIndexPath:(id)arg2;

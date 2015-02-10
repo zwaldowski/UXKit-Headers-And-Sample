@@ -12,20 +12,20 @@
 
 @interface UXBarButtonItem : UXBarItem <UXKitAppearance>
 
-@property (nonatomic) unsigned long long keyEquivalentModifierMask; // @synthesize keyEquivalentModifierMask=_keyEquivalentModifierMask;
-@property (nonatomic, strong) NSString *keyEquivalent; // @synthesize keyEquivalent=_keyEquivalent;
-@property (nonatomic, strong) NSString *toolTip; // @synthesize toolTip=_toolTip;
-@property (nonatomic, weak)  id target; // @synthesize target=_target;
-@property (nonatomic) SEL action; // @synthesize action=_action;
-@property (nonatomic, strong) NSView *customView; // @synthesize customView=_customView;
-@property (nonatomic) double width; // @synthesize width=_width;
-@property (nonatomic) long long style; // @synthesize style=_style;
+@property (nonatomic) unsigned long long keyEquivalentModifierMask;
+@property (nonatomic, strong) NSString *keyEquivalent;
+@property (nonatomic, strong) NSString *toolTip;
+@property (nonatomic, weak) id target;
+@property (nonatomic) SEL action;
+@property (nonatomic, strong) NSView *customView;
+@property (nonatomic) double width;
+@property (nonatomic) long long style;
 - (void)setImage:(id)arg1;
 - (void)setEnabled:(BOOL)arg1;
 - (void)setTitle:(id)arg1;
 - (void)tintColorDidChange;
-@property (nonatomic) long long tintAdjustmentMode; // @synthesize tintAdjustmentMode=_tintAdjustmentMode;
-@property (nonatomic, strong) NSColor *tintColor; // @synthesize tintColor=_tintColor;
+@property (nonatomic) long long tintAdjustmentMode;
+@property (nonatomic, strong) NSColor *tintColor;
 - (id)initWithStyle:(long long)arg1 target:(id)arg2 action:(SEL)arg3;
 - (id)initWithContentViewController:(id)arg1;
 - (id)initWithCustomView:(id)arg1;

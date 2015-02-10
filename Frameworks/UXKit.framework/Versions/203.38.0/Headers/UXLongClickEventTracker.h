@@ -9,8 +9,8 @@
 
 @interface UXLongClickEventTracker : UXEventTracker
 
-@property (nonatomic) double allowableMovement; // @synthesize allowableMovement=_allowableMovement;
-@property (nonatomic) double minimumPressDuration; // @synthesize minimumPressDuration=_minimumPressDuration;
+@property (nonatomic) double allowableMovement;
+@property (nonatomic) double minimumPressDuration;
 - (CGPoint)initialLocationInView:(id)arg1;
 - (void)reset;
 - (void)mouseUp:(id)arg1;

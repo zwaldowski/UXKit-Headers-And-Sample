@@ -13,12 +13,12 @@
 
 + (unsigned long long)collectionViewScrollPositionFromScrollPosition:(long long)arg1;
 + (Class)documentClass;
-@property (nonatomic) NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
-@property (nonatomic, copy) NSColor *separatorColor; // @synthesize separatorColor=_separatorColor;
-@property (nonatomic) long long separatorStyle; // @synthesize separatorStyle=_separatorStyle;
-@property (nonatomic) double rowHeight; // @synthesize rowHeight=_rowHeight;
-@property (nonatomic, weak)  id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;
-@property (nonatomic, weak)  id <UXTableViewDataSource> tableViewDataSource; // @synthesize tableViewDataSource=_tableViewDataSource;
+@property (nonatomic) NSEdgeInsets separatorInset;
+@property (nonatomic, copy) NSColor *separatorColor;
+@property (nonatomic) long long separatorStyle;
+@property (nonatomic) double rowHeight;
+@property (nonatomic, weak) id <UXTableViewDelegate> tableViewDelegate;
+@property (nonatomic, weak) id <UXTableViewDataSource> tableViewDataSource;
 @property (nonatomic) double alpha;
 - (void)collectionView:(id)arg1 layout:(id)arg2 supplementaryViewDidEndFloatingAtIndexPath:(id)arg3 kind:(id)arg4;
 - (void)collectionView:(id)arg1 layout:(id)arg2 supplementaryViewDidBeginFloatingAtIndexPath:(id)arg3 kind:(id)arg4;

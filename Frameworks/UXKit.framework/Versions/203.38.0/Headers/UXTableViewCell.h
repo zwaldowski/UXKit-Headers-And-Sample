@@ -11,19 +11,19 @@
 
 @interface UXTableViewCell : UXCollectionViewCell
 
-@property (nonatomic) NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
-@property (nonatomic) double indentationWidth; // @synthesize indentationWidth=_indentationWidth;
-@property (nonatomic) long long indentationLevel; // @synthesize indentationLevel=_indentationLevel;
-@property (nonatomic) long long selectionStyle; // @synthesize selectionStyle=_selectionStyle;
-@property (nonatomic, getter=isHighlighted) BOOL highlighted; // @synthesize highlighted=_highlighted;
-@property (nonatomic, strong) NSColor *highlightColor; // @synthesize highlightColor=_highlightColor;
-@property (nonatomic, strong) UXView *accessoryView; // @synthesize accessoryView=_accessoryView;
-@property (nonatomic) long long accessoryType; // @synthesize accessoryType=_accessoryType;
-@property (nonatomic, strong) UXLabel *detailTextLabel; // @synthesize detailTextLabel=_detailTextLabel;
-@property (nonatomic, strong) UXLabel *textLabel; // @synthesize textLabel=_textLabel;
-@property (nonatomic, strong) UXView *selectedBackgroundView; // @synthesize selectedBackgroundView=_selectedBackgroundView;
-@property (nonatomic, strong) UXView *backgroundView; // @synthesize backgroundView=_backgroundView;
-@property (nonatomic) long long style; // @synthesize style=_style;
+@property (nonatomic) NSEdgeInsets separatorInset;
+@property (nonatomic) double indentationWidth;
+@property (nonatomic) long long indentationLevel;
+@property (nonatomic) long long selectionStyle;
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+@property (nonatomic, strong) NSColor *highlightColor;
+@property (nonatomic, strong) UXView *accessoryView;
+@property (nonatomic) long long accessoryType;
+@property (nonatomic, strong) UXLabel *detailTextLabel;
+@property (nonatomic, strong) UXLabel *textLabel;
+@property (nonatomic, strong) UXView *selectedBackgroundView;
+@property (nonatomic, strong) UXView *backgroundView;
+@property (nonatomic) long long style;
 - (id)accessibilityLabel;
 @property (nonatomic, readonly) UXView *lowerSpace;
 @property (nonatomic, readonly) UXView *upperSpace;

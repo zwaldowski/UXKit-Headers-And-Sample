@@ -11,14 +11,14 @@
 @interface UXCollectionViewLayoutAccessibility : NSAccessibilityElement
 
 + (Class)sectionAccessibilityClass;
-@property (nonatomic, weak)  UXCollectionViewLayout *layout; // @synthesize layout=_layout;
+@property (nonatomic, weak) UXCollectionViewLayout *layout;
 - (void)accessibilityPostNotification:(id)arg1;
 @property (nonatomic, copy) NSArray *accessibilitySelectedCells; // @dynamic accessibilitySelectedCells;
 - (id)accessibilityArrayAttributeValues:(id)arg1 index:(unsigned long long)arg2 maxCount:(unsigned long long)arg3;
 - (unsigned long long)accessibilityArrayAttributeCount:(id)arg1;
 - (unsigned long long)accessibilityIndexOfChild:(id)arg1;
 - (id)accessibilityChildren;
-@property (nonatomic, copy, readonly) NSArray *accessibilityVisibleChildren; // @synthesize accessibilityVisibleChildren=_accessibilityVisibleChildren;
+@property (nonatomic, copy, readonly) NSArray *accessibilityVisibleChildren;
 - (CGRect)accessibilityFrameInParentSpace;
 - (CGRect)accessibilityFrame;
 - (long long)accessibilityColumnCount;

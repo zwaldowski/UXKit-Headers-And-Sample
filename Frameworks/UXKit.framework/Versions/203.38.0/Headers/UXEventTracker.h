@@ -10,18 +10,18 @@
 
 @interface UXEventTracker : NSResponder
 
-@property (nonatomic, strong) NSMapTable *selectorsByTarget; // @synthesize selectorsByTarget=_selectorsByTarget;
+@property (nonatomic, strong) NSMapTable *selectorsByTarget;
 @property (nonatomic, copy) void(^eventTrackerDidBeginHandler)(UXEventTracker *);
 @property (nonatomic, copy) void(^eventTrackerDidChangeHandler)(UXEventTracker *);
 @property (nonatomic, copy) void(^eventTrackerDidEndHandler)(UXEventTracker *);
-@property (nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
-@property (nonatomic) BOOL cancelsEventsInView; // @synthesize cancelsEventsInView=_cancelsEventsInView;
-@property (nonatomic) unsigned long long ignoredModifiers; // @synthesize ignoredModifiers=_ignoredModifiers;
-@property (nonatomic) double velocity; // @synthesize velocity=_velocity;
-@property (nonatomic) unsigned long long modifiers; // @synthesize modifiers=_modifiers;
-@property (nonatomic, strong) NSEvent *trackingEvent; // @synthesize trackingEvent=_trackingEvent;
-@property (nonatomic, weak)  UXView *view; // @synthesize view=_view;
-@property (nonatomic) long long state; // @synthesize state=_state;
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+@property (nonatomic) BOOL cancelsEventsInView;
+@property (nonatomic) unsigned long long ignoredModifiers;
+@property (nonatomic) double velocity;
+@property (nonatomic) unsigned long long modifiers;
+@property (nonatomic, strong) NSEvent *trackingEvent;
+@property (nonatomic, weak) UXView *view;
+@property (nonatomic) long long state;
 - (BOOL)eventTrackerRequiresTouches;
 - (void)reset;
 @property (nonatomic, readonly) unsigned long long numberOfTouches;

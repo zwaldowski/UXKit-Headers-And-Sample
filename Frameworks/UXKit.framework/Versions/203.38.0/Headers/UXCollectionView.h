@@ -17,12 +17,12 @@
 
 + (BOOL)isCompatibleWithResponsiveScrolling;
 + (Class)documentClass;
-@property (nonatomic, readonly, getter=isDecelerating) BOOL decelerating; // @synthesize decelerating=_decelerating;
-@property (nonatomic, readonly, getter=isScrolling) BOOL scrolling; // @synthesize scrolling=_scrolling;
-@property (nonatomic) BOOL allowsPaintingSelection; // @synthesize allowsPaintingSelection=_allowsPaintingSelection;
-@property (nonatomic) BOOL allowsLassoSelection; // @synthesize allowsLassoSelection=_allowsLassoSelection;
-@property (nonatomic) BOOL allowsContinuousSelection; // @synthesize allowsContinuousSelection=_allowsContinuousSelection;
-@property (nonatomic, strong) UXCollectionViewLayout *collectionViewLayout; // @synthesize collectionViewLayout=_layout;
+@property (nonatomic, readonly, getter=isDecelerating) BOOL decelerating;
+@property (nonatomic, readonly, getter=isScrolling) BOOL scrolling;
+@property (nonatomic) BOOL allowsPaintingSelection;
+@property (nonatomic) BOOL allowsLassoSelection;
+@property (nonatomic) BOOL allowsContinuousSelection;
+@property (nonatomic, strong) UXCollectionViewLayout *collectionViewLayout;
 - (BOOL)lassoInvertsSelection;
 - (void)setLassoInvertsSelection:(BOOL)arg1;
 - (id)accessibilityHitTest:(CGPoint)arg1;
@@ -122,9 +122,9 @@
 - (BOOL)isBusy;
 - (void)reloadData;
 - (void)setNeedsLayout;
-@property (nonatomic) BOOL allowsEmptySelection; // @synthesize allowsEmptySelection=_allowsEmptySelection;
-@property (nonatomic) BOOL allowsMultipleSelection; // @synthesize allowsMultipleSelection=_allowsMultipleSelection;
-@property (nonatomic) BOOL allowsSelection; // @synthesize allowsSelection=_allowsSelection;
+@property (nonatomic) BOOL allowsEmptySelection;
+@property (nonatomic) BOOL allowsMultipleSelection;
+@property (nonatomic) BOOL allowsSelection;
 - (void)deselectAllItems:(BOOL)arg1;
 - (void)selectAllItems:(BOOL)arg1;
 - (void)deselectItemsAtIndexPaths:(id)arg1 animated:(BOOL)arg2;
@@ -136,8 +136,8 @@
 - (BOOL)selectableItemAtIndexPath:(id)arg1;
 - (unsigned long long)numberOfSelectedItems;
 - (id)indexPathsForSelectedItems;
-@property (nonatomic, weak)  NSObject<UXCollectionViewDataSource> *dataSource; // @synthesize dataSource=_dataSource;
-@property (nonatomic, weak)  NSObject<UXCollectionViewDelegate> *delegate; // @synthesize delegate=_delegate;
+@property (nonatomic, weak) NSObject<UXCollectionViewDataSource> *dataSource;
+@property (nonatomic, weak) NSObject<UXCollectionViewDelegate> *delegate;
 - (id)initWithFrame:(CGRect)arg1 collectionViewLayout:(id)arg2;
 - (id)initWithFrame:(CGRect)arg1;
 - (void)updateDraggingItemsForDrag:(id)arg1;

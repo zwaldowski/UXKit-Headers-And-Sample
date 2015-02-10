@@ -10,12 +10,12 @@
 @interface UXCollectionViewFlowLayout : UXCollectionViewLayout
 
 + (Class)invalidationContextClass;
-@property (nonatomic) NSEdgeInsets sectionInset; // @synthesize sectionInset=_sectionInset;
-@property (nonatomic) CGSize footerReferenceSize; // @synthesize footerReferenceSize=_footerReferenceSize;
-@property (nonatomic) CGSize headerReferenceSize; // @synthesize headerReferenceSize=_headerReferenceSize;
-@property (nonatomic) CGSize itemSize; // @synthesize itemSize=_itemSize;
-@property (nonatomic) double minimumInteritemSpacing; // @synthesize minimumInteritemSpacing=_interitemSpacing;
-@property (nonatomic) double minimumLineSpacing; // @synthesize minimumLineSpacing=_lineSpacing;
+@property (nonatomic) NSEdgeInsets sectionInset;
+@property (nonatomic) CGSize footerReferenceSize;
+@property (nonatomic) CGSize headerReferenceSize;
+@property (nonatomic) CGSize itemSize;
+@property (nonatomic) double minimumInteritemSpacing;
+@property (nonatomic) double minimumLineSpacing;
 @property (nonatomic) long long scrollDirection;
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1;
 - (id)indexPathsForItemsInRect:(CGRect)arg1;

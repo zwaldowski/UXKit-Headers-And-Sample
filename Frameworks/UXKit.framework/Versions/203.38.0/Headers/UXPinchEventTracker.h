@@ -9,7 +9,7 @@
 
 @interface UXPinchEventTracker : UXEventTracker
 
-@property (nonatomic) double scale; // @synthesize scale=_scale;
+@property (nonatomic) double scale;
 - (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
 - (CGPoint)locationOfTouch:(id)arg1;
 - (void)mouseDown:(id)arg1;

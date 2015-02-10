@@ -10,7 +10,7 @@
 
 @interface UXCollectionReusableView : NSView
 
-@property (nonatomic, copy, readonly) NSString *reuseIdentifier; // @synthesize reuseIdentifier=_reuseIdentifier;
+@property (nonatomic, copy, readonly) NSString *reuseIdentifier;
 - (void)didTransitionFromLayout:(id)arg1 toLayout:(id)arg2;
 - (void)willTransitionFromLayout:(id)arg1 toLayout:(id)arg2;
 - (void)applyLayoutAttributes:(id)arg1;

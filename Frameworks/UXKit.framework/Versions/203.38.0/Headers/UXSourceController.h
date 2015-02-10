@@ -11,17 +11,17 @@
 
 @interface UXSourceController : UXViewController <UXNavigationControllerDelegate>
 
-@property (readonly) NSOperationQueue *viewControllerOperations; // @synthesize viewControllerOperations=_viewControllerOperations;
-@property (nonatomic, readonly) NSMapTable *transitionControllerClassByToViewControllerClass; // @synthesize transitionControllerClassByToViewControllerClass=_transitionControllerClassByToViewControllerClass;
-@property (nonatomic, readonly) NSMapTable *navigationControllerByRootViewController; // @synthesize navigationControllerByRootViewController=_navigationControllerByRootViewController;
-@property (nonatomic, readonly) NSSplitView *splitView; // @synthesize splitView=_splitView;
-@property (nonatomic, readonly) NSSegmentedControl *segmentedControl; // @synthesize segmentedControl=_segmentedControl;
-@property (nonatomic, copy) NSString *sourceListAutosaveName; // @synthesize sourceListAutosaveName=_sourceListAutosaveName;
-@property (nonatomic, strong) UXViewController<UXSourceList> *sourceListViewController; // @synthesize sourceListViewController=_sourceListViewController;
-@property (nonatomic, strong) UXViewController *selectedViewController; // @synthesize selectedViewController=_selectedViewController;
-@property (nonatomic, copy) NSArray *rootViewControllers; // @synthesize rootViewControllers=_rootViewControllers;
-@property (nonatomic) long long style; // @synthesize style=_style;
-@property (nonatomic) long long preferredStyle; // @synthesize preferredStyle=_preferredStyle;
+@property (readonly) NSOperationQueue *viewControllerOperations;
+@property (nonatomic, readonly) NSMapTable *transitionControllerClassByToViewControllerClass;
+@property (nonatomic, readonly) NSMapTable *navigationControllerByRootViewController;
+@property (nonatomic, readonly) NSSplitView *splitView;
+@property (nonatomic, readonly) NSSegmentedControl *segmentedControl;
+@property (nonatomic, copy) NSString *sourceListAutosaveName;
+@property (nonatomic, strong) UXViewController<UXSourceList> *sourceListViewController;
+@property (nonatomic, strong) UXViewController *selectedViewController;
+@property (nonatomic, copy) NSArray *rootViewControllers;
+@property (nonatomic) long long style;
+@property (nonatomic) long long preferredStyle;
 - (BOOL)navigationController:(id)arg1 shouldBeginInteractivePopFromViewController:(id)arg2 toViewController:(id)arg3;
 - (id)navigationController:(id)arg1 animationControllerForOperation:(long long)arg2 fromViewController:(id)arg3 toViewController:(id)arg4;
 - (id)navigationController:(id)arg1 interactionControllerForAnimationController:(id)arg2;

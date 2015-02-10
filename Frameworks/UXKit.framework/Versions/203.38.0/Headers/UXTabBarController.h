@@ -9,9 +9,9 @@
 
 @interface UXTabBarController : UXViewController
 
-@property (nonatomic, readonly) NSSegmentedControl *segmentedControl; // @synthesize segmentedControl=_segmentedControl;
-@property (nonatomic, weak)  UXViewController *selectedViewController; // @synthesize selectedViewController=_selectedViewController;
-@property (nonatomic, copy) NSArray *viewControllers; // @synthesize viewControllers=_viewControllers;
+@property (nonatomic, readonly) NSSegmentedControl *segmentedControl;
+@property (nonatomic, weak) UXViewController *selectedViewController;
+@property (nonatomic, copy) NSArray *viewControllers;
 @property (nonatomic) unsigned long long selectedIndex;
 - (void)viewDidLoad;
 - (void)keyDown:(id)arg1;

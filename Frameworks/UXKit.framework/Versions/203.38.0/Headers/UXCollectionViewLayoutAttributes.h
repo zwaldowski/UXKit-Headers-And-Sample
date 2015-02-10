@@ -11,17 +11,17 @@
 + (id)layoutAttributesForDecorationViewOfKind:(id)arg1 withIndexPath:(id)arg2;
 + (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 withIndexPath:(id)arg2;
 + (id)layoutAttributesForCellWithIndexPath:(id)arg1;
-@property (nonatomic, strong) NSIndexPath *indexPath; // @synthesize indexPath=_indexPath;
-@property (nonatomic) BOOL isFloatingPinned; // @synthesize isFloatingPinned=_isFloatingPinned;
-@property (nonatomic) CGRect floatingFrame; // @synthesize floatingFrame=_floatingFrame;
-@property (nonatomic) BOOL isFloating; // @synthesize isFloating=_isFloating;
-@property (nonatomic) long long zIndex; // @synthesize zIndex=_zIndex;
-@property (nonatomic) double alpha; // @synthesize alpha=_alpha;
-@property (nonatomic) CGSize size; // @synthesize size=_size;
-@property (nonatomic) CGPoint center; // @synthesize center=_center;
-@property (nonatomic, readonly) NSString *representedElementKind; // @synthesize representedElementKind=_representedElementKind;
+@property (nonatomic, strong) NSIndexPath *indexPath;
+@property (nonatomic) BOOL isFloatingPinned;
+@property (nonatomic) CGRect floatingFrame;
+@property (nonatomic) BOOL isFloating;
+@property (nonatomic) long long zIndex;
+@property (nonatomic) double alpha;
+@property (nonatomic) CGSize size;
+@property (nonatomic) CGPoint center;
+@property (nonatomic, readonly) NSString *representedElementKind;
 @property (nonatomic, readonly) unsigned long long representedElementCategory;
-@property (nonatomic) CGRect frame; // @synthesize frame=_frame;
+@property (nonatomic) CGRect frame;
 @property (nonatomic) CGRect bounds;
 @property (nonatomic, getter=isHidden) BOOL hidden;
 

@@ -10,13 +10,13 @@
 
 @interface UXNavigationItem : NSObject
 
-@property (nonatomic) BOOL leftItemsSupplementBackButton; // @synthesize leftItemsSupplementBackButton=_leftItemsSupplementBackButton;
-@property (nonatomic, strong) NSArray *rightBarButtonItems; // @synthesize rightBarButtonItems=_rightBarButtonItems;
-@property (nonatomic) BOOL hidesAlternateTitleView; // @synthesize hidesAlternateTitleView=_hidesAlternateTitleView;
-@property (nonatomic) BOOL hidesBackButton; // @synthesize hidesBackButton=_hidesBackButton;
-@property (nonatomic, copy) NSString *prompt; // @synthesize prompt=_prompt;
-@property (nonatomic, strong) NSView *titleView; // @synthesize titleView=_titleView;
-@property (nonatomic, strong) UXBarButtonItem *backBarButtonItem; // @synthesize backBarButtonItem=_backBarButtonItem;
+@property (nonatomic) BOOL leftItemsSupplementBackButton;
+@property (nonatomic, strong) NSArray *rightBarButtonItems;
+@property (nonatomic) BOOL hidesAlternateTitleView;
+@property (nonatomic) BOOL hidesBackButton;
+@property (nonatomic, copy) NSString *prompt;
+@property (nonatomic, strong) NSView *titleView;
+@property (nonatomic, strong) UXBarButtonItem *backBarButtonItem;
 - (void)removeChildItem:(id)arg1;
 - (void)addChildItem:(id)arg1;
 @property (nonatomic, strong) UXBarButtonItem *rightBarButtonItem;

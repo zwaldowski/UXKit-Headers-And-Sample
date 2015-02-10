@@ -8,9 +8,9 @@
 
 @interface NSViewAnimationContext : NSObject
 
-@property (nonatomic, readonly) void(^completionHandler)(BOOL finished); // @synthesize completionHandler=_completionHandler;
-@property (nonatomic) long long animationCount; // @synthesize animationCount=_animationCount;
-@property (nonatomic, strong) NSArray *viewAnimations; // @synthesize viewAnimations=_viewAnimations;
+@property (nonatomic, readonly) void(^completionHandler)(BOOL finished);
+@property (nonatomic) long long animationCount;
+@property (nonatomic, strong) NSArray *viewAnimations;
 - (id)initWithCompletionHandler:(void(^)(BOOL))arg1;
 
 @end

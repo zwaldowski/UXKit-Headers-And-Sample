@@ -9,7 +9,7 @@
 
 @interface UXImageView : UXView <NSAccessibilityImage>
 
-@property (nonatomic, strong) NSImage *image; // @synthesize image=_image;
+@property (nonatomic, strong) NSImage *image;
 - (void)sizeToFit;
 - (void)setFrameSize:(CGSize)arg1;
 - (void)viewWillMoveToWindow:(id)arg1;

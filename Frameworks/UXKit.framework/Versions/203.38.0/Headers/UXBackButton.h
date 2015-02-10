@@ -8,7 +8,7 @@
 
 @interface UXBackButton : NSButton
 
-@property (nonatomic) BOOL hidesTitle; // @synthesize hidesTitle=_hidesTitle;
+@property (nonatomic) BOOL hidesTitle;
 - (void)setTitle:(id)arg1;
 
 @end

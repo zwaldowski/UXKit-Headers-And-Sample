@@ -12,21 +12,21 @@
 
 @interface UXNavigationBar : UXBar
 
-@property (nonatomic) BOOL recalculatingWindowKeyViewLoop; // @synthesize recalculatingWindowKeyViewLoop=_recalculatingWindowKeyViewLoop;
-@property (nonatomic, strong) UXNavigationItem *transitioningItem; // @synthesize transitioningItem=_transitioningItem;
-@property (nonatomic) long long currentOperation; // @synthesize currentOperation=_currentOperation;
-@property (nonatomic) double centerYOffset; // @synthesize centerYOffset=_centerYOffset;
-@property (nonatomic) double rightInteritemSpacing; // @synthesize rightInteritemSpacing=_rightInteritemSpacing;
-@property (nonatomic) double leftInteritemSpacing; // @synthesize leftInteritemSpacing=_leftInteritemSpacing;
-@property (nonatomic, getter=isDetached) BOOL detached; // @synthesize detached=_detached;
-@property (nonatomic) BOOL enableAlernateTitle; // @synthesize enableAlernateTitle=_enableAlernateTitle;
-@property (nonatomic, strong) NSView *alternateTitleView; // @synthesize alternateTitleView=_alternateTitleView;
-@property (nonatomic, strong) NSImage *backIndicatorImage; // @synthesize backIndicatorImage=_backIndicatorImage;
-@property (nonatomic, copy) NSArray *items; // @synthesize items=_items;
-@property (nonatomic, weak)  NSView *titleCenteringTrackedView; // @synthesize titleCenteringTrackedView=_titleCenteringTrackedView;
-@property (nonatomic) NSEdgeInsets edgeInsets; // @synthesize edgeInsets=_edgeInsets;
-@property (nonatomic, getter=isTranslucent) BOOL translucent; // @synthesize translucent=_translucent;
-@property (nonatomic, weak)  id <UXNavigationBarDelegate> delegate; // @synthesize delegate=_delegate;
+@property (nonatomic) BOOL recalculatingWindowKeyViewLoop;
+@property (nonatomic, strong) UXNavigationItem *transitioningItem;
+@property (nonatomic) long long currentOperation;
+@property (nonatomic) double centerYOffset;
+@property (nonatomic) double rightInteritemSpacing;
+@property (nonatomic) double leftInteritemSpacing;
+@property (nonatomic, getter=isDetached) BOOL detached;
+@property (nonatomic) BOOL enableAlernateTitle;
+@property (nonatomic, strong) NSView *alternateTitleView;
+@property (nonatomic, strong) NSImage *backIndicatorImage;
+@property (nonatomic, copy) NSArray *items;
+@property (nonatomic, weak) NSView *titleCenteringTrackedView;
+@property (nonatomic) NSEdgeInsets edgeInsets;
+@property (nonatomic, getter=isTranslucent) BOOL translucent;
+@property (nonatomic, weak) id <UXNavigationBarDelegate> delegate;
 - (void)setNeedsRecalcuateWindowKeyViewLoop;
 - (void)recalculateKeyViewLoop;
 - (void)beginInteractivePop;

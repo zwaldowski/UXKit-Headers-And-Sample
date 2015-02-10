@@ -9,12 +9,12 @@
 
 @interface UXLabel : UXView <NSAccessibilityStaticText>
 
-@property (nonatomic, getter=isHighlighted) BOOL highlighted; // @synthesize highlighted=_highlighted;
-@property (nonatomic, strong) NSColor *highlightedTextColor; // @synthesize highlightedTextColor=_highlightedTextColor;
-@property (nonatomic) long long numberOfLines; // @synthesize numberOfLines=_numberOfLines;
-@property (nonatomic) CGSize shadowOffset; // @synthesize shadowOffset=_shadowOffset;
-@property (nonatomic, strong) NSColor *shadowColor; // @synthesize shadowColor=_shadowColor;
-@property (nonatomic, strong) NSColor *textColor; // @synthesize textColor=_textColor;
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+@property (nonatomic, strong) NSColor *highlightedTextColor;
+@property (nonatomic) long long numberOfLines;
+@property (nonatomic) CGSize shadowOffset;
+@property (nonatomic, strong) NSColor *shadowColor;
+@property (nonatomic, strong) NSColor *textColor;
 - (id)accessibilityRoleDescription;
 - (void)setAccessibilityRoleDescription:(id)arg1;
 - (id)accessibilityRole;

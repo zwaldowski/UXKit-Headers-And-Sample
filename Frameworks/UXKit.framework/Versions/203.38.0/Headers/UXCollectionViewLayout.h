@@ -13,8 +13,8 @@
 + (Class)layoutAccessibilityClass;
 + (Class)invalidationContextClass;
 + (Class)layoutAttributesClass;
-@property (nonatomic, readonly) UXCollectionViewLayoutAccessibility *layoutAccessibility; // @synthesize layoutAccessibility=_layoutAccessibility;
-@property (nonatomic, weak, readonly) UXCollectionView *collectionView; // @synthesize collectionView=_collectionView;
+@property (nonatomic, readonly) UXCollectionViewLayoutAccessibility *layoutAccessibility;
+@property (nonatomic, weak, readonly) UXCollectionView *collectionView;
 - (id)indexPathOfItemBelow:(id)arg1;
 - (id)indexPathOfItemAbove:(id)arg1;
 - (id)indexPathOfItemAfter:(id)arg1;

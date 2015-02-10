@@ -13,11 +13,11 @@
 @interface UXNavigationController : UXViewController <UXToolbarDelegate>
 
 + (id)keyPathsForValuesAffectingPreferredContentSize;
-@property (nonatomic, readonly) UXEventTracker *interactivePopEventTracker; // @synthesize interactivePopEventTracker=_interactivePopEventTracker;
-@property (nonatomic, weak)  id <UXNavigationControllerDelegate> delegate; // @synthesize delegate=_delegate;
-@property (nonatomic, getter=isToolbarHidden) BOOL toolbarHidden; // @synthesize toolbarHidden=_toolbarHidden;
-@property (nonatomic, getter=isNavigationBarDetached) BOOL navigationBarDetached; // @synthesize navigationBarDetached=_navigationBarDetached;
-@property (nonatomic, getter=isNavigationBarHidden) BOOL navigationBarHidden; // @synthesize navigationBarHidden=_navigationBarHidden;
+@property (nonatomic, readonly) UXEventTracker *interactivePopEventTracker;
+@property (nonatomic, weak) id <UXNavigationControllerDelegate> delegate;
+@property (nonatomic, getter=isToolbarHidden) BOOL toolbarHidden;
+@property (nonatomic, getter=isNavigationBarDetached) BOOL navigationBarDetached;
+@property (nonatomic, getter=isNavigationBarHidden) BOOL navigationBarHidden;
 - (long long)positionForBar:(id)arg1;
 - (id)popToViewController:(id)arg1 animated:(BOOL)arg2;
 - (id)popToRootViewControllerAnimated:(BOOL)arg1;

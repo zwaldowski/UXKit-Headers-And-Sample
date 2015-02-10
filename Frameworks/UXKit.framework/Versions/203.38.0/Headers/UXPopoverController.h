@@ -11,8 +11,8 @@
 
 @interface UXPopoverController : UXViewController <NSPopoverDelegate>
 
-@property (nonatomic, copy) NSArray *passthroughViews; // @synthesize passthroughViews=_passthroughViews;
-@property (nonatomic, weak)  id <UXPopoverControllerDelegate> delegate; // @synthesize delegate=_delegate;
+@property (nonatomic, copy) NSArray *passthroughViews;
+@property (nonatomic, weak) id <UXPopoverControllerDelegate> delegate;
 - (void)dismissPopoverAnimated:(BOOL)arg1;
 - (void)dismissPopover;
 - (void)presentPopoverFromBarButtonItem:(id)arg1 permittedArrowDirections:(unsigned long long)arg2 animated:(BOOL)arg3;
