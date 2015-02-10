@@ -9,8 +9,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class UXPopover;
-
 @interface UXPopoverController : UXViewController <NSPopoverDelegate>
 
 @property (nonatomic, copy) NSArray *passthroughViews; // @synthesize passthroughViews=_passthroughViews;
@@ -26,7 +24,7 @@
 @property (nonatomic) long long popoverBehavior;
 - (void)popoverWillShow:(id)arg1;
 - (void)popoverDidClose:(id)arg1;
-- (id)popover;
+@property (nonatomic, readonly) NSPopover *popover;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (id)initWithContentViewController:(id)arg1;
 

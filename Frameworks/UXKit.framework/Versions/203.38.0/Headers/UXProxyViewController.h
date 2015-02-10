@@ -12,8 +12,8 @@
 
 - (void)didMoveToParentViewController:(id)arg1;
 - (BOOL)isViewLoaded;
-- (id)view;
-- (id)initWithView:(id)arg1;
+- (UXView *)view;
+- (id)initWithView:(UXView *)arg1;
 
 @end
 

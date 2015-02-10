@@ -7,7 +7,7 @@
 #import <Cocoa/Cocoa.h>
 #import <UXKit/UXLayoutSupport-Protocol.h>
 
-@class UXNavigationController, UXNavigationItem, UXSourceController, UXTabBarItem, UXView;
+@class UXNavigationController, UXNavigationItem, UXSourceController, UXTabBarItem, UXView, UXTabBarController, UXPopoverController;
 
 @interface UXViewController : NSViewController
 
@@ -65,9 +65,9 @@
 - (void)setAccessoryViewController:(id)arg1;
 @property (nonatomic, readonly) UXNavigationItem *navigationItem;
 @property (nonatomic, readonly) UXNavigationController *navigationController;
-- (id)tabBarController;
-- (id)tabBarItem;
-- (id)popoverController;
+@property (nonatomic, readonly) UXTabBarController *tabBarController;
+@property (nonatomic, readonly) UXTabBarItem *tabBarItem;
+@property (nonatomic, readonly) UXPopoverController *popoverController;
 - (void)updateViewConstraints;
 - (void)prepareForTransitionWithContext:(id)arg1 completion:(void(^)(void))arg2;
 @property (nonatomic, readonly) long long interfaceOrientation;
