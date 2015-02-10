@@ -25,11 +25,11 @@
 - (void)removeIndexPathsSet:(id)arg1;
 - (void)removeIndexPaths:(id)arg1;
 - (void)removeIndexPath:(id)arg1;
-- (void)addSection:(long long)arg1 itemsInRange:(struct _NSRange)arg2;
+- (void)addSection:(long long)arg1 itemsInRange:(NSRange)arg2;
 - (void)addIndexPathsSet:(id)arg1;
 - (void)addIndexPaths:(id)arg1;
 - (void)addIndexPath:(id)arg1;
-- (id)copyWithZone:(struct _NSZone *)arg1;
+- (id)copyWithZone:(NSZone *)arg1;
 
 @end
 

@@ -12,7 +12,7 @@
 {
     NSTimer *_clickTimer;
     BOOL _isMouseDown;
-    struct CGPoint _initialMouseLocation;
+    CGPoint _initialMouseLocation;
     double _minimumPressDuration;
     double _allowableMovement;
 }
@@ -22,7 +22,7 @@
 - (void)_minimumDurationElapsed:(id)arg1;
 - (void)_stopTimer;
 - (void)_startTimer;
-- (struct CGPoint)initialLocationInView:(id)arg1;
+- (CGPoint)initialLocationInView:(id)arg1;
 - (void)reset;
 - (void)mouseUp:(id)arg1;
 - (void)mouseDragged:(id)arg1;

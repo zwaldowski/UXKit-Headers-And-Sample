@@ -34,7 +34,7 @@
     double __separatorHeight;
     NSColor *__separatorColor;
     NSMutableArray *__addedConstraints;
-    struct NSEdgeInsets _separatorInset;
+    NSEdgeInsets _separatorInset;
 }
 
 @property(retain, nonatomic) NSMutableArray *_addedConstraints; // @synthesize _addedConstraints=__addedConstraints;
@@ -43,7 +43,7 @@
 @property(nonatomic, setter=_setSeparatorHeight:) double _separatorHeight; // @synthesize _separatorHeight=__separatorHeight;
 @property(nonatomic, setter=_setSeparatorStyle:) long long _separatorStyle; // @synthesize _separatorStyle=__separatorStyle;
 @property(nonatomic, setter=_setHighlightingForContext:) BOOL _highlightingForContext; // @synthesize _highlightingForContext=__highlightingForContext;
-@property(nonatomic) struct NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
+@property(nonatomic) NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
 @property(nonatomic) double indentationWidth; // @synthesize indentationWidth=_indentationWidth;
 @property(nonatomic) long long indentationLevel; // @synthesize indentationLevel=_indentationLevel;
 @property(nonatomic) long long selectionStyle; // @synthesize selectionStyle=_selectionStyle;
@@ -68,7 +68,7 @@
 - (void)setSelected:(BOOL)arg1;
 - (void)updateConstraints;
 - (void)viewDidMoveToWindow;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 - (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;
 
 @end

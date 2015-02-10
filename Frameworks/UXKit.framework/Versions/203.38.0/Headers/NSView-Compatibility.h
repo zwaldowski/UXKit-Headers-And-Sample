@@ -12,7 +12,7 @@
 - (void)setContentHuggingPriority:(float)arg1 forAxis:(long long)arg2;
 - (float)contentHuggingPriorityForAxis:(long long)arg1;
 @property(nonatomic) double alpha;
-- (BOOL)pointInside:(struct CGPoint)arg1 withEvent:(id)arg2;
+- (BOOL)pointInside:(CGPoint)arg1 withEvent:(id)arg2;
 - (void)layoutIfNeeded;
 - (void)layoutSubviews;
 - (void)setNeedsUpdateConstraints;

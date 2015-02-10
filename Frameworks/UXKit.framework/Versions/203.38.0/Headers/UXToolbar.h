@@ -17,7 +17,7 @@
 - (void)_setItems:(id)arg1 animated:(BOOL)arg2 duration:(double)arg3;
 - (void)setItems:(id)arg1 animated:(BOOL)arg2;
 - (void)mouseDown:(id)arg1;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 
 @end
 

@@ -9,7 +9,7 @@
 @interface UXCollectionViewRearrangingCoordinatorDragRecognizer : NSGestureRecognizer
 {
     double _lastEventTime;
-    struct CGPoint _lastLocation;
+    CGPoint _lastLocation;
 }
 
 - (void)mouseUp:(id)arg1;

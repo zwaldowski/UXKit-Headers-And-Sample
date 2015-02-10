@@ -9,8 +9,8 @@
 @class NSString, UXView, UXViewController;
 
 @protocol UXViewControllerContextTransitioning <NSObject>
-- (struct CGRect)finalFrameForViewController:(UXViewController *)arg1;
-- (struct CGRect)initialFrameForViewController:(UXViewController *)arg1;
+- (CGRect)finalFrameForViewController:(UXViewController *)arg1;
+- (CGRect)initialFrameForViewController:(UXViewController *)arg1;
 - (UXViewController *)viewControllerForKey:(NSString *)arg1;
 - (void)completeTransition:(BOOL)arg1;
 - (void)cancelInteractiveTransition;

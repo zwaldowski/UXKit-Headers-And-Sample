@@ -9,6 +9,6 @@
 @class NSArray;
 
 @protocol UXCollectionViewLayoutProxyDelegate <NSObject>
-- (NSArray *)layoutAttributesForElementsInRect:(struct CGRect)arg1;
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)arg1;
 @end
 

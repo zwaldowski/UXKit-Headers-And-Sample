@@ -18,10 +18,10 @@
 @property(nonatomic, getter=isSelected) BOOL selected; // @synthesize selected=_selected;
 - (void)_setSelected:(BOOL)arg1 animated:(BOOL)arg2;
 - (void)prepareForReuse;
-- (void)resizeSubviewsWithOldSize:(struct CGSize)arg1;
+- (void)resizeSubviewsWithOldSize:(CGSize)arg1;
 - (BOOL)wantsUpdateLayer;
 - (id)initWithCoder:(id)arg1;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 - (id)_accessibilityIndexPath;
 - (id)_accessibilityDefaultRole;
 - (id)_dynamicAccessibilityParent;

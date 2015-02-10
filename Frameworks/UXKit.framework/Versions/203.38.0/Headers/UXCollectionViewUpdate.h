@@ -14,8 +14,8 @@
     NSArray *_updateItems;
     UXCollectionViewData *_oldModel;
     UXCollectionViewData *_newModel;
-    struct CGRect _oldVisibleBounds;
-    struct CGRect _newVisibleBounds;
+    CGRect _oldVisibleBounds;
+    CGRect _newVisibleBounds;
     NSMutableIndexSet *_movedItems;
     NSMutableIndexSet *_movedSections;
     NSMutableIndexSet *_deletedSections;
@@ -38,7 +38,7 @@
 - (void)_computeSupplementaryUpdates;
 - (void)_computeItemUpdates;
 - (void)_computeSectionUpdates;
-- (id)initWithCollectionView:(id)arg1 updateItems:(id)arg2 oldModel:(id)arg3 newModel:(id)arg4 oldVisibleBounds:(struct CGRect)arg5 newVisibleBounds:(struct CGRect)arg6;
+- (id)initWithCollectionView:(id)arg1 updateItems:(id)arg2 oldModel:(id)arg3 newModel:(id)arg4 oldVisibleBounds:(CGRect)arg5 newVisibleBounds:(CGRect)arg6;
 
 @end
 

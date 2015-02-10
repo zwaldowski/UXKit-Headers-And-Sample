@@ -13,8 +13,8 @@
     NSMutableArray *_monitoredTouchIds;
     NSMutableSet *_ignoredTouchIds;
     unsigned long long _numberOfMoveEvents;
-    struct CGPoint _initialMouseLocation;
-    struct CGPoint _initialNormalizedLocation;
+    CGPoint _initialMouseLocation;
+    CGPoint _initialNormalizedLocation;
     double _initialDistance;
     double _initialTime;
     double _firstTouchTime;
@@ -28,11 +28,11 @@
 }
 
 @property(nonatomic) double scale; // @synthesize scale=_scale;
-- (struct CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
-- (struct CGPoint)locationOfTouch:(id)arg1;
+- (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
+- (CGPoint)locationOfTouch:(id)arg1;
 - (id)_touchForTouchIdentity:(id)arg1;
 - (double)_distanceBetweenMonitoredTouches;
-- (struct CGPoint)_normalizedlocation;
+- (CGPoint)_normalizedlocation;
 - (void)_updateVelocity:(id)arg1;
 - (void)_touchesMovedWithEvent:(id)arg1;
 - (void)mouseDown:(id)arg1;
@@ -41,7 +41,7 @@
 - (void)rotateWithEvent:(id)arg1;
 - (void)magnifyWithEvent:(id)arg1;
 - (void)reset;
-- (struct CGPoint)locationInView:(id)arg1;
+- (CGPoint)locationInView:(id)arg1;
 - (void)setTrackingEvent:(id)arg1;
 - (id)init;
 - (BOOL)eventTrackerRequiresTouches;

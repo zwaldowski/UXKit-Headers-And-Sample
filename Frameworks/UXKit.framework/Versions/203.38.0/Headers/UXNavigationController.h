@@ -131,11 +131,11 @@
 - (id)transitionCoordinator;
 - (BOOL)_requiresWindowForTransitionPreparation;
 - (void)_prepareForAnimationInContext:(id)arg1 completion:(void(^)(void))arg2;
-- (struct NSEdgeInsets)_intrinsicLayoutInsetsForChildViewController:(id)arg1;
+- (NSEdgeInsets)_intrinsicLayoutInsetsForChildViewController:(id)arg1;
 - (id)_verticalToolbarLayoutConstraint;
 - (void)invalidateIntrinsicLayoutInsets;
-- (struct NSEdgeInsets)intrinsicLayoutInsets;
-- (struct CGSize)preferredContentSize;
+- (NSEdgeInsets)intrinsicLayoutInsets;
+- (CGSize)preferredContentSize;
 - (id)preferredFirstResponder;
 - (void)updateViewConstraints;
 - (void)viewDidAppear;

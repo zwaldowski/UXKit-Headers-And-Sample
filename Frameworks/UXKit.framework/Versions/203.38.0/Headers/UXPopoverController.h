@@ -23,10 +23,10 @@
 - (void)dismissPopoverAnimated:(BOOL)arg1;
 - (void)dismissPopover;
 - (void)presentPopoverFromBarButtonItem:(id)arg1 permittedArrowDirections:(unsigned long long)arg2 animated:(BOOL)arg3;
-- (void)presentPopoverFromRect:(struct CGRect)arg1 inView:(id)arg2 preferredEdge:(unsigned long long)arg3;
+- (void)presentPopoverFromRect:(CGRect)arg1 inView:(id)arg2 preferredEdge:(unsigned long long)arg3;
 @property(retain, nonatomic) UXViewController *contentViewController;
-@property(nonatomic) struct CGSize popoverContentSize;
-- (void)setPopoverContentSize:(struct CGSize)arg1 animated:(BOOL)arg2;
+@property(nonatomic) CGSize popoverContentSize;
+- (void)setPopoverContentSize:(CGSize)arg1 animated:(BOOL)arg2;
 @property(readonly, nonatomic, getter=isPopoverVisible) BOOL popoverVisible;
 @property(nonatomic) long long popoverBehavior;
 - (void)popoverWillShow:(id)arg1;

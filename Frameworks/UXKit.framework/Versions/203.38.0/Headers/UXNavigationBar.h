@@ -29,7 +29,7 @@
     _UXNavigationItemContainerView *_topItemContainer;
     long long _currentOperation;
     UXNavigationItem *_transitioningItem;
-    struct NSEdgeInsets _edgeInsets;
+    NSEdgeInsets _edgeInsets;
 }
 
 + (id)_itemKeyPathsToObserve;
@@ -47,7 +47,7 @@
 @property(retain, nonatomic) NSImage *backIndicatorImage; // @synthesize backIndicatorImage=_backIndicatorImage;
 @property(copy, nonatomic) NSArray *items; // @synthesize items=_items;
 @property(nonatomic) __weak NSView *titleCenteringTrackedView; // @synthesize titleCenteringTrackedView=_titleCenteringTrackedView;
-@property(nonatomic) struct NSEdgeInsets edgeInsets; // @synthesize edgeInsets=_edgeInsets;
+@property(nonatomic) NSEdgeInsets edgeInsets; // @synthesize edgeInsets=_edgeInsets;
 @property(nonatomic, getter=isTranslucent) BOOL translucent; // @synthesize translucent=_translucent;
 @property(nonatomic) __weak id <UXNavigationBarDelegate> delegate; // @synthesize delegate=_delegate;
 - (void)setNeedsRecalcuateWindowKeyViewLoop;
@@ -74,7 +74,7 @@
 - (void)layout;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (long long)barPosition;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 
 @end
 

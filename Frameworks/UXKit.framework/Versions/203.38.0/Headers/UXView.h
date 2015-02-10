@@ -34,12 +34,12 @@
 @property(nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch; // @synthesize exclusiveTouch=_exclusiveTouch;
 - (id)accessibilityChildren;
 - (id)menuForEvent:(id)arg1;
-- (id)snapshotViewFromRect:(struct CGRect)arg1;
+- (id)snapshotViewFromRect:(CGRect)arg1;
 - (id)snapshotView;
-- (id)snapshotForRect:(struct CGRect)arg1;
+- (id)snapshotForRect:(CGRect)arg1;
 - (void)sendSubviewToBack:(id)arg1;
 - (void)bringSubviewToFront:(id)arg1;
-@property(readonly, nonatomic) struct CGPoint center;
+@property(readonly, nonatomic) CGPoint center;
 @property(readonly, nonatomic) NSArray *eventTrackers;
 - (void)removeEventTracker:(id)arg1;
 - (void)addEventTracker:(id)arg1;
@@ -70,7 +70,7 @@
 - (void)rightMouseDown:(id)arg1;
 - (void)mouseDown:(id)arg1;
 - (BOOL)canBecomeKeyView;
-- (id)hitTest:(struct CGPoint)arg1;
+- (id)hitTest:(CGPoint)arg1;
 @property(nonatomic) long long contentMode;
 - (void)addSubview:(id)arg1 positioned:(long long)arg2 relativeTo:(id)arg3;
 - (void)addSubview:(id)arg1;
@@ -84,7 +84,7 @@
 - (id)makeBackingLayer;
 - (id)actionForLayer:(id)arg1 forKey:(id)arg2;
 - (id)initWithCoder:(id)arg1;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 - (void)_disableBlur;
 - (void)_enableBlur;
 - (BOOL)blurEnabled;

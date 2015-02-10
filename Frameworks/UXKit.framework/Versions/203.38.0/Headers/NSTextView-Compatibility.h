@@ -9,10 +9,10 @@
 @class NSString;
 
 @interface NSTextView (Compatibility) <UITextInputTraits>
-- (struct NSEdgeInsets)__textContainerInset;
-- (void)__setTextContainerInset:(struct NSEdgeInsets)arg1;
+- (NSEdgeInsets)__textContainerInset;
+- (void)__setTextContainerInset:(NSEdgeInsets)arg1;
 @property(nonatomic) unsigned long long textAlignment;
-- (struct CGSize)sizeThatFits:(struct CGSize)arg1;
+- (CGSize)sizeThatFits:(CGSize)arg1;
 @property(copy, nonatomic) NSString *text;
 
 // Remaining properties

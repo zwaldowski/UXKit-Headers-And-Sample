@@ -11,8 +11,8 @@
 @protocol UXCollectionViewDelegate <NSObject>
 
 @optional
-- (struct CGPoint)collectionView:(UXCollectionView *)arg1 targetContentOffsetOnResizeForProposedContentOffset:(struct CGPoint)arg2;
-- (void)collectionView:(UXCollectionView *)arg1 didPrepareForOverdraw:(struct CGRect)arg2;
+- (CGPoint)collectionView:(UXCollectionView *)arg1 targetContentOffsetOnResizeForProposedContentOffset:(CGPoint)arg2;
+- (void)collectionView:(UXCollectionView *)arg1 didPrepareForOverdraw:(CGRect)arg2;
 - (void)collectionView:(UXCollectionView *)arg1 itemWasRightClickedAtIndexPath:(NSIndexPath *)arg2 withEvent:(NSEvent *)arg3;
 - (void)collectionView:(UXCollectionView *)arg1 itemWasDoubleClickedAtIndexPath:(NSIndexPath *)arg2 withEvent:(NSEvent *)arg3;
 - (void)collectionView:(UXCollectionView *)arg1 mouseDownWithEvent:(NSEvent *)arg2;
@@ -25,7 +25,7 @@
 - (BOOL)collectionView:(UXCollectionView *)arg1 shouldDeselectItemAtIndexPath:(NSIndexPath *)arg2;
 - (BOOL)collectionView:(UXCollectionView *)arg1 shouldSelectItemAtIndexPath:(NSIndexPath *)arg2;
 - (void)collectionViewDidEndDecelerating:(UXCollectionView *)arg1;
-- (void)collectionViewWillBeginDecelerating:(UXCollectionView *)arg1 targetContentOffset:(struct CGPoint)arg2;
+- (void)collectionViewWillBeginDecelerating:(UXCollectionView *)arg1 targetContentOffset:(CGPoint)arg2;
 - (void)collectionViewDidEndScrolling:(UXCollectionView *)arg1;
 - (void)collectionViewDidScroll:(UXCollectionView *)arg1;
 - (void)collectionViewWillBeginScrolling:(UXCollectionView *)arg1;

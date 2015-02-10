@@ -40,8 +40,8 @@
 - (BOOL)eventTrackerRequiresTouches;
 - (void)reset;
 @property(readonly, nonatomic) unsigned long long numberOfTouches;
-- (struct CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
-- (struct CGPoint)locationInView:(id)arg1;
+- (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
+- (CGPoint)locationInView:(id)arg1;
 - (void)cancelTracking;
 - (void)removeTarget:(id)arg1;
 - (void)addTarget:(id)arg1 action:(SEL)arg2;

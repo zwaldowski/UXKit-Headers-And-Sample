@@ -15,7 +15,7 @@
 + (void)setIndex:(unsigned long long)arg1 atPosition:(unsigned long long)arg2 forIndexPath:(id *)arg3;
 - (id)retain;
 - (id)description;
-- (id)copyWithZone:(struct _NSZone *)arg1;
+- (id)copyWithZone:(NSZone *)arg1;
 - (long long)compare:(id)arg1;
 - (void)getIndexes:(unsigned long long *)arg1;
 - (unsigned long long)indexAtPosition:(unsigned long long)arg1;

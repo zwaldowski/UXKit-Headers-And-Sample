@@ -31,13 +31,13 @@
 @property(readonly, nonatomic) NSMutableDictionary *headerAttributesByIndexPath; // @synthesize headerAttributesByIndexPath=_headerAttributesByIndexPath;
 @property(readonly, nonatomic) NSMutableArray *layoutAttributesArray; // @synthesize layoutAttributesArray=_layoutAttributesArray;
 - (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2;
-- (id)layoutAttributesForElementsInRect:(struct CGRect)arg1;
+- (id)layoutAttributesForElementsInRect:(CGRect)arg1;
 - (void)invalidateLayoutWithContext:(id)arg1;
-- (id)invalidationContextForBoundsChange:(struct CGRect)arg1;
-- (BOOL)shouldInvalidateLayoutForBoundsChange:(struct CGRect)arg1;
+- (id)invalidationContextForBoundsChange:(CGRect)arg1;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1;
 - (void)prepareLayout;
 - (BOOL)_wantsHeaderForSection:(unsigned long long)arg1;
-- (struct NSEdgeInsets)insetForSection:(long long)arg1;
+- (NSEdgeInsets)insetForSection:(long long)arg1;
 @property(nonatomic) BOOL showsSectionFooterForSingleSection;
 @property(nonatomic) BOOL showsSectionHeaderForSingleSection;
 @property(nonatomic) BOOL floatingHeadersDisabled;

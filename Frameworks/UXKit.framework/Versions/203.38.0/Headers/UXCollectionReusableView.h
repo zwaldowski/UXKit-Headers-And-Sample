@@ -20,7 +20,7 @@
 }
 
 @property(readonly, copy, nonatomic) NSString *reuseIdentifier; // @synthesize reuseIdentifier=_reuseIdentifier;
-- (struct CGImage *)_snapshot:(BOOL)arg1;
+- (CGImageRef)_snapshot:(BOOL)arg1;
 - (BOOL)_wasDequeued;
 - (void)_markAsDequeued;
 - (void)_clearUpdateAnimation;
@@ -39,7 +39,7 @@
 - (BOOL)wantsUpdateLayer;
 - (void)encodeWithCoder:(id)arg1;
 - (id)initWithCoder:(id)arg1;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 - (id)_layoutSectionAccessibility;
 - (id)_accessibilityIndexPath;
 - (id)_accessibilityDefaultRole;

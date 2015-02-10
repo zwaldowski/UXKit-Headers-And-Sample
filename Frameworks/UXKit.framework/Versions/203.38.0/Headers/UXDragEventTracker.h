@@ -8,17 +8,17 @@
 
 @interface UXDragEventTracker : UXEventTracker
 {
-    struct CGPoint _currentPoint;
-    struct CGPoint _previousPoint;
+    CGPoint _currentPoint;
+    CGPoint _previousPoint;
     BOOL _didBegin;
     double _trackingThreshold;
-    struct CGPoint _initialPoint;
+    CGPoint _initialPoint;
 }
 
-@property(readonly, nonatomic) struct CGPoint initialPoint; // @synthesize initialPoint=_initialPoint;
+@property(readonly, nonatomic) CGPoint initialPoint; // @synthesize initialPoint=_initialPoint;
 @property(nonatomic) double trackingThreshold; // @synthesize trackingThreshold=_trackingThreshold;
-@property(readonly, nonatomic) struct CGPoint zeroingDelta;
-@property(readonly, nonatomic) struct CGPoint delta;
+@property(readonly, nonatomic) CGPoint zeroingDelta;
+@property(readonly, nonatomic) CGPoint delta;
 - (void)mouseUp:(id)arg1;
 - (void)mouseDragged:(id)arg1;
 - (void)mouseDown:(id)arg1;

@@ -14,14 +14,14 @@
 }
 
 @property(nonatomic) __weak UXCollectionView *collectionView; // @synthesize collectionView=_collectionView;
-- (id)accessibilityHitTest:(struct CGPoint)arg1;
+- (id)accessibilityHitTest:(CGPoint)arg1;
 - (BOOL)acceptsFirstResponder;
-- (void)prepareContentInRect:(struct CGRect)arg1;
+- (void)prepareContentInRect:(CGRect)arg1;
 - (void)_invalidateFocus;
 - (BOOL)isFlipped;
 - (BOOL)wantsUpdateLayer;
 - (BOOL)isOpaque;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 
 @end
 

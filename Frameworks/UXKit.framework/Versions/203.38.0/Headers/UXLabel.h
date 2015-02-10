@@ -18,13 +18,13 @@
     NSColor *_shadowColor;
     long long _numberOfLines;
     NSColor *_highlightedTextColor;
-    struct CGSize _shadowOffset;
+    CGSize _shadowOffset;
 }
 
 @property(nonatomic, getter=isHighlighted) BOOL highlighted; // @synthesize highlighted=_highlighted;
 @property(retain, nonatomic) NSColor *highlightedTextColor; // @synthesize highlightedTextColor=_highlightedTextColor;
 @property(nonatomic) long long numberOfLines; // @synthesize numberOfLines=_numberOfLines;
-@property(nonatomic) struct CGSize shadowOffset; // @synthesize shadowOffset=_shadowOffset;
+@property(nonatomic) CGSize shadowOffset; // @synthesize shadowOffset=_shadowOffset;
 @property(retain, nonatomic) NSColor *shadowColor; // @synthesize shadowColor=_shadowColor;
 @property(retain, nonatomic) NSColor *textColor; // @synthesize textColor=_textColor;
 - (id)accessibilityRoleDescription;
@@ -42,11 +42,11 @@
 @property(copy, nonatomic) NSAttributedString *attributedText;
 @property(copy, nonatomic) NSString *text;
 @property(retain, nonatomic) NSFont *font;
-- (struct CGSize)intrinsicContentSize;
-- (struct CGSize)sizeThatFits:(struct CGSize)arg1;
+- (CGSize)intrinsicContentSize;
+- (CGSize)sizeThatFits:(CGSize)arg1;
 - (void)sizeToFit;
 - (void)setBackgroundColor:(id)arg1;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 
 // Remaining properties
 @property(readonly, copy) NSString *debugDescription;

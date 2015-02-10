@@ -13,7 +13,7 @@
 @interface UXImageView : UXView <NSAccessibilityImage>
 {
     double _backingScaleFactor;
-    struct CGSize _proposedSize;
+    CGSize _proposedSize;
     NSImage *_image;
 }
 
@@ -21,14 +21,14 @@
 - (void)sizeToFit;
 - (void)_updateBackingScaleFactorForWindow:(id)arg1;
 - (void)_updateLayerContentsForWindow:(id)arg1;
-- (struct CGSize)_proposedSize;
-- (void)_setContentStretchInPixels:(struct CGRect)arg1 forContentSize:(struct CGSize)arg2 shouldTile:(BOOL)arg3;
-- (void)setFrameSize:(struct CGSize)arg1;
+- (CGSize)_proposedSize;
+- (void)_setContentStretchInPixels:(CGRect)arg1 forContentSize:(CGSize)arg2 shouldTile:(BOOL)arg3;
+- (void)setFrameSize:(CGSize)arg1;
 - (void)viewWillMoveToWindow:(id)arg1;
 - (void)viewDidChangeBackingProperties;
-- (struct CGSize)intrinsicContentSize;
+- (CGSize)intrinsicContentSize;
 - (id)initWithImage:(id)arg1;
-- (id)initWithFrame:(struct CGRect)arg1;
+- (id)initWithFrame:(CGRect)arg1;
 
 // Remaining properties
 @property(retain, nonatomic) NSString *accessibilityLabel;

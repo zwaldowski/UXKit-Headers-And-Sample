@@ -10,7 +10,7 @@
 {
 }
 
-- (struct CGRect)_insetRect:(struct CGRect)arg1;
+- (CGRect)_insetRect:(CGRect)arg1;
 
 @end
 

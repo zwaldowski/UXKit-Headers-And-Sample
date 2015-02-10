@@ -7,6 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSEvent (UXCollectionViewAdditions)
-- (struct CGPoint)pointForLayoutOfCollectionView:(id)arg1;
+- (CGPoint)pointForLayoutOfCollectionView:(id)arg1;
 @end
 
