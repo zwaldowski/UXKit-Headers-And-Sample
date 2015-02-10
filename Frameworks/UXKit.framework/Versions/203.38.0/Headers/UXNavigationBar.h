@@ -14,10 +14,10 @@
 
 @property (nonatomic) BOOL recalculatingWindowKeyViewLoop;
 @property (nonatomic, strong) UXNavigationItem *transitioningItem;
-@property (nonatomic) long long currentOperation;
-@property (nonatomic) double centerYOffset;
-@property (nonatomic) double rightInteritemSpacing;
-@property (nonatomic) double leftInteritemSpacing;
+@property (nonatomic) NSInteger currentOperation; // TODO: enum
+@property (nonatomic) CGFloat centerYOffset;
+@property (nonatomic) CGFloat rightInteritemSpacing;
+@property (nonatomic) CGFloat leftInteritemSpacing;
 @property (nonatomic, getter=isDetached) BOOL detached;
 @property (nonatomic) BOOL enableAlernateTitle;
 @property (nonatomic, strong) NSView *alternateTitleView;
@@ -39,7 +39,7 @@
 - (void)viewDidEndLiveResize;
 - (void)layout;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
-- (long long)barPosition;
+- (NSInteger)barPosition; // TODO: enum
 - (id)initWithFrame:(CGRect)arg1;
 
 @end

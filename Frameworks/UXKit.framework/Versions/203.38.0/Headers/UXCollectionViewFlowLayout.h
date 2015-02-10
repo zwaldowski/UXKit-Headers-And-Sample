@@ -14,19 +14,19 @@
 @property (nonatomic) CGSize footerReferenceSize;
 @property (nonatomic) CGSize headerReferenceSize;
 @property (nonatomic) CGSize itemSize;
-@property (nonatomic) double minimumInteritemSpacing;
-@property (nonatomic) double minimumLineSpacing;
-@property (nonatomic) long long scrollDirection;
+@property (nonatomic) CGFloat minimumInteritemSpacing;
+@property (nonatomic) CGFloat minimumLineSpacing;
+@property (nonatomic) NSInteger scrollDirection; // TODO: enum
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1;
 - (id)indexPathsForItemsInRect:(CGRect)arg1;
 - (BOOL)shouldUpdateVisibleCellLayoutAttributes;
 - (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)layoutAttributesForItemAtIndexPath:(id)arg1;
-- (id)layoutAttributesForFooterInSection:(long long)arg1;
-- (id)layoutAttributesForHeaderInSection:(long long)arg1;
+- (id)layoutAttributesForFooterInSection:(NSInteger)arg1;
+- (id)layoutAttributesForHeaderInSection:(NSInteger)arg1;
 - (id)layoutAttributesForItemAtIndexPath:(id)arg1 usingData:(id)arg2;
-- (id)layoutAttributesForFooterInSection:(long long)arg1 usingData:(id)arg2;
-- (id)layoutAttributesForHeaderInSection:(long long)arg1 usingData:(id)arg2;
+- (id)layoutAttributesForFooterInSection:(NSInteger)arg1 usingData:(id)arg2;
+- (id)layoutAttributesForHeaderInSection:(NSInteger)arg1 usingData:(id)arg2;
 - (id)indexPathOfItemAfter:(id)arg1;
 - (id)indexPathOfItemBefore:(id)arg1;
 - (id)indexPathOfItemAbove:(id)arg1;
@@ -42,11 +42,11 @@
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1;
 - (void)invalidateLayoutWithContext:(id)arg1;
 - (CGSize)synchronizeLayout;
-- (id)finalLayoutAttributesForFooterInDeletedSection:(long long)arg1;
-- (id)finalLayoutAttributesForHeaderInDeletedSection:(long long)arg1;
+- (id)finalLayoutAttributesForFooterInDeletedSection:(NSInteger)arg1;
+- (id)finalLayoutAttributesForHeaderInDeletedSection:(NSInteger)arg1;
 - (id)finalLayoutAttributesForDeletedItemAtIndexPath:(id)arg1;
-- (id)initialLayoutAttributesForFooterInInsertedSection:(long long)arg1;
-- (id)initialLayoutAttributesForHeaderInInsertedSection:(long long)arg1;
+- (id)initialLayoutAttributesForFooterInInsertedSection:(NSInteger)arg1;
+- (id)initialLayoutAttributesForHeaderInInsertedSection:(NSInteger)arg1;
 - (id)initialLayoutAttributesForInsertedItemAtIndexPath:(id)arg1;
 - (void)finalizeCollectionViewUpdates;
 

@@ -18,9 +18,9 @@
 - (id)firstIndexPath;
 - (id)allIndexPaths;
 - (id)indexPathsForSections:(id)arg1;
-- (id)indexPathsForSection:(long long)arg1;
+- (id)indexPathsForSection:(NSInteger)arg1;
 - (id)sections;
-- (unsigned long long)count;
+- (NSUInteger)count;
 - (id)initWithIndexPathsSet:(id)arg1;
 - (id)initWithIndexPaths:(id)arg1;
 - (id)initWithIndexPath:(id)arg1;

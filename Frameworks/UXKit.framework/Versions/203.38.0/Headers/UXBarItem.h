@@ -8,7 +8,7 @@
 
 @interface UXBarItem : NSObject
 
-@property (nonatomic) long long tag;
+@property (nonatomic) NSInteger tag;
 @property (nonatomic, strong) NSImage *image;
 @property (nonatomic, copy) NSString *accessibilityLabel;
 @property (nonatomic, strong) NSString *title;

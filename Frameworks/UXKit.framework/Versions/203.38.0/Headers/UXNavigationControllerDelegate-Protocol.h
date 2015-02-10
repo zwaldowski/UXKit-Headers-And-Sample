@@ -12,9 +12,8 @@
 
 @optional
 - (BOOL)navigationController:(UXNavigationController *)arg1 shouldBeginInteractivePopFromViewController:(UXViewController *)arg2 toViewController:(UXViewController *)arg3;
-- (id <UXViewControllerAnimatedTransitioning>)navigationController:(UXNavigationController *)arg1 animationControllerForOperation:(long long)arg2 fromViewController:(UXViewController *)arg3 toViewController:(UXViewController *)arg4;
+- (id <UXViewControllerAnimatedTransitioning>)navigationController:(UXNavigationController *)arg1 animationControllerForOperation:(NSInteger)arg2 fromViewController:(UXViewController *)arg3 toViewController:(UXViewController *)arg4; // TODO: enum
 - (id <UXViewControllerInteractiveTransitioning>)navigationController:(UXNavigationController *)arg1 interactionControllerForAnimationController:(id <UXViewControllerAnimatedTransitioning>)arg2;
 - (void)navigationController:(UXNavigationController *)arg1 didShowViewController:(UXViewController *)arg2;
 - (void)navigationController:(UXNavigationController *)arg1 willShowViewController:(UXViewController *)arg2;
 @end
-

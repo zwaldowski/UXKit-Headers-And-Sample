@@ -11,7 +11,7 @@
 
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 @property (nonatomic, strong) NSColor *highlightedTextColor;
-@property (nonatomic) long long numberOfLines;
+@property (nonatomic) NSInteger numberOfLines;
 @property (nonatomic) CGSize shadowOffset;
 @property (nonatomic, strong) NSColor *shadowColor;
 @property (nonatomic, strong) NSColor *textColor;
@@ -24,9 +24,9 @@
 - (id)textFieldCell;
 @property (nonatomic) BOOL selectable;
 @property (nonatomic) BOOL centerVertically;
-@property (nonatomic) double preferredMaxLayoutWidth;
-@property (nonatomic) unsigned long long textAlignment;
-@property (nonatomic) unsigned long long lineBreakMode;
+@property (nonatomic) CGFloat preferredMaxLayoutWidth;
+@property (nonatomic) NSUInteger textAlignment; // TODO: enum
+@property (nonatomic) NSUInteger lineBreakMode; // TODO: enum
 @property (nonatomic, copy) NSAttributedString *attributedText;
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, strong) NSFont *font;

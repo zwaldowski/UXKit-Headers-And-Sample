@@ -9,7 +9,7 @@
 @interface UXToolbar : UXBar
 
 @property (nonatomic, weak) id <UXToolbarDelegate> delegate;
-- (long long)barPosition;
+- (NSInteger)barPosition; // TODO: enum
 - (void)setItems:(id)arg1 animated:(BOOL)arg2;
 - (void)mouseDown:(id)arg1;
 - (id)initWithFrame:(CGRect)arg1;

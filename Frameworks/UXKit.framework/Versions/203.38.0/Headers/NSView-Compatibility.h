@@ -7,11 +7,11 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSView (Compatibility)
-- (void)setContentCompressionResistancePriority:(float)arg1 forAxis:(long long)arg2;
-- (float)contentCompressionResistancePriorityForAxis:(long long)arg1;
-- (void)setContentHuggingPriority:(float)arg1 forAxis:(long long)arg2;
-- (float)contentHuggingPriorityForAxis:(long long)arg1;
-@property (nonatomic) double alpha;
+- (void)setContentCompressionResistancePriority:(NSLayoutPriority)arg1 forAxis:(NSLayoutConstraintOrientation)arg2;
+- (NSLayoutPriority)contentCompressionResistancePriorityForAxis:(NSLayoutConstraintOrientation)arg1;
+- (void)setContentHuggingPriority:(NSLayoutPriority)arg1 forAxis:(NSLayoutConstraintOrientation)arg2;
+- (NSLayoutPriority)contentHuggingPriorityForAxis:(NSLayoutConstraintOrientation)arg1;
+@property (nonatomic) CGFloat alpha;
 - (BOOL)pointInside:(CGPoint)arg1 withEvent:(id)arg2;
 - (void)layoutIfNeeded;
 - (void)layoutSubviews;

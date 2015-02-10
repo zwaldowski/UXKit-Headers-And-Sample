@@ -10,10 +10,10 @@
 
 @protocol UXCollectionViewDataSource <NSObject>
 - (UXCollectionViewCell *)collectionView:(UXCollectionView *)arg1 cellForItemAtIndexPath:(NSIndexPath *)arg2;
-- (long long)collectionView:(UXCollectionView *)arg1 numberOfItemsInSection:(long long)arg2;
+- (NSInteger)collectionView:(UXCollectionView *)arg1 numberOfItemsInSection:(NSInteger)arg2;
 
 @optional
 - (UXCollectionReusableView *)collectionView:(UXCollectionView *)arg1 viewForSupplementaryElementOfKind:(NSString *)arg2 atIndexPath:(NSIndexPath *)arg3;
-- (long long)numberOfSectionsInCollectionView:(UXCollectionView *)arg1;
+- (NSInteger)numberOfSectionsInCollectionView:(UXCollectionView *)arg1;
 @end
 

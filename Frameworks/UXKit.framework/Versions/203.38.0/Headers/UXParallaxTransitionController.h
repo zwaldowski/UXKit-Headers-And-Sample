@@ -11,9 +11,9 @@
 @interface UXParallaxTransitionController : UXTransitionController
 
 - (BOOL)navigationController:(id)arg1 shouldBeginInteractivePopFromViewController:(id)arg2 toViewController:(id)arg3;
-- (id)navigationController:(id)arg1 animationControllerForOperation:(long long)arg2 fromViewController:(id)arg3 toViewController:(id)arg4;
+- (id)navigationController:(id)arg1 animationControllerForOperation:(NSInteger)arg2 fromViewController:(id)arg3 toViewController:(id)arg4; // TODO: enum
 - (id)navigationController:(id)arg1 interactionControllerForAnimationController:(id)arg2;
-- (void)updateInteractiveTransition:(double)arg1 inContext:(id)arg2;
+- (void)updateInteractiveTransition:(CGFloat)arg1 inContext:(id)arg2;
 - (void)startInteractiveTransition:(id)arg1;
 - (void)animateTransition:(id)arg1;
 

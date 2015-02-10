@@ -61,7 +61,7 @@
     return cell;
 }
 
-- (long long)collectionView:(UXCollectionView *)arg1 numberOfItemsInSection:(long long)arg2
+- (NSInteger)collectionView:(UXCollectionView *)arg1 numberOfItemsInSection:(NSInteger)arg2
 {
     return 25;
 }

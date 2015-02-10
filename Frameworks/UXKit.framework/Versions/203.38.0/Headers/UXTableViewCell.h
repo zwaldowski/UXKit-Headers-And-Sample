@@ -12,18 +12,18 @@
 @interface UXTableViewCell : UXCollectionViewCell
 
 @property (nonatomic) NSEdgeInsets separatorInset;
-@property (nonatomic) double indentationWidth;
-@property (nonatomic) long long indentationLevel;
-@property (nonatomic) long long selectionStyle;
+@property (nonatomic) CGFloat indentationWidth;
+@property (nonatomic) NSInteger indentationLevel; // TODO: enum
+@property (nonatomic) NSInteger selectionStyle; // TODO: enum
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 @property (nonatomic, strong) NSColor *highlightColor;
 @property (nonatomic, strong) UXView *accessoryView;
-@property (nonatomic) long long accessoryType;
+@property (nonatomic) NSInteger accessoryType; // TODO: enum
 @property (nonatomic, strong) UXLabel *detailTextLabel;
 @property (nonatomic, strong) UXLabel *textLabel;
 @property (nonatomic, strong) UXView *selectedBackgroundView;
 @property (nonatomic, strong) UXView *backgroundView;
-@property (nonatomic) long long style;
+@property (nonatomic) NSInteger style; // TODO: enum
 - (id)accessibilityLabel;
 @property (nonatomic, readonly) UXView *lowerSpace;
 @property (nonatomic, readonly) UXView *upperSpace;
@@ -33,7 +33,7 @@
 - (void)updateConstraints;
 - (void)viewDidMoveToWindow;
 - (id)initWithFrame:(CGRect)arg1;
-- (id)initWithStyle:(long long)arg1 reuseIdentifier:(id)arg2;
+- (id)initWithStyle:(NSInteger)arg1 reuseIdentifier:(id)arg2; // TODO: enum
 
 @end
 

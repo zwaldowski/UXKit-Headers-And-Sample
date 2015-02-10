@@ -9,6 +9,6 @@
 @protocol UXBarPositioningDelegate <NSObject>
 
 @optional
-- (long long)positionForBar:(id <UXBarPositioning>)arg1;
+- (NSInteger)positionForBar:(id <UXBarPositioning>)arg1; // TODO: enum
 @end
 

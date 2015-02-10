@@ -7,6 +7,6 @@
 
 
 @protocol UXBarPositioning <NSObject>
-@property (nonatomic, readonly) long long barPosition;
+@property (nonatomic, readonly) NSInteger barPosition; // TODO: enum
 @end
 

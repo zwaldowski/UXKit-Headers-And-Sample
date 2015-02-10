@@ -8,11 +8,11 @@
 
 @interface UXView : NSView
 
-+ (void)animateWithDuration:(double)arg1 delay:(double)arg2 usingSpringWithDamping:(double)arg3 initialSpringVelocity:(double)arg4 options:(unsigned long long)arg5 animations:(void(^)(void))arg6 completion:(void(^)(BOOL finished))arg7;
-+ (void)animateWithDuration:(double)arg1 animations:(void(^)(void))arg2;
-+ (void)animateWithDuration:(double)arg1 animations:(void(^)(void))arg2 completion:(void(^)(BOOL finished))arg3;
-+ (void)animateWithDuration:(double)arg1 delay:(double)arg2 options:(unsigned long long)arg3 animations:(void(^)(void))arg4 completion:(void(^)(BOOL finished))arg5;
-+ (id)defaultSpringAnimationForKey:(id)arg1 mass:(double)arg2 stiffness:(double)arg3 damping:(double)arg4 velocity:(double)arg5;
++ (void)animateWithDuration:(CGFloat)arg1 delay:(CGFloat)arg2 usingSpringWithDamping:(CGFloat)arg3 initialSpringVelocity:(CGFloat)arg4 options:(NSUInteger)arg5 animations:(void(^)(void))arg6 completion:(void(^)(BOOL finished))arg7; // TODO
++ (void)animateWithDuration:(CGFloat)arg1 animations:(void(^)(void))arg2;
++ (void)animateWithDuration:(CGFloat)arg1 animations:(void(^)(void))arg2 completion:(void(^)(BOOL finished))arg3;
++ (void)animateWithDuration:(CGFloat)arg1 delay:(CGFloat)arg2 options:(NSInteger)arg3 animations:(void(^)(void))arg4 completion:(void(^)(BOOL finished))arg5; // TODO: enum
++ (id)defaultSpringAnimationForKey:(id)arg1 mass:(CGFloat)arg2 stiffness:(CGFloat)arg3 damping:(CGFloat)arg4 velocity:(CGFloat)arg5;
 + (Class)layerClass;
 @property (nonatomic) BOOL accessibilityChildrenHidden;
 @property (nonatomic) BOOL userInteractionEnabled;
@@ -55,8 +55,8 @@
 - (void)mouseDown:(id)arg1;
 - (BOOL)canBecomeKeyView;
 - (id)hitTest:(CGPoint)arg1;
-@property (nonatomic) long long contentMode;
-- (void)addSubview:(id)arg1 positioned:(long long)arg2 relativeTo:(id)arg3;
+@property (nonatomic) NSInteger contentMode; // TODO: enum
+- (void)addSubview:(id)arg1 positioned:(NSInteger)arg2 relativeTo:(id)arg3; // TODO: enum
 - (void)addSubview:(id)arg1;
 - (void)viewWillMoveToSuperview:(id)arg1;
 - (void)updateConstraintsForSubtreeIfNeeded;

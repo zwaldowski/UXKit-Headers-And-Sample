@@ -10,7 +10,7 @@
 - (void)startInteractiveTransition:(id <UXViewControllerContextTransitioning>)arg1;
 
 @optional
-- (long long)completionCurve;
-- (double)completionSpeed;
+- (NSInteger)completionCurve; // TODO: enum
+- (CGFloat)completionSpeed;
 @end
 

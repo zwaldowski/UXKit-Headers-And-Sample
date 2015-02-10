@@ -20,7 +20,7 @@
 - (void)viewDidLayoutSubviews;
 @property (nonatomic, readonly) UXTableView *tableView;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
-- (id)initWithStyle:(long long)arg1;
+- (id)initWithStyle:(NSInteger)arg1; // TODO: enum
 
 @end
 

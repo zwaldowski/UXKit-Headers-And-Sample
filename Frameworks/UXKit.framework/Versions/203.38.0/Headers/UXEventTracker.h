@@ -16,16 +16,16 @@
 @property (nonatomic, copy) void(^eventTrackerDidEndHandler)(UXEventTracker *);
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 @property (nonatomic) BOOL cancelsEventsInView;
-@property (nonatomic) unsigned long long ignoredModifiers;
-@property (nonatomic) double velocity;
-@property (nonatomic) unsigned long long modifiers;
+@property (nonatomic) NSUInteger ignoredModifiers; // TODO: enum
+@property (nonatomic) CGFloat velocity;
+@property (nonatomic) NSUInteger modifiers; // TODO: enum
 @property (nonatomic, strong) NSEvent *trackingEvent;
 @property (nonatomic, weak) UXView *view;
-@property (nonatomic) long long state;
+@property (nonatomic) NSInteger state; // TODO: enum
 - (BOOL)eventTrackerRequiresTouches;
 - (void)reset;
-@property (nonatomic, readonly) unsigned long long numberOfTouches;
-- (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
+@property (nonatomic, readonly) NSUInteger numberOfTouches;
+- (CGPoint)locationOfTouch:(NSUInteger)arg1 inView:(id)arg2; // TODO: type
 - (CGPoint)locationInView:(id)arg1;
 - (void)cancelTracking;
 - (void)removeTarget:(id)arg1;

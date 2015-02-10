@@ -23,9 +23,8 @@
 @property (nonatomic) BOOL allowsLassoSelection;
 @property (nonatomic) BOOL allowsContinuousSelection;
 @property (nonatomic, strong) UXCollectionViewLayout *collectionViewLayout;
-- (BOOL)lassoInvertsSelection;
-- (void)setLassoInvertsSelection:(BOOL)arg1;
 - (id)accessibilityHitTest:(CGPoint)arg1;
+@property (nonatomic) BOOL lassoInvertsSelection;
 - (BOOL)accessibilityPerformPressWithItemAtIndexPath:(id)arg1;
 - (id)accessibilityChildren;
 - (id)accessibilityContentSiblingCellFromIndexPath:(id)arg1 direction:(id)arg2;
@@ -46,12 +45,12 @@
 - (void)reloadItemsAtIndexPaths:(id)arg1;
 - (void)deleteItemsAtIndexPaths:(id)arg1;
 - (void)insertItemsAtIndexPaths:(id)arg1;
-- (void)moveSection:(long long)arg1 toSection:(long long)arg2;
+- (void)moveSection:(NSInteger)arg1 toSection:(NSInteger)arg2;
 - (void)reloadSections:(id)arg1;
 - (void)deleteSections:(id)arg1;
 - (void)insertSections:(id)arg1;
-- (void)scrollRect:(CGRect)arg1 toScrollPosition:(unsigned long long)arg2 withInsets:(NSEdgeInsets)arg3 animated:(BOOL)arg4;
-- (void)scrollToItemAtIndexPath:(id)arg1 atScrollPosition:(unsigned long long)arg2 animated:(BOOL)arg3;
+- (void)scrollRect:(CGRect)arg1 toScrollPosition:(NSUInteger)arg2 withInsets:(NSEdgeInsets)arg3 animated:(BOOL)arg4; // TODO: enum
+- (void)scrollToItemAtIndexPath:(id)arg1 atScrollPosition:(NSUInteger)arg2 animated:(BOOL)arg3; // TODO: enum
 - (id)nextIndexPath:(id)arg1;
 - (id)previousIndexPath:(id)arg1;
 - (id)contentSupplementaryViews;
@@ -62,8 +61,8 @@
 - (id)indexPathsForVisibleItems;
 - (id)contentCells;
 - (id)visibleCells;
-- (unsigned long long)numberOfContentCells;
-- (unsigned long long)numberOfVisibleCells;
+- (NSUInteger)numberOfContentCells;
+- (NSUInteger)numberOfVisibleCells;
 - (id)viewForSupplementaryElementOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)cellForItemAtIndexPath:(id)arg1;
 - (id)indexPathForSupplementaryView:(id)arg1;
@@ -74,13 +73,12 @@
 - (id)indexPathForItemHitByEvent:(id)arg1;
 - (id)layoutAttributesForSupplementaryElementOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)layoutAttributesForItemAtIndexPath:(id)arg1;
-- (long long)numberOfItemsInSection:(long long)arg1;
-- (long long)numberOfSections;
+- (NSInteger)numberOfItemsInSection:(NSInteger)arg1;
+- (NSInteger)numberOfSections;
 - (void)resetScrollingOverdraw;
 - (CGRect)documentContentRect;
 - (void)updateLayout;
-- (void)_setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2 isInteractive:(BOOL)arg3 completion:(void(^)(BOOL finished))arg4; // probably void(^)(BOOL)
-- (void)setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2 completion:(void(^)(BOOL finished))arg3; // ditto
+- (void)setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2 completion:(void(^)(BOOL finished))arg3;
 - (void)setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2;
 - (id)dequeueReusableSupplementaryViewOfKind:(id)arg1 withReuseIdentifier:(id)arg2 forIndexPath:(id)arg3;
 - (id)dequeueReusableCellWithReuseIdentifier:(id)arg1 forIndexPath:(id)arg2;
@@ -103,8 +101,7 @@
 - (void)setContentOffset:(CGPoint)arg1 animated:(BOOL)arg2;
 - (void)setContentOffset:(CGPoint)arg1;
 @property (atomic, readwrite) CGSize contentSize;
-- (void)setDocumentBounds:(CGRect)arg1;
-- (CGRect)documentBounds;
+@property (nonatomic) CGRect documentBounds;
 - (CGSize)documentSize;
 - (CGPoint)contentOffset;
 - (BOOL)wantsUpdateLayer;
@@ -129,12 +126,12 @@
 - (void)selectAllItems:(BOOL)arg1;
 - (void)deselectItemsAtIndexPaths:(id)arg1 animated:(BOOL)arg2;
 - (void)deselectItemAtIndexPath:(id)arg1 animated:(BOOL)arg2;
-- (void)selectItemsAtIndexPaths:(id)arg1 byExtendingSelection:(BOOL)arg2 animated:(BOOL)arg3 scrollItemAtIndex:(id)arg4 toPosition:(unsigned long long)arg5;
+- (void)selectItemsAtIndexPaths:(id)arg1 byExtendingSelection:(BOOL)arg2 animated:(BOOL)arg3 scrollItemAtIndex:(id)arg4 toPosition:(NSUInteger)arg5; // TODO: enum
 - (void)selectItemsAtIndexPaths:(id)arg1 byExtendingSelection:(BOOL)arg2 animated:(BOOL)arg3;
-- (void)selectItemAtIndexPath:(id)arg1 animated:(BOOL)arg2 scrollPosition:(unsigned long long)arg3;
+- (void)selectItemAtIndexPath:(id)arg1 animated:(BOOL)arg2 scrollPosition:(NSUInteger)arg3; // TODO: enum
 - (BOOL)selectedItemAtIndexPath:(id)arg1;
 - (BOOL)selectableItemAtIndexPath:(id)arg1;
-- (unsigned long long)numberOfSelectedItems;
+- (NSUInteger)numberOfSelectedItems;
 - (id)indexPathsForSelectedItems;
 @property (nonatomic, weak) NSObject<UXCollectionViewDataSource> *dataSource;
 @property (nonatomic, weak) NSObject<UXCollectionViewDelegate> *delegate;

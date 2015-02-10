@@ -15,10 +15,10 @@
 
 + (Class)collectionViewClass;
 @property (nonatomic, strong) UXCollectionView *collectionView;
-- (double)scrollView:(id)arg1 pageAlignedOriginOnAxis:(long long)arg2 forProposedDestination:(double)arg3 currentOrigin:(double)arg4 initialOrigin:(double)arg5 velocity:(double)arg6;
+- (CGFloat)scrollView:(id)arg1 pageAlignedOriginOnAxis:(NSEventGestureAxis)arg2 forProposedDestination:(CGFloat)arg3 currentOrigin:(CGFloat)arg4 initialOrigin:(CGFloat)arg5 velocity:(CGFloat)arg6;
 - (id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2;
-- (long long)collectionView:(id)arg1 numberOfItemsInSection:(long long)arg2;
-- (long long)numberOfSectionsInCollectionView:(id)arg1;
+- (NSInteger)collectionView:(id)arg1 numberOfItemsInSection:(CGFloat)arg2;
+- (NSInteger)numberOfSectionsInCollectionView:(id)arg1;
 - (id)preferredFirstResponder;
 - (void)viewDidLoad;
 - (id)initWithCollectionViewLayout:(id)arg1;

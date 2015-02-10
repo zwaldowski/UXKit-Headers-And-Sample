@@ -7,8 +7,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSIndexPath (UXTableView)
-+ (id)indexPathForRow:(long long)arg1 inSection:(long long)arg2;
-@property (nonatomic, readonly) long long row;
-@property (nonatomic, readonly) long long section;
++ (id)indexPathForRow:(NSInteger)arg1 inSection:(NSInteger)arg2;
+@property (nonatomic, readonly) NSInteger row;
+@property (nonatomic, readonly) NSInteger section;
 @end
 

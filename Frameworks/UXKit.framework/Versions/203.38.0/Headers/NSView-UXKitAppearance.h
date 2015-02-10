@@ -9,7 +9,7 @@
 
 @interface NSView (UXKitAppearance) <UXKitAppearance>
 - (void)tintColorDidChange;
-@property (nonatomic) long long tintAdjustmentMode;
+@property (nonatomic) NSInteger tintAdjustmentMode; // TODO: enum
 @property (nonatomic, strong) NSColor *tintColor;
 
 

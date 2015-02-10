@@ -9,8 +9,8 @@
 
 @interface UXPinchEventTracker : UXEventTracker
 
-@property (nonatomic) double scale;
-- (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
+@property (nonatomic) CGFloat scale;
+- (CGPoint)locationOfTouch:(NSUInteger)arg1 inView:(id)arg2; // TODO: type
 - (CGPoint)locationOfTouch:(id)arg1;
 - (void)mouseDown:(id)arg1;
 - (void)endGestureWithEvent:(id)arg1;

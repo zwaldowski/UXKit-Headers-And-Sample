@@ -7,7 +7,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSImage (UXKit)
-- (id)resizableImageWithCapInsets:(NSEdgeInsets)arg1 resizingMode:(long long)arg2;
+- (id)resizableImageWithCapInsets:(NSEdgeInsets)arg1 resizingMode:(NSInteger)arg2; // TODO: enum
 - (id)resizableImageWithCapInsets:(NSEdgeInsets)arg1;
 @end
 

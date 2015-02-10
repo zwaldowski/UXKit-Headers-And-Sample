@@ -7,7 +7,7 @@
 #import <Cocoa/Cocoa.h>
 
 @protocol UXKitAppearance <NSObject>
-@property (nonatomic) long long tintAdjustmentMode;
+@property (nonatomic) NSInteger tintAdjustmentMode; // TODO: enum
 @property (nonatomic, strong) NSColor *tintColor;
 - (void)tintColorDidChange;
 @end

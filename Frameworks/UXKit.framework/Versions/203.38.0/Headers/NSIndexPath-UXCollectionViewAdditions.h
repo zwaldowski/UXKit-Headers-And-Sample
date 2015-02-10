@@ -7,8 +7,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSIndexPath (UXCollectionViewAdditions)
-+ (id)indexPathForItem:(long long)arg1 inSection:(long long)arg2;
-@property (nonatomic, readonly) long long section;
-@property (nonatomic, readonly) long long item;
++ (id)indexPathForItem:(NSInteger)arg1 inSection:(NSInteger)arg2;
+@property (nonatomic, readonly) NSInteger section;
+@property (nonatomic, readonly) NSInteger item;
 @end
 

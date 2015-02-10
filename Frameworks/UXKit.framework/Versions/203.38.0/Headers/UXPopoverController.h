@@ -15,15 +15,15 @@
 @property (nonatomic, weak) id <UXPopoverControllerDelegate> delegate;
 - (void)dismissPopoverAnimated:(BOOL)arg1;
 - (void)dismissPopover;
-- (void)presentPopoverFromBarButtonItem:(id)arg1 permittedArrowDirections:(unsigned long long)arg2 animated:(BOOL)arg3;
-- (void)presentPopoverFromRect:(CGRect)arg1 inView:(id)arg2 preferredEdge:(unsigned long long)arg3;
+- (void)presentPopoverFromBarButtonItem:(id)arg1 permittedArrowDirections:(NSUInteger)arg2 animated:(BOOL)arg3; // TODO: enum
+- (void)presentPopoverFromRect:(CGRect)arg1 inView:(id)arg2 preferredEdge:(NSUInteger)arg3; // TODO: enum
 @property (nonatomic, strong) UXViewController *contentViewController;
 @property (nonatomic) CGSize popoverContentSize;
 - (void)setPopoverContentSize:(CGSize)arg1 animated:(BOOL)arg2;
 @property (nonatomic, readonly, getter=isPopoverVisible) BOOL popoverVisible;
-@property (nonatomic) long long popoverBehavior;
 - (void)popoverWillShow:(id)arg1;
 - (void)popoverDidClose:(id)arg1;
+@property (nonatomic) NSInteger popoverBehavior;  // TODO: enum
 @property (nonatomic, readonly) NSPopover *popover;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (id)initWithContentViewController:(id)arg1;

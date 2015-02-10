@@ -14,11 +14,11 @@
 @property (nonatomic, weak) UXCollectionViewLayout *layout;
 - (void)accessibilityPostNotification:(id)arg1;
 @property (nonatomic, copy) NSArray *accessibilitySelectedCells; // @dynamic accessibilitySelectedCells;
-- (id)accessibilityArrayAttributeValues:(id)arg1 index:(unsigned long long)arg2 maxCount:(unsigned long long)arg3;
-- (unsigned long long)accessibilityArrayAttributeCount:(id)arg1;
-- (unsigned long long)accessibilityIndexOfChild:(id)arg1;
+- (id)accessibilityArrayAttributeValues:(id)arg1 index:(NSUInteger)arg2 maxCount:(NSUInteger)arg3;
 - (id)accessibilityChildren;
 @property (nonatomic, copy, readonly) NSArray *accessibilityVisibleChildren;
+- (NSUInteger)accessibilityArrayAttributeCount:(id)arg1;
+- (NSUInteger)accessibilityIndexOfChild:(id)arg1;
 - (CGRect)accessibilityFrameInParentSpace;
 - (CGRect)accessibilityFrame;
 - (long long)accessibilityColumnCount;

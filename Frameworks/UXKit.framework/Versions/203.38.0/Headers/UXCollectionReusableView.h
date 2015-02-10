@@ -6,14 +6,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class UXCollectionView, UXCollectionViewLayoutAttributes;
+@class UXCollectionViewLayoutAttributes;
 
 @interface UXCollectionReusableView : NSView
 
 @property (nonatomic, copy, readonly) NSString *reuseIdentifier;
 - (void)didTransitionFromLayout:(id)arg1 toLayout:(id)arg2;
 - (void)willTransitionFromLayout:(id)arg1 toLayout:(id)arg2;
-- (void)applyLayoutAttributes:(id)arg1;
+- (void)applyLayoutAttributes:(UXCollectionViewLayoutAttributes *)arg1;
 - (void)prepareForReuse;
 - (BOOL)wantsUpdateLayer;
 - (id)initWithFrame:(CGRect)arg1;

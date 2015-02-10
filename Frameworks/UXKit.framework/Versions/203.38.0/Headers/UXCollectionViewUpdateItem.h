@@ -8,7 +8,7 @@
 
 @interface UXCollectionViewUpdateItem : NSObject
 
-@property (nonatomic, readonly) long long updateAction;
+@property (nonatomic, readonly) NSInteger updateAction; // TODO: enum
 @property (nonatomic, strong, readonly) NSIndexPath *indexPathAfterUpdate;
 @property (nonatomic, strong, readonly) NSIndexPath *indexPathBeforeUpdate;
 

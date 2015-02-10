@@ -18,7 +18,7 @@
 @property (nonatomic, getter=isToolbarHidden) BOOL toolbarHidden;
 @property (nonatomic, getter=isNavigationBarDetached) BOOL navigationBarDetached;
 @property (nonatomic, getter=isNavigationBarHidden) BOOL navigationBarHidden;
-- (long long)positionForBar:(id)arg1;
+- (NSInteger)positionForBar:(id)arg1; // TODO: enum
 - (id)popToViewController:(id)arg1 animated:(BOOL)arg2;
 - (id)popToRootViewControllerAnimated:(BOOL)arg1;
 - (id)popViewControllerAnimated:(BOOL)arg1;

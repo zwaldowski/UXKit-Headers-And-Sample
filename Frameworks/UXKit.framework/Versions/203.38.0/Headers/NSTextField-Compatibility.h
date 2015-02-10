@@ -7,16 +7,16 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSTextField (Compatibility) <UITextInputTraits>
-@property (nonatomic) unsigned long long textAlignment;
+@property (nonatomic) NSUInteger textAlignment; // TODO: enum
 @property (nonatomic, copy) NSString *placeholder;
 @property (nonatomic, copy) NSString *text;
-@property (nonatomic) long long autocapitalizationType;
-@property (nonatomic) long long autocorrectionType;
+@property (nonatomic) NSInteger autocapitalizationType; // TODO: enum
+@property (nonatomic) NSInteger autocorrectionType; // TODO: enum
 @property (nonatomic) BOOL enablesReturnKeyAutomatically;
-@property (nonatomic) long long keyboardAppearance;
-@property (nonatomic) long long keyboardType;
-@property (nonatomic) long long returnKeyType;
+@property (nonatomic) NSInteger keyboardAppearance; // TODO: enum
+@property (nonatomic) NSInteger keyboardType; // TODO: enum
+@property (nonatomic) NSInteger returnKeyType; // TODO: enum
 @property (nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
-@property (nonatomic) long long spellCheckingType;
+@property (nonatomic) NSInteger spellCheckingType; // TODO: enum
 @end
 

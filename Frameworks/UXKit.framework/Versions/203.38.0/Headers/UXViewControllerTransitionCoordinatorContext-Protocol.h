@@ -11,14 +11,14 @@
 @protocol UXViewControllerTransitionCoordinatorContext <NSObject>
 - (UXView *)containerView;
 - (UXViewController *)viewControllerForKey:(NSString *)arg1;
-- (long long)completionCurve;
-- (double)completionVelocity;
-- (double)percentComplete;
-- (double)transitionDuration;
+- (NSInteger)completionCurve; // TODO: enum
+- (CGFloat)completionVelocity;
+- (CGFloat)percentComplete;
+- (CGFloat)transitionDuration;
 - (BOOL)isCancelled;
 - (BOOL)isInteractive;
 - (BOOL)initiallyInteractive;
-- (long long)presentationStyle;
+- (NSInteger)presentationStyle; // TODO: enum
 - (BOOL)isAnimated;
 @end
 

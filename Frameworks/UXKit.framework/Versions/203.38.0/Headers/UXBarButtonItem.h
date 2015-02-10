@@ -12,26 +12,26 @@
 
 @interface UXBarButtonItem : UXBarItem <UXKitAppearance>
 
-@property (nonatomic) unsigned long long keyEquivalentModifierMask;
+@property (nonatomic) NSUInteger keyEquivalentModifierMask; // TODO: enum
 @property (nonatomic, strong) NSString *keyEquivalent;
 @property (nonatomic, strong) NSString *toolTip;
 @property (nonatomic, weak) id target;
 @property (nonatomic) SEL action;
 @property (nonatomic, strong) NSView *customView;
-@property (nonatomic) double width;
-@property (nonatomic) long long style;
 - (void)setImage:(id)arg1;
 - (void)setEnabled:(BOOL)arg1;
 - (void)setTitle:(id)arg1;
 - (void)tintColorDidChange;
-@property (nonatomic) long long tintAdjustmentMode;
+@property (nonatomic) CGFloat width;
+@property (nonatomic) NSInteger style; // TODO: enum
+@property (nonatomic) NSInteger tintAdjustmentMode; // TODO: enum
 @property (nonatomic, strong) NSColor *tintColor;
-- (id)initWithStyle:(long long)arg1 target:(id)arg2 action:(SEL)arg3;
+- (id)initWithStyle:(NSInteger)arg1 target:(id)arg2 action:(SEL)arg3; // TODO: enum
 - (id)initWithContentViewController:(id)arg1;
 - (id)initWithCustomView:(id)arg1;
-- (id)initWithBarButtonSystemItem:(long long)arg1 target:(id)arg2 action:(SEL)arg3;
-- (id)initWithTitle:(id)arg1 style:(long long)arg2 target:(id)arg3 action:(SEL)arg4;
-- (id)initWithImage:(id)arg1 style:(long long)arg2 target:(id)arg3 action:(SEL)arg4;
+- (id)initWithBarButtonSystemItem:(NSInteger)arg1 target:(id)arg2 action:(SEL)arg3; // TODO: enum
+- (id)initWithTitle:(id)arg1 style:(NSInteger)arg2 target:(id)arg3 action:(SEL)arg4; // TODO: enum
+- (id)initWithImage:(id)arg1 style:(NSInteger)arg2 target:(id)arg3 action:(SEL)arg4; // TODO: enum
 
 @end
 

@@ -15,8 +15,8 @@
 - (void)completeTransition:(BOOL)arg1;
 - (void)cancelInteractiveTransition;
 - (void)finishInteractiveTransition;
-- (void)updateInteractiveTransition:(double)arg1;
-- (long long)presentationStyle;
+- (void)updateInteractiveTransition:(CGFloat)arg1;
+- (NSInteger)presentationStyle; // TODO: enum
 - (BOOL)transitionWasCancelled;
 - (BOOL)isInteractive;
 - (BOOL)isAnimated;

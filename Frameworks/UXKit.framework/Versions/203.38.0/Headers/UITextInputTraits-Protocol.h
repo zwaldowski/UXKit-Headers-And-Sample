@@ -11,11 +11,11 @@
 @optional
 @property (nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
 @property (nonatomic) BOOL enablesReturnKeyAutomatically;
-@property (nonatomic) long long returnKeyType;
-@property (nonatomic) long long keyboardAppearance;
-@property (nonatomic) long long keyboardType;
-@property (nonatomic) long long spellCheckingType;
-@property (nonatomic) long long autocorrectionType;
-@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) NSInteger returnKeyType; // TODO: enum
+@property (nonatomic) NSInteger keyboardAppearance; // TODO: enum
+@property (nonatomic) NSInteger keyboardType; // TODO: enum
+@property (nonatomic) NSInteger spellCheckingType; // TODO: enum
+@property (nonatomic) NSInteger autocorrectionType; // TODO: enum
+@property (nonatomic) NSInteger autocapitalizationType; // TODO: enum
 @end
 

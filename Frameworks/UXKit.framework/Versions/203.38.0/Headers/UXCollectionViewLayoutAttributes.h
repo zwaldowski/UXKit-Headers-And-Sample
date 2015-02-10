@@ -15,12 +15,12 @@
 @property (nonatomic) BOOL isFloatingPinned;
 @property (nonatomic) CGRect floatingFrame;
 @property (nonatomic) BOOL isFloating;
-@property (nonatomic) long long zIndex;
-@property (nonatomic) double alpha;
+@property (nonatomic) NSInteger zIndex;
+@property (nonatomic) CGFloat alpha;
 @property (nonatomic) CGSize size;
 @property (nonatomic) CGPoint center;
 @property (nonatomic, readonly) NSString *representedElementKind;
-@property (nonatomic, readonly) unsigned long long representedElementCategory;
+@property (nonatomic, readonly) NSUInteger representedElementCategory; // TODO: enum
 @property (nonatomic) CGRect frame;
 @property (nonatomic) CGRect bounds;
 @property (nonatomic, getter=isHidden) BOOL hidden;

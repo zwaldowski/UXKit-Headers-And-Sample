@@ -22,9 +22,9 @@
 - (id)indexPathsForItemRangeSelectionFrom:(id)arg1 to:(id)arg2;
 - (id)lastSelectableItemIndexPath;
 - (id)firstSelectableItemIndexPath;
-- (NSEdgeInsets)insetsForScrollingItemAtIndexPath:(id)arg1 toScrollPosition:(unsigned long long)arg2;
-- (CGRect)backingAlignedRect:(CGRect)arg1 options:(unsigned long long)arg2;
-- (long long)userInterfaceLayoutDirection;
+- (NSEdgeInsets)insetsForScrollingItemAtIndexPath:(id)arg1 toScrollPosition:(NSUInteger)arg2; // TODO: enum
+- (CGRect)backingAlignedRect:(CGRect)arg1 options:(NSUInteger)arg2; // TODO: enum
+- (NSInteger)userInterfaceLayoutDirection; // TODO: enum
 - (CGPoint)updatesContentOffsetForProposedContentOffset:(CGPoint)arg1;
 - (CGPoint)transitionContentOffsetForProposedContentOffset:(CGPoint)arg1 keyItemIndexPath:(id)arg2;
 - (void)finalizeLayoutTransition;
@@ -41,7 +41,7 @@
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)arg1 withScrollingVelocity:(CGPoint)arg2;
 - (id)invalidationContextForBoundsChange:(CGRect)arg1;
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1;
-- (BOOL)shouldInvalidateLayoutForScaleFactorChangeFrom:(double)arg1 to:(double)arg2;
+- (BOOL)shouldInvalidateLayoutForScaleFactorChangeFrom:(CGFloat)arg1 to:(CGFloat)arg2;
 - (void)invalidateLayoutWithContext:(id)arg1;
 - (void)invalidateLayout;
 - (void)prepareLayout;
@@ -64,7 +64,7 @@
 - (id)proposedDropIndexPathForDraggingPoint:(CGPoint)arg1;
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1 withIndexPaths:(id)arg2 exchangedWithIndexPaths:(id)arg3;
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1 withIndexPaths:(id)arg2 movedToIndexPath:(id)arg3 atPoint:(CGPoint)arg4;
-- (long long)dropPositionForPoint:(CGPoint)arg1 withIndexPaths:(id)arg2 movedToIndexPath:(id)arg3;
+- (NSInteger)dropPositionForPoint:(CGPoint)arg1 withIndexPaths:(id)arg2 movedToIndexPath:(id)arg3; // TODO: enum
 
 @end
 

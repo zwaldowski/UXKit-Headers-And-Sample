@@ -14,8 +14,8 @@
 + (Class)viewClass;
 @property (nonatomic, strong) UXView *presentedViewControllerContainerView;
 @property (nonatomic) BOOL automaticallyAdjustsScrollViewInsets;
-@property (nonatomic) unsigned long long edgesForExtendedLayout;
-@property (nonatomic) long long modalPresentationStyle;
+@property (nonatomic) NSUInteger edgesForExtendedLayout; // TODO: enum
+@property (nonatomic) NSInteger modalPresentationStyle; // TODO: enum
 @property (nonatomic) BOOL isEditing;
 - (id)menuForEvent:(id)arg1;
 - (id)bottomLayoutGuide;
@@ -33,7 +33,7 @@
 - (void)didMoveToParentViewController:(id)arg1;
 - (void)willMoveToParentViewController:(id)arg1;
 - (void)removeFromParentViewController;
-- (void)removeChildViewControllerAtIndex:(long long)arg1;
+- (void)removeChildViewControllerAtIndex:(NSInteger)arg1;
 - (void)addChildViewController:(id)arg1;
 - (void)viewDidLiveResize;
 - (void)viewWillLiveResize;
@@ -53,7 +53,7 @@
 @property (nonatomic, readonly) UXView *uxView;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 @property (nonatomic) BOOL hidesBottomBarWhenPushed;
-- (long long)preferredToolbarPosition;
+- (NSInteger)preferredToolbarPosition; // TODO: enum
 - (id)toolbarViewController;
 - (void)setToolbarViewController:(id)arg1;
 - (id)toolbarItems;
@@ -70,7 +70,7 @@
 @property (nonatomic, readonly) UXPopoverController *popoverController;
 - (void)updateViewConstraints;
 - (void)prepareForTransitionWithContext:(id)arg1 completion:(void(^)(void))arg2;
-@property (nonatomic, readonly) long long interfaceOrientation;
+@property (nonatomic, readonly) NSInteger interfaceOrientation; // TODO: enum
 - (void)viewDidDisappear:(BOOL)arg1;
 - (void)viewWillDisappear:(BOOL)arg1;
 - (void)viewDidAppear:(BOOL)arg1;
@@ -78,7 +78,7 @@
 @property (nonatomic) BOOL hidesSourceListWhenPushed;
 - (BOOL)isTransitory;
 - (void)setTransitory:(BOOL)arg1;
-- (void)viewControllersForNavigationDestination:(id)arg1 completion:(void(^)(id unknown, NSArray *viewControllers))arg2;
+- (void)viewControllersForNavigationDestination:(id)arg1 completion:(void(^)(id unknown, NSArray *viewControllers))arg2; // TODO
 - (void)willEncodeNavigationDestination:(id)arg1;
 - (id)navigationDestination;
 - (id)navigationIdentifier;

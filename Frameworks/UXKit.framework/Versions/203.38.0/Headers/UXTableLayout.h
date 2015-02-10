@@ -18,7 +18,7 @@
 - (id)invalidationContextForBoundsChange:(CGRect)arg1;
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1;
 - (void)prepareLayout;
-- (NSEdgeInsets)insetForSection:(long long)arg1;
+- (NSEdgeInsets)insetForSection:(NSInteger)arg1;
 @property (nonatomic) BOOL showsSectionFooterForSingleSection;
 @property (nonatomic) BOOL showsSectionHeaderForSingleSection;
 @property (nonatomic) BOOL floatingHeadersDisabled;
