@@ -54,7 +54,6 @@
 #import <UXKit/UXPinchEventTracker.h>
 #import <UXKit/NSMenuItem-Compatibility.h>
 #import <UXKit/UXCollectionView.h>
-#import <UXKit/UXPopover.h>
 #import <UXKit/UXCollectionViewAnimation.h>
 #import <UXKit/UXPopoverController.h>
 #import <UXKit/NSNull-NSAccessibility.h>
