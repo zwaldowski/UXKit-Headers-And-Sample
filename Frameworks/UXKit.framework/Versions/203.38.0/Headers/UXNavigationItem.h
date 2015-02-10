@@ -10,7 +10,6 @@
 
 @interface UXNavigationItem : NSObject
 
-@property (strong) NSMutableArray *childItems; // @synthesize childItems=_childItems;
 @property (nonatomic) BOOL leftItemsSupplementBackButton; // @synthesize leftItemsSupplementBackButton=_leftItemsSupplementBackButton;
 @property (nonatomic, strong) NSArray *rightBarButtonItems; // @synthesize rightBarButtonItems=_rightBarButtonItems;
 @property (nonatomic) BOOL hidesAlternateTitleView; // @synthesize hidesAlternateTitleView=_hidesAlternateTitleView;

@@ -15,7 +15,6 @@
 + (id)defaultSpringAnimationForKey:(id)arg1 mass:(double)arg2 stiffness:(double)arg3 damping:(double)arg4 velocity:(double)arg5;
 + (long long)_contentModeForLayerContentsGravity:(id)arg1;
 + (Class)layerClass;
-@property (nonatomic, strong) NSMutableArray *internalTrackers; // @synthesize internalTrackers=_internalTrackers;
 @property (nonatomic) BOOL accessibilityChildrenHidden; // @synthesize accessibilityChildrenHidden=_accessibilityChildrenHidden;
 @property (nonatomic) BOOL userInteractionEnabled; // @synthesize userInteractionEnabled=_userInteractionEnabled;
 @property (nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch; // @synthesize exclusiveTouch=_exclusiveTouch;

@@ -12,8 +12,6 @@
 
 @interface UXTableLayout : UXCollectionViewFlowLayout
 
-@property (nonatomic, readonly) NSMutableDictionary *headerAttributesByIndexPath; // @synthesize headerAttributesByIndexPath=_headerAttributesByIndexPath;
-@property (nonatomic, readonly) NSMutableArray *layoutAttributesArray; // @synthesize layoutAttributesArray=_layoutAttributesArray;
 - (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1;
 - (void)invalidateLayoutWithContext:(id)arg1;
