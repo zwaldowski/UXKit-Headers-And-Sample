@@ -20,7 +20,6 @@
 
 + (id)_reuseKeyForSupplementaryViewOfKind:(id)arg1 withReuseIdentifier:(id)arg2;
 + (BOOL)isCompatibleWithResponsiveScrolling;
-+ (void)initialize;
 + (Class)documentClass;
 @property (nonatomic, readonly, getter=isDecelerating) BOOL decelerating; // @synthesize decelerating=_decelerating;
 @property (nonatomic, readonly, getter=isScrolling) BOOL scrolling; // @synthesize scrolling=_scrolling;

@@ -10,7 +10,6 @@
 
 @interface UXCollectionViewData : NSObject
 
-+ (void)initialize;
 @property (nonatomic, readonly) NSArray *clonedLayoutAttributes; // @synthesize clonedLayoutAttributes=_clonedLayoutAttributes;
 @property (nonatomic, getter=isLayoutLocked) BOOL layoutLocked;
 @property (nonatomic, readonly) BOOL layoutIsPrepared;
