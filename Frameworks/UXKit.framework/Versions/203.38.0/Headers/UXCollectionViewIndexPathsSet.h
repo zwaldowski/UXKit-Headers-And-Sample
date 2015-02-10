@@ -26,7 +26,6 @@
 - (id)initWithIndexPathsSet:(id)arg1;
 - (id)initWithIndexPaths:(id)arg1;
 - (id)initWithIndexPath:(id)arg1;
-- (id)init;
 
 @end
 

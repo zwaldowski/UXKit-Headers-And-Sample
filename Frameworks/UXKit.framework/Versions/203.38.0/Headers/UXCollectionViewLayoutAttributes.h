@@ -24,7 +24,6 @@
 @property (nonatomic) CGRect frame; // @synthesize frame=_frame;
 @property (nonatomic) CGRect bounds;
 @property (nonatomic, getter=isHidden) BOOL hidden;
-- (id)init;
 
 @end
 

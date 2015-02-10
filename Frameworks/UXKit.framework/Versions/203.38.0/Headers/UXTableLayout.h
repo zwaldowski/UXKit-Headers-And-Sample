@@ -25,7 +25,6 @@
 @property (nonatomic) BOOL showsSectionHeaderForSingleSection;
 @property (nonatomic) BOOL floatingHeadersDisabled;
 @property (nonatomic, readonly) id <UXCollectionViewDelegateFlowLayout> delegateFlowLayout;
-- (id)init;
 
 @end
 

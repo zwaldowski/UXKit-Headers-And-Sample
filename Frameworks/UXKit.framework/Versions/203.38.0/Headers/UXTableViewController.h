@@ -20,7 +20,6 @@
 - (void)viewDidLayoutSubviews;
 @property (nonatomic, readonly) UXTableView *tableView;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
-- (id)init;
 - (id)initWithStyle:(long long)arg1;
 
 @end

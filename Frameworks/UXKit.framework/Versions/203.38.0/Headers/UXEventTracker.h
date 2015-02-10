@@ -30,7 +30,6 @@
 - (void)cancelTracking;
 - (void)removeTarget:(id)arg1;
 - (void)addTarget:(id)arg1 action:(SEL)arg2;
-- (id)init;
 - (id)initWithTarget:(id)arg1 action:(SEL)arg2;
 
 @end

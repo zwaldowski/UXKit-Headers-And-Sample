@@ -41,7 +41,6 @@
 - (id)invalidationContextForBoundsChange:(CGRect)arg1;
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1;
 - (void)invalidateLayoutWithContext:(id)arg1;
-- (id)init;
 - (CGSize)synchronizeLayout;
 - (id)finalLayoutAttributesForFooterInDeletedSection:(long long)arg1;
 - (id)finalLayoutAttributesForHeaderInDeletedSection:(long long)arg1;

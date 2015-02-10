@@ -16,7 +16,6 @@
 - (void)mouseDragged:(id)arg1;
 - (void)mouseDown:(id)arg1;
 - (void)reset;
-- (id)init;
 
 @end
 

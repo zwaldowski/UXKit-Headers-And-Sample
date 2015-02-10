@@ -15,7 +15,6 @@
 - (void)setNextAction:(id)arg1 forNamespace:(id)arg2;
 - (id)valueForKey:(id)arg1 inNamespace:(id)arg2;
 - (void)setValue:(id)arg1 forKey:(id)arg2 inNamespace:(id)arg3;
-- (id)init;
 
 @end
 

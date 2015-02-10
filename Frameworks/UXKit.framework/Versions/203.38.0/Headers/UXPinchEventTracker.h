@@ -19,7 +19,6 @@
 - (void)reset;
 - (CGPoint)locationInView:(id)arg1;
 - (void)setTrackingEvent:(id)arg1;
-- (id)init;
 - (BOOL)eventTrackerRequiresTouches;
 
 @end

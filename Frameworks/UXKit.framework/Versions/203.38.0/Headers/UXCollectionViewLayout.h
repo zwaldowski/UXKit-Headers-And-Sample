@@ -53,7 +53,6 @@
 - (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)layoutAttributesForItemAtIndexPath:(id)arg1;
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1;
-- (id)init;
 - (id)indexPathsToInsertForDecorationViewOfKind:(id)arg1;
 - (id)indexPathsToInsertForSupplementaryViewOfKind:(id)arg1;
 - (id)indexPathsToDeleteForDecorationViewOfKind:(id)arg1;

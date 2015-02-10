@@ -63,7 +63,6 @@
 - (void)setDataSource:(id)arg1;
 - (BOOL)overdrawEnabled;
 - (void)setOverdrawEnabled:(BOOL)arg1;
-- (id)init;
 - (id)initWithFrame:(CGRect)arg1;
 - (id)initWithFrame:(CGRect)arg1 style:(long long)arg2;
 - (id)initWithFrame:(CGRect)arg1 collectionViewLayout:(id)arg2;

@@ -52,7 +52,6 @@
 - (void)setView:(id)arg1;
 @property (nonatomic, readonly) UXView *uxView;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
-- (id)init;
 @property (nonatomic) BOOL hidesBottomBarWhenPushed;
 - (long long)preferredToolbarPosition;
 - (id)toolbarViewController;

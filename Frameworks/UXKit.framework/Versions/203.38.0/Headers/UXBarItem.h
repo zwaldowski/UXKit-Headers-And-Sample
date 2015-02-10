@@ -13,7 +13,6 @@
 @property (nonatomic, copy) NSString *accessibilityLabel; // @synthesize accessibilityLabel=_accessibilityLabel;
 @property (nonatomic, strong) NSString *title; // @synthesize title=_title;
 @property (nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
-- (id)init;
 
 @end
 
