@@ -7,14 +7,6 @@
 #import <UXKit/UXView.h>
 
 @interface UXControl : UXView
-{
-    BOOL _highlighted;
-    BOOL _selected;
-    BOOL _enabled;
-    BOOL _ignoresMultiClick;
-    id _target;
-    SEL _action;
-}
 
 @property (nonatomic) BOOL ignoresMultiClick; // @synthesize ignoresMultiClick=_ignoresMultiClick;
 @property (nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;

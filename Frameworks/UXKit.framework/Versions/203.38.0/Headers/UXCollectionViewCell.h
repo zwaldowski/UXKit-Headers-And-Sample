@@ -8,10 +8,6 @@
 #import <UXKit/UXCollectionReusableView.h>
 
 @interface UXCollectionViewCell : UXCollectionReusableView
-{
-    NSView *_contentView;
-    BOOL _selected;
-}
 
 @property (nonatomic, readonly) NSView *contentView; // @synthesize contentView=_contentView;
 @property (nonatomic, getter=isSelected) BOOL selected; // @synthesize selected=_selected;

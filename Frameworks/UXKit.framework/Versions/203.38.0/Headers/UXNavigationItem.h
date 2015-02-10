@@ -9,19 +9,6 @@
 @class UXBarButtonItem, UXLabel;
 
 @interface UXNavigationItem : NSObject
-{
-    NSArray *_leftBarButtonItems;
-    NSArray *_rightBarButtonItems;
-    UXLabel *_internalTitleView;
-    NSString *_title;
-    BOOL _hidesBackButton;
-    BOOL _hidesAlternateTitleView;
-    BOOL _leftItemsSupplementBackButton;
-    UXBarButtonItem *_backBarButtonItem;
-    NSView *_titleView;
-    NSString *_prompt;
-    NSMutableArray *_childItems;
-}
 
 @property (strong) NSMutableArray *childItems; // @synthesize childItems=_childItems;
 @property (nonatomic) BOOL leftItemsSupplementBackButton; // @synthesize leftItemsSupplementBackButton=_leftItemsSupplementBackButton;

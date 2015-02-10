@@ -9,10 +9,6 @@
 #import <UXKit/UXViewControllerInteractiveTransitioning-Protocol.h>
 
 @interface UXTransitionController : NSObject <UXViewControllerAnimatedTransitioning, UXViewControllerInteractiveTransitioning>
-{
-    long long _operation;
-    double _percentComplete;
-}
 
 @property (nonatomic, readonly) double percentComplete; // @synthesize percentComplete=_percentComplete;
 @property (nonatomic) long long operation; // @synthesize operation=_operation;

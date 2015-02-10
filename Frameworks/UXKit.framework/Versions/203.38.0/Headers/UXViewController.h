@@ -10,25 +10,6 @@
 @class UXNavigationController, UXNavigationItem, UXSourceController, UXTabBarItem, UXView;
 
 @interface UXViewController : NSViewController
-{
-    UXNavigationItem *_navigationItem;
-    UXTabBarItem *_tabBarItem;
-    UXViewController *_accessoryViewController;
-    NSArray *_accessoryBarItems;
-    UXViewController *_toolbarViewController;
-    NSArray *_toolbarItems;
-    BOOL _hidesBottomBarWhenPushed;
-    CGSize _ux_preferredContentSize;
-    BOOL _viewDidLoad;
-    BOOL _ignoreViewController;
-    id <UXLayoutSupport> _topLayoutGuide;
-    id <UXLayoutSupport> _bottomLayoutGuide;
-    BOOL _isEditing;
-    BOOL _automaticallyAdjustsScrollViewInsets;
-    long long _modalPresentationStyle;
-    unsigned long long _edgesForExtendedLayout;
-    UXView *_presentedViewControllerContainerView;
-}
 
 + (Class)viewClass;
 @property (nonatomic, strong) UXView *presentedViewControllerContainerView; // @synthesize presentedViewControllerContainerView=_presentedViewControllerContainerView;

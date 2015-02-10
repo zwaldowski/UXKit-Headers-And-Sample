@@ -8,15 +8,6 @@
 #import <UXKit/UXView.h>
 
 @interface UXLabel : UXView <NSAccessibilityStaticText>
-{
-    NSTextField *_concreteTextField;
-    BOOL _highlighted;
-    NSColor *_textColor;
-    NSColor *_shadowColor;
-    long long _numberOfLines;
-    NSColor *_highlightedTextColor;
-    CGSize _shadowOffset;
-}
 
 @property (nonatomic, getter=isHighlighted) BOOL highlighted; // @synthesize highlighted=_highlighted;
 @property (nonatomic, strong) NSColor *highlightedTextColor; // @synthesize highlightedTextColor=_highlightedTextColor;

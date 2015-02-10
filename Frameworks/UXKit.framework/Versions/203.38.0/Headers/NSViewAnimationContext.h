@@ -7,11 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSViewAnimationContext : NSObject
-{
-    NSArray *_viewAnimations;
-    long long _animationCount;
-    void(^_completionHandler)(BOOL finished);
-}
 
 @property (nonatomic, readonly) void(^completionHandler)(BOOL finished); // @synthesize completionHandler=_completionHandler;
 @property (nonatomic) long long animationCount; // @synthesize animationCount=_animationCount;

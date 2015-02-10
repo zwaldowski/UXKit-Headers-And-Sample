@@ -11,16 +11,6 @@
 @class _UXSinglePixelLine;
 
 @interface UXBar : UXView <NSAccessibilityGroup, UXBarPositioning>
-{
-    _UXSinglePixelLine *_decorationLine;
-    BOOL _isInteractiveTransitioning;
-    NSColor *_barTintColor;
-    double _interitemSpacing;
-    double _height;
-    UXView *_barItemsContainer;
-    double _percent;
-    UXView *_nextItemContainer;
-}
 
 @property (nonatomic, strong) UXView *nextItemContainer; // @synthesize nextItemContainer=_nextItemContainer;
 @property (nonatomic) double percent; // @synthesize percent=_percent;

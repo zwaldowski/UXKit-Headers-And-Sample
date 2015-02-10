@@ -7,12 +7,6 @@
 #import <UXKit/UXCollectionViewLayoutInvalidationContext.h>
 
 @interface UXCollectionViewFlowLayoutInvalidationContext : UXCollectionViewLayoutInvalidationContext
-{
-    struct {
-        unsigned int invalidateDelegateMetrics:1;
-        unsigned int invalidateAttributes:1;
-    } _flowLayoutInvalidationFlags;
-}
 
 @property (nonatomic) BOOL invalidateFlowLayoutDelegateMetrics;
 @property (nonatomic) BOOL invalidateFlowLayoutAttributes;

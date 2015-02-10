@@ -9,34 +9,16 @@
 #import <UXKit/UXNavigationControllerDelegate-Protocol.h>
 #import <UXKit/UXSourceList-Protocol.h>
 
-@class UXTransitionController, _UXSourceSplitView, _UXViewControllerOneToOneTransitionContext;
+@class UXTransitionController;
 
 @interface UXSourceController : UXViewController <UXNavigationControllerDelegate>
-{
-    NSView *_tabBarView;
-    BOOL _isTransitioning;
-    _UXViewControllerOneToOneTransitionContext *_transitionCtx;
-    UXTransitionController *_transitionController;
-    id <UXNavigationControllerDelegate> _currentNavigationDelegate;
-    long long _preferredStyle;
-    long long _style;
-    NSArray *_rootViewControllers;
-    UXViewController *_selectedViewController;
-    UXViewController<UXSourceList> *_sourceListViewController;
-    NSString *_sourceListAutosaveName;
-    NSSegmentedControl *_segmentedControl;
-    _UXSourceSplitView *_splitView;
-    NSMapTable *_navigationControllerByRootViewController;
-    NSMapTable *_transitionControllerClassByToViewControllerClass;
-    NSOperationQueue *_viewControllerOperations;
-}
 
 + (Class)_defaultTransitionControllerClass;
 + (id)_autosaveDefaultsKeyForName:(id)arg1;
 @property (readonly) NSOperationQueue *viewControllerOperations; // @synthesize viewControllerOperations=_viewControllerOperations;
 @property (nonatomic, readonly) NSMapTable *transitionControllerClassByToViewControllerClass; // @synthesize transitionControllerClassByToViewControllerClass=_transitionControllerClassByToViewControllerClass;
 @property (nonatomic, readonly) NSMapTable *navigationControllerByRootViewController; // @synthesize navigationControllerByRootViewController=_navigationControllerByRootViewController;
-@property (nonatomic, readonly) _UXSourceSplitView *splitView; // @synthesize splitView=_splitView;
+@property (nonatomic, readonly) NSSplitView *splitView; // @synthesize splitView=_splitView;
 @property (nonatomic, readonly) NSSegmentedControl *segmentedControl; // @synthesize segmentedControl=_segmentedControl;
 @property (nonatomic, copy) NSString *sourceListAutosaveName; // @synthesize sourceListAutosaveName=_sourceListAutosaveName;
 @property (nonatomic, strong) UXViewController<UXSourceList> *sourceListViewController; // @synthesize sourceListViewController=_sourceListViewController;

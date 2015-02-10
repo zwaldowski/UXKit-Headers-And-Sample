@@ -9,9 +9,6 @@
 @class UXView;
 
 @interface UXParallaxTransitionController : UXTransitionController
-{
-    UXView *_dimmingView;
-}
 
 + (void)_addShadowToView:(id)arg1 withAlpha:(double)arg2;
 - (BOOL)navigationController:(id)arg1 shouldBeginInteractivePopFromViewController:(id)arg2 toViewController:(id)arg3;

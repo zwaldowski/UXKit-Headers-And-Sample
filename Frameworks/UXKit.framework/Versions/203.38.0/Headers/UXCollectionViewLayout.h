@@ -9,30 +9,6 @@
 @class UXCollectionView, UXCollectionViewLayoutAccessibility, UXCollectionViewLayoutInvalidationContext;
 
 @interface UXCollectionViewLayout : NSObject
-{
-    UXCollectionView *_collectionView;
-    CGSize _collectionViewBoundsSize;
-    NSMutableDictionary *_initialAnimationLayoutAttributesDict;
-    NSMutableDictionary *_finalAnimationLayoutAttributesDict;
-    NSMutableDictionary *_deletedSupplementaryIndexPathsDict;
-    NSMutableDictionary *_insertedSupplementaryIndexPathsDict;
-    NSMutableDictionary *_deletedDecorationIndexPathsDict;
-    NSMutableDictionary *_insertedDecorationIndexPathsDict;
-    NSMutableIndexSet *_deletedSectionsSet;
-    NSMutableIndexSet *_insertedSectionsSet;
-    NSMutableDictionary *_decorationViewClassDict;
-    NSMutableDictionary *_decorationViewNibDict;
-    UXCollectionViewLayout *_transitioningFromLayout;
-    UXCollectionViewLayout *_transitioningToLayout;
-    BOOL _inTransitionFromTransitionLayout;
-    BOOL _inTransitionToTransitionLayout;
-    UXCollectionViewLayoutInvalidationContext *_invalidationContext;
-    NSArray *_accessibilityChildren;
-    UXCollectionViewLayoutAccessibility *_layoutAccessibility;
-    NSString *_accessibilityIdentifier;
-    NSString *_accessibilityLabel;
-    NSString *_accessibilityRoleDescription;
-}
 
 + (Class)layoutAccessibilityClass;
 + (Class)invalidationContextClass;

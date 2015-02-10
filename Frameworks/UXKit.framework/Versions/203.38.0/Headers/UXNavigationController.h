@@ -11,50 +11,6 @@
 @class UXEventTracker, UXNavigationBar, UXToolbar, UXTransitionController, _UXContainerView, _UXViewControllerOneToOneTransitionContext;
 
 @interface UXNavigationController : UXViewController <UXToolbarDelegate>
-{
-    UXNavigationBar *_navigationBar;
-    UXToolbar *_accessoryBar;
-    UXToolbar *_toolbar;
-    struct {
-        unsigned int willShowViewController:1;
-        unsigned int didShowViewController:1;
-        unsigned int interactionControllerForAnimationController:1;
-        unsigned int animationControllerForOperation:1;
-        unsigned int shouldBeginInteractivePopFromViewControllerToViewController:1;
-    } _delegateFlags;
-    BOOL _navigationBarHidden;
-    BOOL _navigationBarDetached;
-    BOOL _toolbarHidden;
-    BOOL __fullScreenMode;
-    BOOL __locked;
-    BOOL __hidesBackTitles;
-    BOOL __backBarButtonItemBordered;
-    BOOL _isTransitioning;
-    BOOL _isInteractive;
-    id <UXNavigationControllerDelegate> _delegate;
-    UXEventTracker *_interactivePopEventTracker;
-    double __leftContentInset;
-    long long __toolbarPosition;
-    unsigned long long __defaultPushTransition;
-    unsigned long long __defaultPopTransition;
-    id _accessoryBarContainer;
-    NSMutableArray *_internalViewControllers;
-    _UXContainerView *_containerView;
-    NSMutableArray *_addedConstraints;
-    NSLayoutConstraint *_topConstraint;
-    NSLayoutConstraint *_bottomConstraint;
-    NSLayoutConstraint *_navigationBarTopConstraint;
-    NSArray *_navigationBarConstraints;
-    NSLayoutConstraint *_toolbarVerticalConstraint;
-    NSLayoutConstraint *_toolbarLeftConstraint;
-    NSLayoutConstraint *_topViewControllerLeftConstraint;
-    NSArray *_topViewControllerOtherConstraints;
-    _UXViewControllerOneToOneTransitionContext *_currentTransitionContext;
-    long long _currentOperation;
-    UXTransitionController *_defaultTransitionController;
-    UXViewController *_observedViewController;
-    UXViewController *_provisionalPreviousViewController;
-}
 
 + (id)keyPathsForValuesAffectingPreferredContentSize;
 @property (nonatomic, strong) UXViewController *provisionalPreviousViewController; // @synthesize provisionalPreviousViewController=_provisionalPreviousViewController;

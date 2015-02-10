@@ -8,23 +8,6 @@
 #import <UXKit/UXEventTracker.h>
 
 @interface UXPinchEventTracker : UXEventTracker
-{
-    NSMutableArray *_monitoredTouchIds;
-    NSMutableSet *_ignoredTouchIds;
-    unsigned long long _numberOfMoveEvents;
-    CGPoint _initialMouseLocation;
-    CGPoint _initialNormalizedLocation;
-    double _initialDistance;
-    double _initialTime;
-    double _firstTouchTime;
-    double _currentDistance;
-    double _previousDistance;
-    double _distance;
-    double _previousTime;
-    BOOL _didBegin;
-    BOOL _initiallyTwoTouches;
-    double _scale;
-}
 
 @property (nonatomic) double scale; // @synthesize scale=_scale;
 - (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;

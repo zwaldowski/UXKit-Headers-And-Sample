@@ -7,28 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface UXCollectionViewLayoutAttributes : NSObject <NSCopying>
-{
-    unsigned long long _hash;
-    NSString *_elementKind;
-    NSString *_reuseIdentifier;
-    CGRect _frame;
-    CGPoint _center;
-    CGSize _size;
-    double _alpha;
-    long long _zIndex;
-    BOOL _isFloating;
-    CGRect _floatingFrame;
-    BOOL _isFloatingPinned;
-    NSIndexPath *_indexPath;
-    NSString *_representedElementKind;
-    NSString *_isCloneString;
-    struct {
-        unsigned int isCellKind:1;
-        unsigned int isDecorationView:1;
-        unsigned int isHidden:1;
-        unsigned int isClone:1;
-    } _layoutFlags;
-}
 
 + (id)layoutAttributesForDecorationViewOfKind:(id)arg1 withIndexPath:(id)arg2;
 + (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 withIndexPath:(id)arg2;

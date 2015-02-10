@@ -9,28 +9,6 @@
 @class UXCollectionView, UXCollectionViewData;
 
 @interface UXCollectionViewUpdate : NSObject
-{
-    UXCollectionView *_collectionView;
-    NSArray *_updateItems;
-    UXCollectionViewData *_oldModel;
-    UXCollectionViewData *_newModel;
-    CGRect _oldVisibleBounds;
-    CGRect _newVisibleBounds;
-    NSMutableIndexSet *_movedItems;
-    NSMutableIndexSet *_movedSections;
-    NSMutableIndexSet *_deletedSections;
-    NSMutableIndexSet *_insertedSections;
-    long long *_oldSectionMap;
-    long long *_newSectionMap;
-    long long *_oldGlobalItemMap;
-    long long *_newGlobalItemMap;
-    NSMutableArray *_deletedSupplementaryIndexesSectionArray;
-    NSMutableArray *_insertedSupplementaryIndexesSectionArray;
-    NSMutableDictionary *_deletedSupplementaryTopLevelIndexesDict;
-    NSMutableDictionary *_insertedSupplementaryTopLevelIndexesDict;
-    NSMutableArray *_viewAnimations;
-    NSMutableArray *_gaps;
-}
 
 - (id)oldIndexPathForSupplementaryElementOfKind:(id)arg1 newIndexPath:(id)arg2;
 - (id)newIndexPathForSupplementaryElementOfKind:(id)arg1 oldIndexPath:(id)arg2;

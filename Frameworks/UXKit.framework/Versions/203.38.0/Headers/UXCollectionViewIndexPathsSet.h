@@ -9,10 +9,6 @@
 @class _UXCollectionViewSectionItemIndexes;
 
 @interface UXCollectionViewIndexPathsSet : NSObject <NSCopying, NSMutableCopying>
-{
-    NSMutableIndexSet *_sectionIndexes;
-    NSMutableDictionary *_sectionToItemIndexesMap;
-}
 
 + (id)indexPathsSetWithIndexPathsSet:(id)arg1;
 + (id)indexPathsSetWithIndexPaths:(id)arg1;

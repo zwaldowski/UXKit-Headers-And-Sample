@@ -9,29 +9,6 @@
 @class UXCollectionView, UXCollectionViewLayout;
 
 @interface UXCollectionViewData : NSObject
-{
-    UXCollectionView *_collectionView;
-    UXCollectionViewLayout *_layout;
-    NSMapTable *_screenPageMap;
-    id _globalItems;
-    NSMutableDictionary *_supplementaryLayoutAttributes;
-    NSMutableDictionary *_decorationLayoutAttributes;
-    NSMutableDictionary *_invalidatedSupplementaryViews;
-    CGRect _validLayoutRect;
-    long long _numItems;
-    long long _numSections;
-    long long *_sectionItemCounts;
-    long long _lastSectionTestedForNumberOfItemsBeforeSection;
-    long long _lastResultForNumberOfItemsBeforeSection;
-    CGSize _contentSize;
-    struct {
-        unsigned int contentSizeIsValid:1;
-        unsigned int itemCountsAreValid:1;
-        unsigned int layoutIsPrepared:1;
-        unsigned int layoutLocked:1;
-    } _collectionViewDataFlags;
-    NSMutableArray *_clonedLayoutAttributes;
-}
 
 + (void)initialize;
 @property (nonatomic, readonly) NSArray *clonedLayoutAttributes; // @synthesize clonedLayoutAttributes=_clonedLayoutAttributes;

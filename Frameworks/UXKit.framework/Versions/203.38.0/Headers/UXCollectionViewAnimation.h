@@ -9,22 +9,6 @@
 @class UXCollectionReusableView, UXCollectionViewLayoutAttributes;
 
 @interface UXCollectionViewAnimation : NSObject
-{
-    UXCollectionReusableView *_view;
-    UXCollectionViewLayoutAttributes *_finalLayoutAttributes;
-    double _startFraction;
-    double _endFraction;
-    unsigned long long _viewType;
-    NSMutableArray *_completionHandlers;
-    NSMutableArray *_startupHandlers;
-    void(^_animationBlock)(void(^completion)(BOOL finished));
-    struct {
-        unsigned int animateFromCurrentPosition:1;
-        unsigned int deleteAterAnimation:1;
-        unsigned int rasterizeAfterAnimation:1;
-        unsigned int resetRasterizationAfterAnimation:1;
-    } _collectionViewAnimationFlags;
-}
 
 @property (nonatomic, readonly) double endFraction; // @synthesize endFraction=_endFraction;
 @property (nonatomic, readonly) double startFraction; // @synthesize startFraction=_startFraction;

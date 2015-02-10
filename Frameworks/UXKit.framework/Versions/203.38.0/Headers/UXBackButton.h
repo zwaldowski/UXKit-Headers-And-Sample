@@ -7,10 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface UXBackButton : NSButton
-{
-    BOOL _hidesTitle;
-    NSLayoutConstraint *_widthConstraint;
-}
 
 + (Class)cellClass;
 @property (nonatomic, readonly) NSLayoutConstraint *widthConstraint; // @synthesize widthConstraint=_widthConstraint;

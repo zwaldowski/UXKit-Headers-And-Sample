@@ -7,8 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface UXCollectionClipView : NSClipView
-{
-}
 
 - (void)_invalidateFocus;
 

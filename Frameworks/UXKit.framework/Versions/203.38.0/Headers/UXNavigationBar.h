@@ -11,26 +11,6 @@
 @class UXNavigationItem, _UXNavigationItemContainerView;
 
 @interface UXNavigationBar : UXBar
-{
-    BOOL _needsRecalculateWindowKeyViewLoop;
-    BOOL _translucent;
-    BOOL _enableAlernateTitle;
-    BOOL _detached;
-    BOOL _recalculatingWindowKeyViewLoop;
-    id <UXNavigationBarDelegate> _delegate;
-    NSView *_titleCenteringTrackedView;
-    NSArray *_items;
-    NSImage *_backIndicatorImage;
-    NSView *_alternateTitleView;
-    double _leftInteritemSpacing;
-    double _rightInteritemSpacing;
-    double _centerYOffset;
-    NSMutableArray *_internalItems;
-    _UXNavigationItemContainerView *_topItemContainer;
-    long long _currentOperation;
-    UXNavigationItem *_transitioningItem;
-    NSEdgeInsets _edgeInsets;
-}
 
 + (id)_itemKeyPathsToObserve;
 @property (nonatomic) BOOL recalculatingWindowKeyViewLoop; // @synthesize recalculatingWindowKeyViewLoop=_recalculatingWindowKeyViewLoop;

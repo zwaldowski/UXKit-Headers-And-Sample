@@ -8,36 +8,6 @@
 #import <UXKit/UXCollectionViewLayout.h>
 
 @interface UXCollectionViewFlowLayout : UXCollectionViewLayout
-{
-    struct {
-        unsigned int delegateSizeForItem:1;
-        unsigned int delegateReferenceSizeForHeader:1;
-        unsigned int delegateReferenceSizeForFooter:1;
-        unsigned int delegateInsetForSection:1;
-        unsigned int delegateInteritemSpacingForSection:1;
-        unsigned int delegateLineSpacingForSection:1;
-        unsigned int delegateAlignmentOptions:1;
-        unsigned int layoutDataIsValid:1;
-        unsigned int delegateInfoIsValid:1;
-    } _gridLayoutFlags;
-    double _interitemSpacing;
-    double _lineSpacing;
-    CGSize _itemSize;
-    CGSize _headerReferenceSize;
-    CGSize _footerReferenceSize;
-    NSEdgeInsets _sectionInset;
-    id _data;
-    CGSize _currentLayoutSize;
-    NSMutableDictionary *_insertedItemsAttributesDict;
-    NSMutableDictionary *_insertedSectionHeadersAttributesDict;
-    NSMutableDictionary *_insertedSectionFootersAttributesDict;
-    NSMutableDictionary *_deletedItemsAttributesDict;
-    NSMutableDictionary *_deletedSectionHeadersAttributesDict;
-    NSMutableDictionary *_deletedSectionFootersAttributesDict;
-    long long _scrollDirection;
-    NSDictionary *_rowAlignmentsOptionsDictionary;
-    CGRect _visibleBounds;
-}
 
 + (Class)invalidationContextClass;
 @property (nonatomic) NSEdgeInsets sectionInset; // @synthesize sectionInset=_sectionInset;

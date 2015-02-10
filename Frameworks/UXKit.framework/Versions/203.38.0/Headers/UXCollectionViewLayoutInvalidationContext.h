@@ -7,14 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface UXCollectionViewLayoutInvalidationContext : NSObject
-{
-    NSMutableDictionary *_invalidatedSupplementaryViews;
-    NSArray *_updateItems;
-    struct {
-        unsigned int invalidateDataSource:1;
-        unsigned int invalidateEverything:1;
-    } _invalidationContextFlags;
-}
 
 - (id)_updateItems;
 - (void)_setUpdateItems:(id)arg1;

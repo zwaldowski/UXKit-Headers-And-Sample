@@ -7,9 +7,6 @@
 #import <UXKit/UXEventTracker.h>
 
 @interface UXClickEventTracker : UXEventTracker
-{
-    unsigned long long _numberOfClicksRequired;
-}
 
 @property (nonatomic) unsigned long long numberOfClicksRequired; // @synthesize numberOfClicksRequired=_numberOfClicksRequired;
 - (id)description;

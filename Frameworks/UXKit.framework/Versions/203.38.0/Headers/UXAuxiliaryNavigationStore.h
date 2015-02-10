@@ -9,12 +9,6 @@
 @class UXSourceController;
 
 @interface UXAuxiliaryNavigationStore : NSObject <NSSecureCoding>
-{
-    NSMutableDictionary *_namespaceDict;
-    NSMutableDictionary *_globalDict;
-    NSString *_lastAction;
-    UXSourceController *_sourceController;
-}
 
 + (BOOL)supportsSecureCoding;
 @property (nonatomic, weak)  UXSourceController *sourceController; // @synthesize sourceController=_sourceController;

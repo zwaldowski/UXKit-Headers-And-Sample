@@ -7,8 +7,6 @@
 #import <UXKit/UXCollectionViewIndexPathsSet.h>
 
 @interface UXCollectionViewMutableIndexPathsSet : UXCollectionViewIndexPathsSet
-{
-}
 
 - (void)adjustForDeletionOfIndexPath:(id)arg1;
 - (void)adjustForDeletionOfItems:(id)arg1 inSection:(unsigned long long)arg2;

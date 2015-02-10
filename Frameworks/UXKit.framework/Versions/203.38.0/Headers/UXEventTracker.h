@@ -9,20 +9,6 @@
 @class UXView;
 
 @interface UXEventTracker : NSResponder
-{
-    UXView *_view;
-    BOOL _cancelsEventsInView;
-    BOOL _enabled;
-    long long _state;
-    NSEvent *_trackingEvent;
-    unsigned long long _modifiers;
-    double _velocity;
-    unsigned long long _ignoredModifiers;
-    void(^_eventTrackerDidBeginHandler)(UXEventTracker *);
-    void(^_eventTrackerDidChangeHandler)(UXEventTracker *);
-    void(^_eventTrackerDidEndHandler)(UXEventTracker *);
-    NSMapTable *_selectorsByTarget;
-}
 
 @property (nonatomic, strong) NSMapTable *selectorsByTarget; // @synthesize selectorsByTarget=_selectorsByTarget;
 @property (nonatomic, copy) void(^eventTrackerDidBeginHandler)(UXEventTracker *);

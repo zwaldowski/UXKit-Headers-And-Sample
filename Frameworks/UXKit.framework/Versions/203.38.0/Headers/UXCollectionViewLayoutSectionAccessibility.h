@@ -9,9 +9,6 @@
 @class UXCollectionView, UXCollectionViewLayoutAccessibility;
 
 @interface UXCollectionViewLayoutSectionAccessibility : NSAccessibilityElement
-{
-    NSArray *_accessibilityVisibleChildren;
-}
 
 - (void)setAccessibilityVisibleChildren:(id)arg1;
 - (id)description;

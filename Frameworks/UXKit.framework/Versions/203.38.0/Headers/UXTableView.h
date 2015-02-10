@@ -10,36 +10,6 @@
 #import <UXKit/UXCollectionViewDataSource-Protocol.h>
 
 @interface UXTableView : UXCollectionView
-{
-    struct {
-        unsigned int delegateImplementsTitleForHeaderInSection:1;
-        unsigned int delegateImplementsTitleForFooterInSection:1;
-        unsigned int delegateImplementsHeaderViewForSection:1;
-        unsigned int delegateImplementsFooterViewForSection:1;
-        unsigned int delegateImplementsHeightForHeaderInSection:1;
-        unsigned int delegateImplementsHeightForRowAtIndexPath:1;
-        unsigned int delegateImplementsDidSelectionRowAtIndexPath:1;
-        unsigned int delegateImplementsShouldHighlightRowAtIndexPath:1;
-        unsigned int delegateImplementsDidHighlightRowAtIndexPath:1;
-        unsigned int delegateImplementsDidUnhighlightRowAtIndexPath:1;
-        unsigned int delegateImplementsEditingStyleForRowAtIndexPath:1;
-        unsigned int delegateImplementsDidDeselectRowAtIndexPath:1;
-    } _tableViewDelegateFlags;
-    struct {
-        unsigned int dataSourceImplementsNumberOfSectionsInTableView:1;
-        unsigned int dataSourceImplementsCanEditRowAtIndexPath:1;
-        unsigned int dataSourceImplementsCommitEditingStyleForRowAtIndexPath:1;
-    } _tableViewDataSourceFlags;
-    NSIndexPath *_highlightedIndexPath;
-    NSMenu *_observedMenu;
-    BOOL __floatingHeadersDisabled;
-    id <UXTableViewDataSource> _tableViewDataSource;
-    id <UXTableViewDelegate> _tableViewDelegate;
-    double _rowHeight;
-    long long _separatorStyle;
-    NSColor *_separatorColor;
-    NSEdgeInsets _separatorInset;
-}
 
 + (unsigned long long)collectionViewScrollPositionFromScrollPosition:(long long)arg1;
 + (Class)documentClass;

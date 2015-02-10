@@ -7,13 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface UXBarItem : NSObject
-{
-    BOOL _enabled;
-    NSString *_title;
-    NSString *_accessibilityLabel;
-    NSImage *_image;
-    long long _tag;
-}
 
 @property (nonatomic) long long tag; // @synthesize tag=_tag;
 @property (nonatomic, strong) NSImage *image; // @synthesize image=_image;

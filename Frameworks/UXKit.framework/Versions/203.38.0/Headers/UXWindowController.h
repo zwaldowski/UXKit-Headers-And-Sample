@@ -10,11 +10,6 @@
 @class UXToolbar, UXViewController;
 
 @interface UXWindowController : NSWindowController <NSToolbarDelegate, UXAccessoryBarContainer, NSWindowDelegate>
-{
-    NSTitlebarAccessoryViewController *_titlebarAccessoryViewController;
-    UXToolbar *_currentAccessoryToolbar;
-    NSToolbarItem *_navigationBarToolbarItem;
-}
 
 + (id)defaultWindow;
 @property (weak) NSToolbarItem *navigationBarToolbarItem; // @synthesize navigationBarToolbarItem=_navigationBarToolbarItem;

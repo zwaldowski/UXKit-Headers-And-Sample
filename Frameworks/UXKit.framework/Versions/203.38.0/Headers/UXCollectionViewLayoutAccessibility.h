@@ -9,12 +9,6 @@
 @class UXCollectionView, UXCollectionViewLayout;
 
 @interface UXCollectionViewLayoutAccessibility : NSAccessibilityElement
-{
-    NSArray *_accessibilityVisibleChildren;
-    UXCollectionViewLayout *_layout;
-    unsigned long long __sectionCacheOffset;
-    NSMutableArray *__sectionCache;
-}
 
 + (Class)sectionAccessibilityClass;
 @property (nonatomic, strong) NSMutableArray *_sectionCache; // @synthesize _sectionCache=__sectionCache;

@@ -9,14 +9,6 @@
 @class UXCollectionViewUpdateItem;
 
 @interface UXCollectionViewUpdateGap : NSObject
-{
-    UXCollectionViewUpdateItem *_firstUpdateItem;
-    UXCollectionViewUpdateItem *_lastUpdateItem;
-    NSMutableArray *_deleteItems;
-    NSMutableArray *_insertItems;
-    CGRect _beginningRect;
-    CGRect _endingRect;
-}
 
 + (id)gapWithUpdateItem:(id)arg1;
 @property (nonatomic) CGRect endingRect; // @synthesize endingRect=_endingRect;

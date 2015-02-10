@@ -7,8 +7,6 @@
 #import <UXKit/UXTransitionController.h>
 
 @interface UXIdentityTransitionController : UXTransitionController
-{
-}
 
 - (void)animateTransition:(id)arg1;
 - (double)transitionDuration:(id)arg1;

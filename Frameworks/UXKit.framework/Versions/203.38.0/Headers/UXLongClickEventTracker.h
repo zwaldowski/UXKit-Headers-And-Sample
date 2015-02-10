@@ -8,13 +8,6 @@
 #import <UXKit/UXEventTracker.h>
 
 @interface UXLongClickEventTracker : UXEventTracker
-{
-    NSTimer *_clickTimer;
-    BOOL _isMouseDown;
-    CGPoint _initialMouseLocation;
-    double _minimumPressDuration;
-    double _allowableMovement;
-}
 
 @property (nonatomic) double allowableMovement; // @synthesize allowableMovement=_allowableMovement;
 @property (nonatomic) double minimumPressDuration; // @synthesize minimumPressDuration=_minimumPressDuration;

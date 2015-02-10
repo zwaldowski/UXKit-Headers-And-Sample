@@ -11,22 +11,6 @@
 @class UXViewController;
 
 @interface UXBarButtonItem : UXBarItem <UXKitAppearance>
-{
-    NSView *__view;
-    NSColor *_tintColor;
-    long long _tintAdjustmentMode;
-    long long _style;
-    double _width;
-    NSView *_customView;
-    SEL _action;
-    id _target;
-    NSString *_toolTip;
-    NSString *_keyEquivalent;
-    unsigned long long _keyEquivalentModifierMask;
-    UXViewController *_contentViewController;
-    long long _systemItem;
-    UXBarButtonItem *__widthConstrainingItem;
-}
 
 @property (nonatomic, weak, setter=_setWidthConstrainingItem:) UXBarButtonItem *_widthConstrainingItem; // @synthesize _widthConstrainingItem=__widthConstrainingItem;
 @property (nonatomic, readonly) long long systemItem; // @synthesize systemItem=_systemItem;

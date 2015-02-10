@@ -9,9 +9,6 @@
 @class UXTableView;
 
 @interface UXTableViewController : UXCollectionViewController
-{
-    id <UXTableViewDelegate> _tableViewDelegate;
-}
 
 + (Class)collectionViewClass;
 @property (nonatomic, readonly) id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;

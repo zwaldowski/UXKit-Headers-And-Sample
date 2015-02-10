@@ -7,9 +7,6 @@
 #import <UXKit/UXBar.h>
 
 @interface UXToolbar : UXBar
-{
-    id <UXToolbarDelegate> _delegate;
-}
 
 @property (nonatomic, weak)  id <UXToolbarDelegate> delegate; // @synthesize delegate=_delegate;
 - (long long)barPosition;

@@ -8,11 +8,6 @@
 #import <UXKit/UXViewController.h>
 
 @interface UXTabBarController : UXViewController
-{
-    NSArray *_viewControllers;
-    UXViewController *_selectedViewController;
-    NSSegmentedControl *_segmentedControl;
-}
 
 @property (nonatomic, readonly) NSSegmentedControl *segmentedControl; // @synthesize segmentedControl=_segmentedControl;
 @property (nonatomic, weak)  UXViewController *selectedViewController; // @synthesize selectedViewController=_selectedViewController;

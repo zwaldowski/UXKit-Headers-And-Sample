@@ -9,15 +9,6 @@
 @class UXCollectionView, UXCollectionViewLayoutAttributes;
 
 @interface UXCollectionReusableView : NSView
-{
-    UXCollectionViewLayoutAttributes *_layoutAttributes;
-    NSString *_reuseIdentifier;
-    UXCollectionView *_collectionView;
-    struct {
-        unsigned int updateAnimationCount:5;
-        unsigned int wasDequeued:1;
-    } _reusableViewFlags;
-}
 
 @property (nonatomic, copy, readonly) NSString *reuseIdentifier; // @synthesize reuseIdentifier=_reuseIdentifier;
 - (CGImageRef)_snapshot:(BOOL)arg1;

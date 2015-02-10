@@ -9,9 +9,6 @@
 @class UXView;
 
 @interface UXProxyViewController : UXViewController
-{
-    UXView *_proxyView;
-}
 
 - (void)didMoveToParentViewController:(id)arg1;
 - (BOOL)isViewLoaded;

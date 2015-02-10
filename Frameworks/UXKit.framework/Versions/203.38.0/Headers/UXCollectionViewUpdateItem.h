@@ -7,12 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface UXCollectionViewUpdateItem : NSObject
-{
-    NSIndexPath *_initialIndexPath;
-    NSIndexPath *_finalIndexPath;
-    long long _updateAction;
-    id _gap;
-}
 
 @property (nonatomic, readonly) long long updateAction; // @synthesize updateAction=_updateAction;
 @property (nonatomic, strong, readonly) NSIndexPath *indexPathAfterUpdate; // @synthesize indexPathAfterUpdate=_finalIndexPath;

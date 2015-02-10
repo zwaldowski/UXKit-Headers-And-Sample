@@ -9,9 +9,6 @@
 @class UXPopoverController;
 
 @interface UXPopover : NSPopover
-{
-    UXPopoverController *_popoverController;
-}
 
 @property (nonatomic, strong) UXPopoverController *popoverController; // @synthesize popoverController=_popoverController;
 

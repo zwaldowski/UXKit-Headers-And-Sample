@@ -8,11 +8,6 @@
 #import <UXKit/UXView.h>
 
 @interface UXImageView : UXView <NSAccessibilityImage>
-{
-    double _backingScaleFactor;
-    CGSize _proposedSize;
-    NSImage *_image;
-}
 
 @property (nonatomic, strong) NSImage *image; // @synthesize image=_image;
 - (void)sizeToFit;

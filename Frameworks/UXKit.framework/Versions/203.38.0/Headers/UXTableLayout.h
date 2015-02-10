@@ -11,21 +11,6 @@
 @protocol UXCollectionViewDelegateFlowLayout;
 
 @interface UXTableLayout : UXCollectionViewFlowLayout
-{
-    struct {
-        unsigned int delegateSupplementaryViewDidBeginFloating:1;
-        unsigned int delegateSupplementaryViewDidEndFloating:1;
-        unsigned int delegateRreferenceSizeForHeaderInSection:1;
-        unsigned int delegateLayoutInsetForSectionAtIndex:1;
-        unsigned int needsDelegateFlagsUpdate:1;
-        unsigned int floatingHeadersDisabled:1;
-        unsigned int preparingForUpdates:1;
-        unsigned int showsSectionHeaderForSingleSection:1;
-        unsigned int showsSectionFooterForSingleSection:1;
-    } _tableLayoutFlags;
-    NSMutableArray *_layoutAttributesArray;
-    NSMutableDictionary *_headerAttributesByIndexPath;
-}
 
 @property (nonatomic, readonly) NSMutableDictionary *headerAttributesByIndexPath; // @synthesize headerAttributesByIndexPath=_headerAttributesByIndexPath;
 @property (nonatomic, readonly) NSMutableArray *layoutAttributesArray; // @synthesize layoutAttributesArray=_layoutAttributesArray;

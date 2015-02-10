@@ -9,9 +9,6 @@
 @class UXCollectionView;
 
 @interface UXCollectionDocumentView : NSView
-{
-    UXCollectionView *_collectionView;
-}
 
 @property (nonatomic, weak)  UXCollectionView *collectionView; // @synthesize collectionView=_collectionView;
 - (id)accessibilityHitTest:(CGPoint)arg1;

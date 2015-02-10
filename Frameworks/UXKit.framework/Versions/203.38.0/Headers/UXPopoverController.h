@@ -12,11 +12,6 @@
 @class UXPopover;
 
 @interface UXPopoverController : UXViewController <NSPopoverDelegate>
-{
-    UXPopover *_popover;
-    id <UXPopoverControllerDelegate> _delegate;
-    NSArray *_passthroughViews;
-}
 
 @property (nonatomic, copy) NSArray *passthroughViews; // @synthesize passthroughViews=_passthroughViews;
 @property (nonatomic, weak)  id <UXPopoverControllerDelegate> delegate; // @synthesize delegate=_delegate;

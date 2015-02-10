@@ -7,8 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface UXBackButtonCell : NSButtonCell
-{
-}
 
 - (CGRect)_insetRect:(CGRect)arg1;
 

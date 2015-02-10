@@ -7,10 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface UXCollectionViewRearrangingCoordinatorDragRecognizer : NSGestureRecognizer
-{
-    double _lastEventTime;
-    CGPoint _lastLocation;
-}
 
 - (void)mouseUp:(id)arg1;
 - (void)mouseDragged:(id)arg1;

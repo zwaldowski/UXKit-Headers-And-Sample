@@ -10,33 +10,6 @@
 @class UXLabel, UXView, _UXButton;
 
 @interface UXTableViewCell : UXCollectionViewCell
-{
-    long long _style;
-    _UXButton *_internalAccessoryView;
-    UXView *_internalHighlightedBackgroundView;
-    UXView *_defaultSelectedBackgroundView;
-    UXView *__lineView;
-    UXView *_upperSpace;
-    UXView *_lowerSpace;
-    NSLayoutConstraint *_lineHeightConstraint;
-    BOOL _highlighted;
-    BOOL __highlightingForContext;
-    UXView *_backgroundView;
-    UXView *_selectedBackgroundView;
-    UXLabel *_textLabel;
-    UXLabel *_detailTextLabel;
-    long long _accessoryType;
-    UXView *_accessoryView;
-    NSColor *_highlightColor;
-    long long _selectionStyle;
-    long long _indentationLevel;
-    double _indentationWidth;
-    long long __separatorStyle;
-    double __separatorHeight;
-    NSColor *__separatorColor;
-    NSMutableArray *__addedConstraints;
-    NSEdgeInsets _separatorInset;
-}
 
 @property (nonatomic, strong) NSMutableArray *_addedConstraints; // @synthesize _addedConstraints=__addedConstraints;
 @property (nonatomic, readonly) UXView *internalHighlightedBackgroundView; // @synthesize internalHighlightedBackgroundView=_internalHighlightedBackgroundView;

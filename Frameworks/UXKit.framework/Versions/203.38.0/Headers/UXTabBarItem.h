@@ -8,9 +8,6 @@
 #import <UXKit/UXBarItem.h>
 
 @interface UXTabBarItem : UXBarItem
-{
-    NSSet *_possibleTitles;
-}
 
 @property (nonatomic, copy) NSSet *possibleTitles; // @synthesize possibleTitles=_possibleTitles;
 - (id)initWithTitle:(id)arg1;

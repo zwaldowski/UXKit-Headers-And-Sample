@@ -12,10 +12,6 @@
 @class UXCollectionView, UXCollectionViewLayout;
 
 @interface UXCollectionViewController : UXViewController <UXCollectionViewDataSource, UXCollectionViewDelegate>
-{
-    UXCollectionViewLayout *_layout;
-    UXCollectionView *_collectionView;
-}
 
 + (Class)collectionViewClass;
 @property (nonatomic, strong) UXCollectionView *collectionView; // @synthesize collectionView=_collectionView;

@@ -7,13 +7,6 @@
 #import <UXKit/UXEventTracker.h>
 
 @interface UXDragEventTracker : UXEventTracker
-{
-    CGPoint _currentPoint;
-    CGPoint _previousPoint;
-    BOOL _didBegin;
-    double _trackingThreshold;
-    CGPoint _initialPoint;
-}
 
 @property (nonatomic, readonly) CGPoint initialPoint; // @synthesize initialPoint=_initialPoint;
 @property (nonatomic) double trackingThreshold; // @synthesize trackingThreshold=_trackingThreshold;

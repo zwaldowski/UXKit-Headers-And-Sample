@@ -7,8 +7,6 @@
 #import <UXKit/UXTransitionController.h>
 
 @interface UXSlideTransitionController : UXTransitionController
-{
-}
 
 - (id)navigationController:(id)arg1 animationControllerForOperation:(long long)arg2 fromViewController:(id)arg3 toViewController:(id)arg4;
 - (id)navigationController:(id)arg1 interactionControllerForAnimationController:(id)arg2;
