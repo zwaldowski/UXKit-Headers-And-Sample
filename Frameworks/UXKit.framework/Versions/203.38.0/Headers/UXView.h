@@ -19,7 +19,6 @@
 + (Class)layerClass;
 @property (nonatomic, strong) NSMutableArray *internalTrackers; // @synthesize internalTrackers=_internalTrackers;
 @property (nonatomic, weak)  UXViewController *viewControllerProxy; // @synthesize viewControllerProxy=_viewControllerProxy;
-@property (readonly) NSVisualEffectView *_visualEffectsView; // @synthesize _visualEffectsView=__visualEffectsView;
 @property (nonatomic) BOOL accessibilityChildrenHidden; // @synthesize accessibilityChildrenHidden=_accessibilityChildrenHidden;
 @property (nonatomic) BOOL userInteractionEnabled; // @synthesize userInteractionEnabled=_userInteractionEnabled;
 @property (nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch; // @synthesize exclusiveTouch=_exclusiveTouch;
@@ -34,7 +33,6 @@
 @property (nonatomic, readonly) NSArray *eventTrackers;
 - (void)removeEventTracker:(id)arg1;
 - (void)addEventTracker:(id)arg1;
-- (void)_applyTintColorIfNotUXView:(id)arg1;
 - (void)touchesCancelledWithEvent:(id)arg1;
 - (void)touchesEndedWithEvent:(id)arg1;
 - (void)touchesMovedWithEvent:(id)arg1;
@@ -75,17 +73,10 @@
 - (id)makeBackingLayer;
 - (id)actionForLayer:(id)arg1 forKey:(id)arg2;
 - (id)initWithFrame:(CGRect)arg1;
-- (void)_disableBlur;
-- (void)_enableBlur;
 - (BOOL)blurEnabled;
 - (void)setBlurEnabled:(BOOL)arg1;
-- (id)_infoWithParents;
-- (id)_infoForWindow;
-- (id)_infoWithChildren;
 - (id)recursiveDescription;
-- (id)_superDescription;
 - (id)description;
-- (id)_autoresizingDescription;
 
 @end
 

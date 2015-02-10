@@ -12,7 +12,6 @@
 
 + (Class)collectionViewClass;
 @property (nonatomic, readonly) id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;
-- (void)_updateContentInsetFromLayoutGuides;
 - (id)preferredFirstResponder;
 - (void)viewDidAppear;
 - (void)viewWillAppear;

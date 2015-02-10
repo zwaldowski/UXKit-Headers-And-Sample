@@ -11,18 +11,13 @@
 
 @property (nonatomic, readonly) NSView *contentView; // @synthesize contentView=_contentView;
 @property (nonatomic, getter=isSelected) BOOL selected; // @synthesize selected=_selected;
-- (void)_setSelected:(BOOL)arg1 animated:(BOOL)arg2;
 - (void)prepareForReuse;
 - (void)resizeSubviewsWithOldSize:(CGSize)arg1;
 - (BOOL)wantsUpdateLayer;
 - (id)initWithFrame:(CGRect)arg1;
-- (id)_accessibilityIndexPath;
-- (id)_accessibilityDefaultRole;
-- (id)_dynamicAccessibilityParent;
 - (void)setAccessibilitySelected:(BOOL)arg1;
 - (BOOL)isAccessibilitySelectorAllowed:(SEL)arg1;
 - (BOOL)isAccessibilitySelected;
-- (id)_axSimulateClick:(unsigned long long)arg1 withNumberOfClicks:(unsigned long long)arg2;
 - (BOOL)accessibilityPerformPress;
 
 @end

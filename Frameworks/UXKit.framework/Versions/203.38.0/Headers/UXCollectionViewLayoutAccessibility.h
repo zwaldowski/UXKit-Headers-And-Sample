@@ -11,12 +11,7 @@
 @interface UXCollectionViewLayoutAccessibility : NSAccessibilityElement
 
 + (Class)sectionAccessibilityClass;
-@property (nonatomic, strong) NSMutableArray *_sectionCache; // @synthesize _sectionCache=__sectionCache;
-@property (nonatomic) unsigned long long _sectionCacheOffset; // @synthesize _sectionCacheOffset=__sectionCacheOffset;
 @property (nonatomic, weak)  UXCollectionViewLayout *layout; // @synthesize layout=_layout;
-- (id)_dequeueSectionWithIndex:(unsigned long long)arg1;
-- (void)_trimSectionCacheToVisibleSections:(id)arg1;
-- (id)_visibleSections;
 - (void)accessibilityPostNotification:(id)arg1;
 @property (nonatomic, copy) NSArray *accessibilitySelectedCells; // @dynamic accessibilitySelectedCells;
 - (id)accessibilityArrayAttributeValues:(id)arg1 index:(unsigned long long)arg2 maxCount:(unsigned long long)arg3;
@@ -39,7 +34,6 @@
 - (id)previousSectionForSection:(id)arg1;
 - (id)accessibilityParentForCell:(id)arg1;
 - (id)accessibilityParentForReusableView:(id)arg1;
-- (void)_dumpVisibleChildren;
 - (void)accessibilityPrepareLayout;
 - (void)accessibilityInvalidateLayout;
 - (void)accessibilityDidEndScrolling;

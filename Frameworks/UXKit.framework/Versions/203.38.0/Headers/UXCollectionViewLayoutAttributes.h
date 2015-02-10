@@ -21,23 +21,11 @@
 @property (nonatomic) CGPoint center; // @synthesize center=_center;
 @property (nonatomic, readonly) NSString *representedElementKind; // @synthesize representedElementKind=_representedElementKind;
 @property (nonatomic, readonly) unsigned long long representedElementCategory;
-- (BOOL)_isSupplementaryView;
-- (BOOL)_isDecorationView;
-- (BOOL)_isCell;
 - (unsigned long long)hash;
-- (BOOL)_isTransitionVisibleTo:(id)arg1;
-- (BOOL)_isEquivalentTo:(id)arg1;
 - (BOOL)isEqual:(id)arg1;
 - (id)description;
 @property (nonatomic) CGRect frame; // @synthesize frame=_frame;
 @property (nonatomic) CGRect bounds;
-- (void)_setIndexPath:(id)arg1;
-- (id)_reuseIdentifier;
-- (void)_setReuseIdentifier:(id)arg1;
-- (id)_elementKind;
-- (void)_setElementKind:(id)arg1;
-- (BOOL)_isClone;
-- (void)_setIsClone:(BOOL)arg1;
 @property (nonatomic, getter=isHidden) BOOL hidden;
 - (id)init;
 

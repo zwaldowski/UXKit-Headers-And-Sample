@@ -11,9 +11,6 @@
 
 @property (nonatomic) double allowableMovement; // @synthesize allowableMovement=_allowableMovement;
 @property (nonatomic) double minimumPressDuration; // @synthesize minimumPressDuration=_minimumPressDuration;
-- (void)_minimumDurationElapsed:(id)arg1;
-- (void)_stopTimer;
-- (void)_startTimer;
 - (CGPoint)initialLocationInView:(id)arg1;
 - (void)reset;
 - (void)mouseUp:(id)arg1;

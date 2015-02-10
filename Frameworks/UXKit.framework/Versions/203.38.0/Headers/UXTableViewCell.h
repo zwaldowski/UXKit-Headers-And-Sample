@@ -11,12 +11,7 @@
 
 @interface UXTableViewCell : UXCollectionViewCell
 
-@property (nonatomic, strong) NSMutableArray *_addedConstraints; // @synthesize _addedConstraints=__addedConstraints;
 @property (nonatomic, readonly) UXView *internalHighlightedBackgroundView; // @synthesize internalHighlightedBackgroundView=_internalHighlightedBackgroundView;
-@property (nonatomic, strong, setter=_setSeparatorColor:) NSColor *_separatorColor; // @synthesize _separatorColor=__separatorColor;
-@property (nonatomic, setter=_setSeparatorHeight:) double _separatorHeight; // @synthesize _separatorHeight=__separatorHeight;
-@property (nonatomic, setter=_setSeparatorStyle:) long long _separatorStyle; // @synthesize _separatorStyle=__separatorStyle;
-@property (nonatomic, setter=_setHighlightingForContext:) BOOL _highlightingForContext; // @synthesize _highlightingForContext=__highlightingForContext;
 @property (nonatomic) NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
 @property (nonatomic) double indentationWidth; // @synthesize indentationWidth=_indentationWidth;
 @property (nonatomic) long long indentationLevel; // @synthesize indentationLevel=_indentationLevel;
@@ -31,9 +26,6 @@
 @property (nonatomic, strong) UXView *backgroundView; // @synthesize backgroundView=_backgroundView;
 @property (nonatomic) long long style; // @synthesize style=_style;
 - (id)accessibilityLabel;
-- (unsigned long long)_detailTextAlignment;
-- (void)_configureInternalAccessoryViewForType:(long long)arg1;
-- (void)_updateTextColor;
 @property (nonatomic, readonly) UXView *lowerSpace;
 @property (nonatomic, readonly) UXView *upperSpace;
 @property (nonatomic, readonly) UXView *defaultSelectedBackgroundView;

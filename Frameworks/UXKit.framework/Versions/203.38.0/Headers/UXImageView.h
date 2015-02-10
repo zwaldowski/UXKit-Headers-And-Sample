@@ -11,10 +11,6 @@
 
 @property (nonatomic, strong) NSImage *image; // @synthesize image=_image;
 - (void)sizeToFit;
-- (void)_updateBackingScaleFactorForWindow:(id)arg1;
-- (void)_updateLayerContentsForWindow:(id)arg1;
-- (CGSize)_proposedSize;
-- (void)_setContentStretchInPixels:(CGRect)arg1 forContentSize:(CGSize)arg2 shouldTile:(BOOL)arg3;
 - (void)setFrameSize:(CGSize)arg1;
 - (void)viewWillMoveToWindow:(id)arg1;
 - (void)viewDidChangeBackingProperties;

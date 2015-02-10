@@ -18,7 +18,6 @@
 - (void)mouseDown:(id)arg1;
 - (BOOL)sendAction:(SEL)arg1 to:(id)arg2;
 - (BOOL)isFlipped;
-- (BOOL)_locationInsideForEvent:(id)arg1;
 - (id)initWithFrame:(CGRect)arg1;
 
 @end

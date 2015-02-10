@@ -10,8 +10,6 @@
 
 @property (nonatomic, weak)  id <UXToolbarDelegate> delegate; // @synthesize delegate=_delegate;
 - (long long)barPosition;
-- (void)_beginInteractiveTransitionForItems:(id)arg1;
-- (void)_setItems:(id)arg1 animated:(BOOL)arg2 duration:(double)arg3;
 - (void)setItems:(id)arg1 animated:(BOOL)arg2;
 - (void)mouseDown:(id)arg1;
 - (id)initWithFrame:(CGRect)arg1;

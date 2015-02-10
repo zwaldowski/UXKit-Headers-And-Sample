@@ -14,7 +14,6 @@
 - (id)accessibilityHitTest:(CGPoint)arg1;
 - (BOOL)acceptsFirstResponder;
 - (void)prepareContentInRect:(CGRect)arg1;
-- (void)_invalidateFocus;
 - (BOOL)isFlipped;
 - (BOOL)wantsUpdateLayer;
 - (BOOL)isOpaque;

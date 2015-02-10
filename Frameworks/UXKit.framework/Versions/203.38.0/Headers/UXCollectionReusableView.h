@@ -11,28 +11,12 @@
 @interface UXCollectionReusableView : NSView
 
 @property (nonatomic, copy, readonly) NSString *reuseIdentifier; // @synthesize reuseIdentifier=_reuseIdentifier;
-- (CGImageRef)_snapshot:(BOOL)arg1;
-- (BOOL)_wasDequeued;
-- (void)_markAsDequeued;
-- (void)_clearUpdateAnimation;
-- (void)_addUpdateAnimation;
-- (BOOL)_isInUpdateAnimation;
-- (void)_setCollectionView:(id)arg1;
-- (id)_collectionView;
-- (void)_setReuseIdentifier:(id)arg1;
-- (id)_layoutAttributes;
-- (void)_setLayoutAttributes:(id)arg1;
-- (void)_setBaseLayoutAttributes:(id)arg1;
 - (void)didTransitionFromLayout:(id)arg1 toLayout:(id)arg2;
 - (void)willTransitionFromLayout:(id)arg1 toLayout:(id)arg2;
 - (void)applyLayoutAttributes:(id)arg1;
 - (void)prepareForReuse;
 - (BOOL)wantsUpdateLayer;
 - (id)initWithFrame:(CGRect)arg1;
-- (id)_layoutSectionAccessibility;
-- (id)_accessibilityIndexPath;
-- (id)_accessibilityDefaultRole;
-- (id)_dynamicAccessibilityParent;
 - (BOOL)accessibilityPerformScrollToVisible;
 - (void)accessibilityPerformAction:(id)arg1;
 - (id)accessibilityActionDescription:(id)arg1;

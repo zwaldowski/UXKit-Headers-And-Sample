@@ -19,7 +19,6 @@
 @property (nonatomic) long long scrollDirection;
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1;
 - (id)indexPathsForItemsInRect:(CGRect)arg1;
-- (id)_layoutAttributesForItemsInRect:(CGRect)arg1;
 - (BOOL)shouldUpdateVisibleCellLayoutAttributes;
 - (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)layoutAttributesForItemAtIndexPath:(id)arg1;
@@ -43,8 +42,6 @@
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1;
 - (void)invalidateLayoutWithContext:(id)arg1;
 - (id)init;
-- (void)_invalidateButKeepAllInfo;
-- (void)_invalidateButKeepDelegateInfo;
 - (CGSize)synchronizeLayout;
 - (id)finalLayoutAttributesForFooterInDeletedSection:(long long)arg1;
 - (id)finalLayoutAttributesForHeaderInDeletedSection:(long long)arg1;
@@ -53,13 +50,6 @@
 - (id)initialLayoutAttributesForHeaderInInsertedSection:(long long)arg1;
 - (id)initialLayoutAttributesForInsertedItemAtIndexPath:(id)arg1;
 - (void)finalizeCollectionViewUpdates;
-- (CGRect)_frameForFooterInSection:(long long)arg1 usingData:(id)arg2;
-- (CGRect)_frameForHeaderInSection:(long long)arg1 usingData:(id)arg2;
-- (CGRect)_frameForItemAtSection:(long long)arg1 andRow:(long long)arg2 usingData:(id)arg3;
-- (void)_fetchItemsInfo;
-- (void)_updateItemsLayout;
-- (void)_getSizingInfos;
-- (void)_updateDelegateFlags;
 @property (nonatomic, strong, setter=_setRowAlignmentsOptions:) NSDictionary *_rowAlignmentOptions;
 
 @end

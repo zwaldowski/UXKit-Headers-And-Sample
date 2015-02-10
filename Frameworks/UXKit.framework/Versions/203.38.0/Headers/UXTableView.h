@@ -13,7 +13,6 @@
 
 + (unsigned long long)collectionViewScrollPositionFromScrollPosition:(long long)arg1;
 + (Class)documentClass;
-@property (nonatomic, setter=_setFloatingHeadersDisabled:) BOOL _floatingHeadersDisabled; // @synthesize _floatingHeadersDisabled=__floatingHeadersDisabled;
 @property (nonatomic) NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
 @property (nonatomic, copy) NSColor *separatorColor; // @synthesize separatorColor=_separatorColor;
 @property (nonatomic) long long separatorStyle; // @synthesize separatorStyle=_separatorStyle;
@@ -21,7 +20,6 @@
 @property (nonatomic, weak)  id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;
 @property (nonatomic, weak)  id <UXTableViewDataSource> tableViewDataSource; // @synthesize tableViewDataSource=_tableViewDataSource;
 @property (nonatomic) double alpha;
-- (void)_checkForAccessoryViewsInScrollerAreas;
 - (void)collectionView:(id)arg1 layout:(id)arg2 supplementaryViewDidEndFloatingAtIndexPath:(id)arg3 kind:(id)arg4;
 - (void)collectionView:(id)arg1 layout:(id)arg2 supplementaryViewDidBeginFloatingAtIndexPath:(id)arg3 kind:(id)arg4;
 - (CGSize)collectionView:(id)arg1 layout:(id)arg2 sizeForItemAtIndexPath:(id)arg3;
@@ -40,8 +38,6 @@
 - (void)mouseDown:(id)arg1;
 - (BOOL)acceptsFirstResponder;
 - (id)menuForEvent:(id)arg1;
-- (void)_menuDidEndTracking:(id)arg1;
-- (void)_menuDidBeginTracking:(id)arg1;
 - (void)deselectRowAtIndexPath:(id)arg1 animated:(BOOL)arg2;
 - (void)selectRowAtIndexPath:(id)arg1 animated:(BOOL)arg2 scrollPosition:(long long)arg3;
 - (id)indexPathForSelectedRow;

@@ -12,7 +12,6 @@
 
 @interface UXBarButtonItem : UXBarItem <UXKitAppearance>
 
-@property (nonatomic, weak, setter=_setWidthConstrainingItem:) UXBarButtonItem *_widthConstrainingItem; // @synthesize _widthConstrainingItem=__widthConstrainingItem;
 @property (nonatomic, readonly) long long systemItem; // @synthesize systemItem=_systemItem;
 @property (nonatomic, readonly) UXViewController *contentViewController; // @synthesize contentViewController=_contentViewController;
 @property (nonatomic) unsigned long long keyEquivalentModifierMask; // @synthesize keyEquivalentModifierMask=_keyEquivalentModifierMask;
@@ -24,8 +23,6 @@
 @property (nonatomic) double width; // @synthesize width=_width;
 @property (nonatomic) long long style; // @synthesize style=_style;
 @property (nonatomic, readonly) NSView *_view;
-- (void)_performAction:(id)arg1;
-- (id)_viewOfClass:(Class)arg1;
 - (void)setImage:(id)arg1;
 - (void)setEnabled:(BOOL)arg1;
 - (void)setTitle:(id)arg1;

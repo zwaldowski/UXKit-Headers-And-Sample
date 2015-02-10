@@ -13,14 +13,7 @@
 @property (nonatomic, strong, readonly) NSIndexPath *indexPathBeforeUpdate; // @synthesize indexPathBeforeUpdate=_initialIndexPath;
 - (long long)inverseCompareIndexPaths:(id)arg1;
 - (long long)compareIndexPaths:(id)arg1;
-- (BOOL)_isSectionOperation;
-- (void)_setGap:(id)arg1;
-- (id)_gap;
-- (id)_indexPath;
-- (long long)_action;
 - (id)description;
-- (void)_setNewIndexPath:(id)arg1;
-- (id)_newIndexPath;
 - (id)initWithOldIndexPath:(id)arg1 newIndexPath:(id)arg2;
 - (id)initWithAction:(long long)arg1 forIndexPath:(id)arg2;
 - (id)initWithInitialIndexPath:(id)arg1 finalIndexPath:(id)arg2 updateAction:(long long)arg3;

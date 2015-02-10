@@ -27,7 +27,6 @@
 - (void)popoverWillShow:(id)arg1;
 - (void)popoverDidClose:(id)arg1;
 - (id)popover;
-- (void)_updateContentSize;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (id)initWithContentViewController:(id)arg1;
 

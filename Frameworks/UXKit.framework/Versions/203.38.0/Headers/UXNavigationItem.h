@@ -18,16 +18,12 @@
 @property (nonatomic, copy) NSString *prompt; // @synthesize prompt=_prompt;
 @property (nonatomic, strong) NSView *titleView; // @synthesize titleView=_titleView;
 @property (nonatomic, strong) UXBarButtonItem *backBarButtonItem; // @synthesize backBarButtonItem=_backBarButtonItem;
-- (void)_removeAllChildItems;
 - (void)removeChildItem:(id)arg1;
 - (void)addChildItem:(id)arg1;
 @property (nonatomic, strong) UXBarButtonItem *rightBarButtonItem;
 @property (nonatomic, strong) NSArray *leftBarButtonItems;
 @property (nonatomic, strong) UXBarButtonItem *leftBarButtonItem;
-- (void)_updateInternalTitleView;
 @property (nonatomic, strong) NSString *title;
-- (id)_rightBarButtonItems:(BOOL)arg1;
-- (id)_leftBarButtonItems:(BOOL)arg1;
 @property (nonatomic, readonly) UXLabel *internalTitleView;
 @property (nonatomic, strong) NSArray *trailingBarButtonItems;
 - (void)setTrailingBarButtonItems:(id)arg1 animated:(BOOL)arg2;

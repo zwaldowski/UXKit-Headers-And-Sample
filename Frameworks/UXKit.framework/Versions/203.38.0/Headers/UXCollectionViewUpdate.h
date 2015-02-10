@@ -12,10 +12,6 @@
 
 - (id)oldIndexPathForSupplementaryElementOfKind:(id)arg1 newIndexPath:(id)arg2;
 - (id)newIndexPathForSupplementaryElementOfKind:(id)arg1 oldIndexPath:(id)arg2;
-- (void)_computeGaps;
-- (void)_computeSupplementaryUpdates;
-- (void)_computeItemUpdates;
-- (void)_computeSectionUpdates;
 - (id)initWithCollectionView:(id)arg1 updateItems:(id)arg2 oldModel:(id)arg3 newModel:(id)arg4 oldVisibleBounds:(CGRect)arg5 newVisibleBounds:(CGRect)arg6;
 
 @end

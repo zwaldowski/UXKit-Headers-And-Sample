@@ -21,7 +21,6 @@
 - (long long)numberOfSectionsInCollectionView:(id)arg1;
 - (id)preferredFirstResponder;
 - (void)viewDidLoad;
-- (void)_sendViewDidLoad;
 - (id)initWithCollectionViewLayout:(id)arg1;
 
 @end

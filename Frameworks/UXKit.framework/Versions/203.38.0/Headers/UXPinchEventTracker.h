@@ -12,14 +12,8 @@
 @property (nonatomic) double scale; // @synthesize scale=_scale;
 - (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
 - (CGPoint)locationOfTouch:(id)arg1;
-- (id)_touchForTouchIdentity:(id)arg1;
-- (double)_distanceBetweenMonitoredTouches;
-- (CGPoint)_normalizedlocation;
-- (void)_updateVelocity:(id)arg1;
-- (void)_touchesMovedWithEvent:(id)arg1;
 - (void)mouseDown:(id)arg1;
 - (void)endGestureWithEvent:(id)arg1;
-- (void)_processGestureWithEvent:(id)arg1;
 - (void)rotateWithEvent:(id)arg1;
 - (void)magnifyWithEvent:(id)arg1;
 - (void)reset;

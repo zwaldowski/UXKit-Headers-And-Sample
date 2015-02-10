@@ -8,15 +8,8 @@
 
 @interface UXCollectionViewLayoutInvalidationContext : NSObject
 
-- (id)_updateItems;
-- (void)_setUpdateItems:(id)arg1;
-- (void)_setInvalidateEverything:(BOOL)arg1;
 @property (nonatomic, readonly) BOOL invalidateEverything;
-- (void)_setInvalidateDataSourceCounts:(BOOL)arg1;
 @property (nonatomic, readonly) BOOL invalidateDataSourceCounts;
-- (void)_invalidateSupplementaryElementsOfKind:(id)arg1 atIndexPaths:(id)arg2;
-- (void)_setInvalidatedSupplementaryViews:(id)arg1;
-- (id)_invalidatedSupplementaryViews;
 
 @end
 
