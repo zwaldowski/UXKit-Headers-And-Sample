@@ -16,7 +16,6 @@
 #import <UXKit/UXControl.h>
 #import <UXKit/UXViewControllerTransitionCoordinatorContext-Protocol.h>
 #import <UXKit/UXDragEventTracker.h>
-#import <UXKit/UIMutableIndexPath.h>
 #import <UXKit/UXEventTracker.h>
 #import <UXKit/UXWindowController.h>
 #import <UXKit/UITextInputTraits-Protocol.h>
