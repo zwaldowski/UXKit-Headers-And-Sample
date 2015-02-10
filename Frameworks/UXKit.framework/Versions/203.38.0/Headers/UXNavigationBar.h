@@ -12,7 +12,6 @@
 
 @interface UXNavigationBar : UXBar
 
-+ (id)_itemKeyPathsToObserve;
 @property (nonatomic) BOOL recalculatingWindowKeyViewLoop; // @synthesize recalculatingWindowKeyViewLoop=_recalculatingWindowKeyViewLoop;
 @property (nonatomic, strong) UXNavigationItem *transitioningItem; // @synthesize transitioningItem=_transitioningItem;
 @property (nonatomic) long long currentOperation; // @synthesize currentOperation=_currentOperation;

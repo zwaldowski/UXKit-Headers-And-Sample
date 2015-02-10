@@ -18,7 +18,6 @@
 
 @interface UXCollectionView : NSScrollView
 
-+ (id)_reuseKeyForSupplementaryViewOfKind:(id)arg1 withReuseIdentifier:(id)arg2;
 + (BOOL)isCompatibleWithResponsiveScrolling;
 + (Class)documentClass;
 @property (nonatomic, readonly, getter=isDecelerating) BOOL decelerating; // @synthesize decelerating=_decelerating;

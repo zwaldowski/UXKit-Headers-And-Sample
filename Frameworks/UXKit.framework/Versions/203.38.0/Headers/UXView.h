@@ -13,7 +13,6 @@
 + (void)animateWithDuration:(double)arg1 animations:(void(^)(void))arg2 completion:(void(^)(BOOL finished))arg3;
 + (void)animateWithDuration:(double)arg1 delay:(double)arg2 options:(unsigned long long)arg3 animations:(void(^)(void))arg4 completion:(void(^)(BOOL finished))arg5;
 + (id)defaultSpringAnimationForKey:(id)arg1 mass:(double)arg2 stiffness:(double)arg3 damping:(double)arg4 velocity:(double)arg5;
-+ (long long)_contentModeForLayerContentsGravity:(id)arg1;
 + (Class)layerClass;
 @property (nonatomic) BOOL accessibilityChildrenHidden; // @synthesize accessibilityChildrenHidden=_accessibilityChildrenHidden;
 @property (nonatomic) BOOL userInteractionEnabled; // @synthesize userInteractionEnabled=_userInteractionEnabled;

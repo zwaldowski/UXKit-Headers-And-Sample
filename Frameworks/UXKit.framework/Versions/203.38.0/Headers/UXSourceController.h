@@ -11,8 +11,6 @@
 
 @interface UXSourceController : UXViewController <UXNavigationControllerDelegate>
 
-+ (Class)_defaultTransitionControllerClass;
-+ (id)_autosaveDefaultsKeyForName:(id)arg1;
 @property (readonly) NSOperationQueue *viewControllerOperations; // @synthesize viewControllerOperations=_viewControllerOperations;
 @property (nonatomic, readonly) NSMapTable *transitionControllerClassByToViewControllerClass; // @synthesize transitionControllerClassByToViewControllerClass=_transitionControllerClassByToViewControllerClass;
 @property (nonatomic, readonly) NSMapTable *navigationControllerByRootViewController; // @synthesize navigationControllerByRootViewController=_navigationControllerByRootViewController;
