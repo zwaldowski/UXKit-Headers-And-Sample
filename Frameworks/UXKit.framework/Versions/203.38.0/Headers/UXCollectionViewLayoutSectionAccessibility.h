@@ -11,7 +11,6 @@
 @interface UXCollectionViewLayoutSectionAccessibility : NSAccessibilityElement
 
 - (void)setAccessibilityVisibleChildren:(id)arg1;
-- (id)description;
 - (BOOL)accessibilityPerformScrollToVisible;
 - (void)accessibilityPerformAction:(id)arg1;
 - (id)accessibilityActionDescription:(id)arg1;

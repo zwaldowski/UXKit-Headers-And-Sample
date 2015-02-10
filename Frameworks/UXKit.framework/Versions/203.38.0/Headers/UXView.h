@@ -76,7 +76,6 @@
 - (BOOL)blurEnabled;
 - (void)setBlurEnabled:(BOOL)arg1;
 - (id)recursiveDescription;
-- (id)description;
 
 @end
 

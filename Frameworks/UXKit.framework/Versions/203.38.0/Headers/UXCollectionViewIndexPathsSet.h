@@ -23,7 +23,6 @@
 - (id)indexPathsForSection:(long long)arg1;
 - (id)sections;
 - (unsigned long long)count;
-- (id)description;
 - (id)initWithIndexPathsSet:(id)arg1;
 - (id)initWithIndexPaths:(id)arg1;
 - (id)initWithIndexPath:(id)arg1;

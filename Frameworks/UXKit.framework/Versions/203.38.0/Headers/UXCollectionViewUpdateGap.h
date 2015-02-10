@@ -22,7 +22,6 @@
 @property (nonatomic, readonly) BOOL hasInserts;
 @property (nonatomic, readonly) BOOL isDeleteBasedGap;
 - (void)addUpdateItem:(id)arg1;
-- (id)description;
 - (id)init;
 
 @end

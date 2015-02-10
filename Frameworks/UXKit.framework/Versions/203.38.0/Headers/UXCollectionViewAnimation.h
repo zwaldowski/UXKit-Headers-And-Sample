@@ -22,7 +22,6 @@
 @property (nonatomic) BOOL rasterizeAfterAnimation;
 @property (nonatomic, readonly) BOOL deleteAfterAnimation;
 @property (nonatomic, readonly) BOOL animateFromCurrentPosition;
-- (id)description;
 - (id)initWithView:(id)arg1 viewType:(unsigned long long)arg2 finalLayoutAttributes:(id)arg3 startFraction:(double)arg4 endFraction:(double)arg5 animateFromCurrentPosition:(BOOL)arg6 deleteAfterAnimation:(BOOL)arg7 customAnimations:(void(^)(void(^completion)(BOOL finished)))arg8;
 
 @end

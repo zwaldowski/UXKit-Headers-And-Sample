@@ -142,7 +142,6 @@
 - (id)indexPathsForSelectedItems;
 @property (nonatomic, weak)  NSObject<UXCollectionViewDataSource> *dataSource; // @synthesize dataSource=_dataSource;
 @property (nonatomic, weak)  NSObject<UXCollectionViewDelegate> *delegate; // @synthesize delegate=_delegate;
-- (id)description;
 - (id)initWithFrame:(CGRect)arg1 collectionViewLayout:(id)arg2;
 - (id)initWithFrame:(CGRect)arg1;
 - (void)updateDraggingItemsForDrag:(id)arg1;

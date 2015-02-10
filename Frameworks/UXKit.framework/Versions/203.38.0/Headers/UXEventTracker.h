@@ -22,7 +22,6 @@
 @property (nonatomic, strong) NSEvent *trackingEvent; // @synthesize trackingEvent=_trackingEvent;
 @property (nonatomic, weak)  UXView *view; // @synthesize view=_view;
 @property (nonatomic) long long state; // @synthesize state=_state;
-- (id)description;
 - (BOOL)eventTrackerRequiresTouches;
 - (void)reset;
 @property (nonatomic, readonly) unsigned long long numberOfTouches;

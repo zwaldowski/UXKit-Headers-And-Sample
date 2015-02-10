@@ -9,7 +9,6 @@
 @interface UXClickEventTracker : UXEventTracker
 
 @property (nonatomic) unsigned long long numberOfClicksRequired; // @synthesize numberOfClicksRequired=_numberOfClicksRequired;
-- (id)description;
 - (void)mouseUp:(id)arg1;
 - (void)mouseDown:(id)arg1;
 - (id)init;
