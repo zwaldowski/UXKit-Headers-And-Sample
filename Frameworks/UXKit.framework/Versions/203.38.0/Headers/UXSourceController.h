@@ -9,8 +9,6 @@
 #import <UXKit/UXNavigationControllerDelegate-Protocol.h>
 #import <UXKit/UXSourceList-Protocol.h>
 
-@class UXTransitionController;
-
 @interface UXSourceController : UXViewController <UXNavigationControllerDelegate>
 
 + (Class)_defaultTransitionControllerClass;

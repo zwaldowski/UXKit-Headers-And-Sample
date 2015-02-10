@@ -8,28 +8,11 @@
 #import <UXKit/UXViewController.h>
 #import <UXKit/UXToolbarDelegate-Protocol.h>
 
-@class UXEventTracker, UXNavigationBar, UXToolbar, UXTransitionController, _UXContainerView, _UXViewControllerOneToOneTransitionContext;
+@class UXEventTracker, UXNavigationBar, UXToolbar;
 
 @interface UXNavigationController : UXViewController <UXToolbarDelegate>
 
 + (id)keyPathsForValuesAffectingPreferredContentSize;
-@property (nonatomic, strong) UXViewController *provisionalPreviousViewController; // @synthesize provisionalPreviousViewController=_provisionalPreviousViewController;
-@property (nonatomic, weak)  UXViewController *observedViewController; // @synthesize observedViewController=_observedViewController;
-@property (nonatomic, strong) UXTransitionController *defaultTransitionController; // @synthesize defaultTransitionController=_defaultTransitionController;
-@property (nonatomic) long long currentOperation; // @synthesize currentOperation=_currentOperation;
-@property (nonatomic, strong) NSArray *topViewControllerOtherConstraints; // @synthesize topViewControllerOtherConstraints=_topViewControllerOtherConstraints;
-@property (nonatomic, strong) NSLayoutConstraint *topViewControllerLeftConstraint; // @synthesize topViewControllerLeftConstraint=_topViewControllerLeftConstraint;
-@property (nonatomic, strong) NSLayoutConstraint *toolbarLeftConstraint; // @synthesize toolbarLeftConstraint=_toolbarLeftConstraint;
-@property (nonatomic, strong) NSLayoutConstraint *toolbarVerticalConstraint; // @synthesize toolbarVerticalConstraint=_toolbarVerticalConstraint;
-@property (nonatomic, strong) NSArray *navigationBarConstraints; // @synthesize navigationBarConstraints=_navigationBarConstraints;
-@property (nonatomic, strong) NSLayoutConstraint *navigationBarTopConstraint; // @synthesize navigationBarTopConstraint=_navigationBarTopConstraint;
-@property (nonatomic, strong) NSLayoutConstraint *bottomConstraint; // @synthesize bottomConstraint=_bottomConstraint;
-@property (nonatomic, strong) NSLayoutConstraint *topConstraint; // @synthesize topConstraint=_topConstraint;
-@property (nonatomic, strong) NSMutableArray *addedConstraints; // @synthesize addedConstraints=_addedConstraints;
-@property (nonatomic, strong) NSMutableArray *internalViewControllers; // @synthesize internalViewControllers=_internalViewControllers;
-@property (nonatomic, readonly) BOOL isInteractive; // @synthesize isInteractive=_isInteractive;
-@property (nonatomic, readonly) BOOL isTransitioning; // @synthesize isTransitioning=_isTransitioning;
-@property (nonatomic, weak) id accessoryBarContainer; // @synthesize accessoryBarContainer=_accessoryBarContainer;
 @property (nonatomic, readonly) UXEventTracker *interactivePopEventTracker; // @synthesize interactivePopEventTracker=_interactivePopEventTracker;
 @property (nonatomic, weak)  id <UXNavigationControllerDelegate> delegate; // @synthesize delegate=_delegate;
 @property (nonatomic, getter=isToolbarHidden) BOOL toolbarHidden; // @synthesize toolbarHidden=_toolbarHidden;

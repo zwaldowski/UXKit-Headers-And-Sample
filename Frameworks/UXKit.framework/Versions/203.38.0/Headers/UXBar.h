@@ -8,8 +8,6 @@
 #import <UXKit/UXView.h>
 #import <UXKit/UXBarPositioning-Protocol.h>
 
-@class _UXSinglePixelLine;
-
 @interface UXBar : UXView <NSAccessibilityGroup, UXBarPositioning>
 
 @property (nonatomic, strong) UXView *nextItemContainer; // @synthesize nextItemContainer=_nextItemContainer;

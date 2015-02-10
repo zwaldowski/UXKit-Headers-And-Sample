@@ -6,8 +6,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class UXViewController;
-
 @interface UXView : NSView
 
 + (void)animateWithDuration:(double)arg1 delay:(double)arg2 usingSpringWithDamping:(double)arg3 initialSpringVelocity:(double)arg4 options:(unsigned long long)arg5 animations:(void(^)(void))arg6 completion:(void(^)(BOOL finished))arg7;

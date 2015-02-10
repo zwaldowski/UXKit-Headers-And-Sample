@@ -7,7 +7,7 @@
 #import <Cocoa/Cocoa.h>
 #import <UXKit/UXCollectionViewCell.h>
 
-@class UXLabel, UXView, _UXButton;
+@class UXLabel, UXView;
 
 @interface UXTableViewCell : UXCollectionViewCell
 

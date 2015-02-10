@@ -6,8 +6,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class _UXCollectionViewSectionItemIndexes;
-
 @interface UXCollectionViewIndexPathsSet : NSObject <NSCopying, NSMutableCopying>
 
 + (id)indexPathsSetWithIndexPathsSet:(id)arg1;

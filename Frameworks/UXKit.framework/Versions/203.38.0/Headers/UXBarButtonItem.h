@@ -12,8 +12,6 @@
 
 @interface UXBarButtonItem : UXBarItem <UXKitAppearance>
 
-@property (nonatomic, readonly) long long systemItem; // @synthesize systemItem=_systemItem;
-@property (nonatomic, readonly) UXViewController *contentViewController; // @synthesize contentViewController=_contentViewController;
 @property (nonatomic) unsigned long long keyEquivalentModifierMask; // @synthesize keyEquivalentModifierMask=_keyEquivalentModifierMask;
 @property (nonatomic, strong) NSString *keyEquivalent; // @synthesize keyEquivalent=_keyEquivalent;
 @property (nonatomic, strong) NSString *toolTip; // @synthesize toolTip=_toolTip;
