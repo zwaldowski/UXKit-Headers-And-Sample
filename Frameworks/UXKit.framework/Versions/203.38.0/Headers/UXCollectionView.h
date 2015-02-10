@@ -7,14 +7,11 @@
 #import <Cocoa/Cocoa.h>
 #import <UXKit/UXCollectionViewLayout.h>
 #import <UXKit/UXCollectionViewIndexPathsSet.h>
-#import <UXKit/UXCollectionViewData.h>
-#import <UXKit/UXCollectionViewUpdate.h>
 #import <UXKit/UXCollectionViewDelegate-Protocol.h>
 #import <UXKit/UXCollectionViewDataSource-Protocol.h>
-#import <UXKit/UXCollectionDocumentView.h>
 #import <UXKit/UXCollectionViewMutableIndexPathsSet.h>
 
-@class CALayer, UXCollectionDocumentView, UXCollectionViewData, UXCollectionViewIndexPathsSet, UXCollectionViewLayout, UXCollectionViewMutableIndexPathsSet, UXCollectionViewUpdate, _UXCollectionViewRearrangingCoordinator;
+@class CALayer, UXCollectionViewIndexPathsSet, UXCollectionViewLayout, UXCollectionViewMutableIndexPathsSet, _UXCollectionViewRearrangingCoordinator;
 
 @interface UXCollectionView : NSScrollView
 
