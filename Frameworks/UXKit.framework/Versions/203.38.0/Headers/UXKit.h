@@ -88,7 +88,6 @@
 #import <UXKit/UXTransitionController.h>
 #import <UXKit/UXView.h>
 #import <UXKit/NSView-Compatibility.h>
-#import <UXKit/UXViewAnimationContext.h>
 #import <UXKit/NSView-UXCollectionViewRearrangingCoordinator.h>
 #import <UXKit/UXCollectionViewMutableIndexPathsSet.h>
 #import <UXKit/UXViewController.h>
@@ -96,6 +95,5 @@
 #import <UXKit/UXViewControllerAnimatedTransitioning-Protocol.h>
 #import <UXKit/NSView-UXKitAppearance.h>
 #import <UXKit/UXViewControllerContextTransitioning-Protocol.h>
-#import <UXKit/NSViewAnimationContext.h>
 #import <UXKit/UXViewControllerInteractiveTransitioning-Protocol.h>
 #import <UXKit/UXSourceList-Protocol.h>
