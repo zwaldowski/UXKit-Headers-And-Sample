@@ -29,7 +29,6 @@
 #import <UXKit/NSControl-Compatibility.h>
 #import <UXKit/UXBackButton.h>
 #import <UXKit/UXLabel.h>
-#import <UXKit/UXBackButtonCell.h>
 #import <UXKit/UXLayoutSupport-Protocol.h>
 #import <UXKit/UXBar.h>
 #import <UXKit/UXLongClickEventTracker.h>
