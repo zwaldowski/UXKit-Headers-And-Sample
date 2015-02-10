@@ -19,16 +19,16 @@
 }
 
 + (id)gapWithUpdateItem:(id)arg1;
-@property(nonatomic) CGRect endingRect; // @synthesize endingRect=_endingRect;
-@property(nonatomic) CGRect beginningRect; // @synthesize beginningRect=_beginningRect;
-@property(readonly, nonatomic) NSArray *insertItems; // @synthesize insertItems=_insertItems;
-@property(readonly, nonatomic) NSArray *deleteItems; // @synthesize deleteItems=_deleteItems;
-@property(retain, nonatomic) UXCollectionViewUpdateItem *lastUpdateItem; // @synthesize lastUpdateItem=_lastUpdateItem;
-@property(retain, nonatomic) UXCollectionViewUpdateItem *firstUpdateItem; // @synthesize firstUpdateItem=_firstUpdateItem;
-@property(readonly, nonatomic) BOOL isSectionBasedGap;
-@property(readonly, nonatomic) NSArray *updateItems;
-@property(readonly, nonatomic) BOOL hasInserts;
-@property(readonly, nonatomic) BOOL isDeleteBasedGap;
+@property (nonatomic) CGRect endingRect; // @synthesize endingRect=_endingRect;
+@property (nonatomic) CGRect beginningRect; // @synthesize beginningRect=_beginningRect;
+@property (nonatomic, readonly) NSArray *insertItems; // @synthesize insertItems=_insertItems;
+@property (nonatomic, readonly) NSArray *deleteItems; // @synthesize deleteItems=_deleteItems;
+@property (nonatomic, strong) UXCollectionViewUpdateItem *lastUpdateItem; // @synthesize lastUpdateItem=_lastUpdateItem;
+@property (nonatomic, strong) UXCollectionViewUpdateItem *firstUpdateItem; // @synthesize firstUpdateItem=_firstUpdateItem;
+@property (nonatomic, readonly) BOOL isSectionBasedGap;
+@property (nonatomic, readonly) NSArray *updateItems;
+@property (nonatomic, readonly) BOOL hasInserts;
+@property (nonatomic, readonly) BOOL isDeleteBasedGap;
 - (void)addUpdateItem:(id)arg1;
 - (id)description;
 - (id)init;

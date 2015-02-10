@@ -17,7 +17,7 @@
 }
 
 + (id)defaultWindow;
-@property __weak NSToolbarItem *navigationBarToolbarItem; // @synthesize navigationBarToolbarItem=_navigationBarToolbarItem;
+@property (weak) NSToolbarItem *navigationBarToolbarItem; // @synthesize navigationBarToolbarItem=_navigationBarToolbarItem;
 - (void)windowDidBecomeFirstResponder:(id)arg1;
 - (void)windowDidRecalculateKeyViewLoop:(id)arg1;
 - (void)windowWillRecalculateKeyViewLoop:(id)arg1;
@@ -30,14 +30,14 @@
 - (void)_setupAccessoryBar;
 - (void)_setupNavigationBarToolbarItem;
 - (void)_setAccessoryBarHidden:(BOOL)arg1;
-@property(readonly, nonatomic) double _accessoryBarHeight;
+@property (nonatomic, readonly) double _accessoryBarHeight;
 - (id)toolbar:(id)arg1 itemForItemIdentifier:(id)arg2 willBeInsertedIntoToolbar:(BOOL)arg3;
 - (id)toolbarDefaultItemIdentifiers:(id)arg1;
 - (id)toolbarAllowedItemIdentifiers:(id)arg1;
 - (void)setWindow:(id)arg1;
 - (id)rootNavigationController;
-@property(retain, nonatomic) UXViewController *rootViewController;
-@property(readonly, nonatomic) NSTitlebarAccessoryViewController *titlebarAccessoryViewController;
+@property (nonatomic, strong) UXViewController *rootViewController;
+@property (nonatomic, readonly) NSTitlebarAccessoryViewController *titlebarAccessoryViewController;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (void)_tearDownViewControllerHierarchyForViewController:(id)arg1;
 - (void)teardownViewControllerHierarchy;

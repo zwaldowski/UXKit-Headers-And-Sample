@@ -26,18 +26,18 @@
     } _collectionViewAnimationFlags;
 }
 
-@property(readonly, nonatomic) double endFraction; // @synthesize endFraction=_endFraction;
-@property(readonly, nonatomic) double startFraction; // @synthesize startFraction=_startFraction;
-@property(readonly, nonatomic) UXCollectionViewLayoutAttributes *finalLayoutAttributes; // @synthesize finalLayoutAttributes=_finalLayoutAttributes;
-@property(readonly, nonatomic) unsigned long long viewType; // @synthesize viewType=_viewType;
-@property(readonly, nonatomic) UXCollectionReusableView *view; // @synthesize view=_view;
+@property (nonatomic, readonly) double endFraction; // @synthesize endFraction=_endFraction;
+@property (nonatomic, readonly) double startFraction; // @synthesize startFraction=_startFraction;
+@property (nonatomic, readonly) UXCollectionViewLayoutAttributes *finalLayoutAttributes; // @synthesize finalLayoutAttributes=_finalLayoutAttributes;
+@property (nonatomic, readonly) unsigned long long viewType; // @synthesize viewType=_viewType;
+@property (nonatomic, readonly) UXCollectionReusableView *view; // @synthesize view=_view;
 - (void)addStartupHandler:(void(^)(void))arg1;
 - (void)addCompletionHandler:(void(^)(BOOL finished))arg1;
 - (void)start;
-@property(nonatomic) BOOL resetRasterizationAfterAnimation;
-@property(nonatomic) BOOL rasterizeAfterAnimation;
-@property(readonly, nonatomic) BOOL deleteAfterAnimation;
-@property(readonly, nonatomic) BOOL animateFromCurrentPosition;
+@property (nonatomic) BOOL resetRasterizationAfterAnimation;
+@property (nonatomic) BOOL rasterizeAfterAnimation;
+@property (nonatomic, readonly) BOOL deleteAfterAnimation;
+@property (nonatomic, readonly) BOOL animateFromCurrentPosition;
 - (id)description;
 - (id)initWithView:(id)arg1 viewType:(unsigned long long)arg2 finalLayoutAttributes:(id)arg3 startFraction:(double)arg4 endFraction:(double)arg5 animateFromCurrentPosition:(BOOL)arg6 deleteAfterAnimation:(BOOL)arg7 customAnimations:(void(^)(void(^completion)(BOOL finished)))arg8;
 

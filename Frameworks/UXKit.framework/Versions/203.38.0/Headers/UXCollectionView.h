@@ -133,12 +133,12 @@
 + (BOOL)isCompatibleWithResponsiveScrolling;
 + (void)initialize;
 + (Class)documentClass;
-@property(readonly, nonatomic, getter=isDecelerating) BOOL decelerating; // @synthesize decelerating=_decelerating;
-@property(readonly, nonatomic, getter=isScrolling) BOOL scrolling; // @synthesize scrolling=_scrolling;
-@property(nonatomic) BOOL allowsPaintingSelection; // @synthesize allowsPaintingSelection=_allowsPaintingSelection;
-@property(nonatomic) BOOL allowsLassoSelection; // @synthesize allowsLassoSelection=_allowsLassoSelection;
-@property(nonatomic) BOOL allowsContinuousSelection; // @synthesize allowsContinuousSelection=_allowsContinuousSelection;
-@property(retain, nonatomic) UXCollectionViewLayout *collectionViewLayout; // @synthesize collectionViewLayout=_layout;
+@property (nonatomic, readonly, getter=isDecelerating) BOOL decelerating; // @synthesize decelerating=_decelerating;
+@property (nonatomic, readonly, getter=isScrolling) BOOL scrolling; // @synthesize scrolling=_scrolling;
+@property (nonatomic) BOOL allowsPaintingSelection; // @synthesize allowsPaintingSelection=_allowsPaintingSelection;
+@property (nonatomic) BOOL allowsLassoSelection; // @synthesize allowsLassoSelection=_allowsLassoSelection;
+@property (nonatomic) BOOL allowsContinuousSelection; // @synthesize allowsContinuousSelection=_allowsContinuousSelection;
+@property (nonatomic, strong) UXCollectionViewLayout *collectionViewLayout; // @synthesize collectionViewLayout=_layout;
 - (BOOL)lassoInvertsSelection;
 - (void)setLassoInvertsSelection:(BOOL)arg1;
 - (id)accessibilityHitTest:(CGPoint)arg1;
@@ -292,9 +292,9 @@
 - (void)_resumeReloads;
 - (void)_suspendReloads;
 - (void)setNeedsLayout;
-@property(nonatomic) BOOL allowsEmptySelection; // @synthesize allowsEmptySelection=_allowsEmptySelection;
-@property(nonatomic) BOOL allowsMultipleSelection; // @synthesize allowsMultipleSelection=_allowsMultipleSelection;
-@property(nonatomic) BOOL allowsSelection; // @synthesize allowsSelection=_allowsSelection;
+@property (nonatomic) BOOL allowsEmptySelection; // @synthesize allowsEmptySelection=_allowsEmptySelection;
+@property (nonatomic) BOOL allowsMultipleSelection; // @synthesize allowsMultipleSelection=_allowsMultipleSelection;
+@property (nonatomic) BOOL allowsSelection; // @synthesize allowsSelection=_allowsSelection;
 - (void)deselectAllItems:(BOOL)arg1;
 - (void)selectAllItems:(BOOL)arg1;
 - (void)deselectItemsAtIndexPaths:(id)arg1 animated:(BOOL)arg2;
@@ -319,8 +319,8 @@
 - (id)indexPathsForSelectedItems;
 - (BOOL)_dataSourceImplementsNumberOfSections;
 - (void)_reloadDataIfNeeded;
-@property(nonatomic) __weak NSObject<UXCollectionViewDataSource> *dataSource; // @synthesize dataSource=_dataSource;
-@property(nonatomic) __weak NSObject<UXCollectionViewDelegate> *delegate; // @synthesize delegate=_delegate;
+@property (nonatomic, weak)  NSObject<UXCollectionViewDataSource> *dataSource; // @synthesize dataSource=_dataSource;
+@property (nonatomic, weak)  NSObject<UXCollectionViewDelegate> *delegate; // @synthesize delegate=_delegate;
 - (id)_visibleDecorationViewOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)_visibleSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)_visibleSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2 isDecorationView:(BOOL)arg3;
@@ -347,13 +347,13 @@
 - (void)draggingSession:(id)arg1 willBeginAtPoint:(CGPoint)arg2;
 - (unsigned long long)draggingSession:(id)arg1 sourceOperationMaskForDraggingContext:(long long)arg2;
 - (void)rearrangingCoordinatorReloadLayout_;
-@property(readonly, nonatomic) BOOL isRearranging_;
-@property(nonatomic) double rearrangingPreviewDelay_;
-@property(nonatomic) BOOL rearrangingContinuouslyUpdateInsideCells_;
-@property(nonatomic) long long rearrangingInitiationMode_;
-@property(nonatomic) BOOL rearrangingExternalDropEnabled_;
-@property(nonatomic) BOOL rearrangingAllowAutoscroll_;
-@property(nonatomic) BOOL rearrangingEnabled_;
+@property (nonatomic, readonly) BOOL isRearranging_;
+@property (nonatomic) double rearrangingPreviewDelay_;
+@property (nonatomic) BOOL rearrangingContinuouslyUpdateInsideCells_;
+@property (nonatomic) long long rearrangingInitiationMode_;
+@property (nonatomic) BOOL rearrangingExternalDropEnabled_;
+@property (nonatomic) BOOL rearrangingAllowAutoscroll_;
+@property (nonatomic) BOOL rearrangingEnabled_;
 - (id)_rearrangingCoordinator;
 
 @end

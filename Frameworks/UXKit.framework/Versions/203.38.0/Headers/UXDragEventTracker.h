@@ -15,10 +15,10 @@
     CGPoint _initialPoint;
 }
 
-@property(readonly, nonatomic) CGPoint initialPoint; // @synthesize initialPoint=_initialPoint;
-@property(nonatomic) double trackingThreshold; // @synthesize trackingThreshold=_trackingThreshold;
-@property(readonly, nonatomic) CGPoint zeroingDelta;
-@property(readonly, nonatomic) CGPoint delta;
+@property (nonatomic, readonly) CGPoint initialPoint; // @synthesize initialPoint=_initialPoint;
+@property (nonatomic) double trackingThreshold; // @synthesize trackingThreshold=_trackingThreshold;
+@property (nonatomic, readonly) CGPoint zeroingDelta;
+@property (nonatomic, readonly) CGPoint delta;
 - (void)mouseUp:(id)arg1;
 - (void)mouseDragged:(id)arg1;
 - (void)mouseDown:(id)arg1;

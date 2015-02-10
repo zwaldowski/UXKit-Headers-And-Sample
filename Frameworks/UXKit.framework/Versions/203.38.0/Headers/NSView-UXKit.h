@@ -7,6 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSView (UXKit)
-@property(nonatomic) NSColor *backgroundColor;
+@property (nonatomic) NSColor *backgroundColor;
 @end
 

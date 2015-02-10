@@ -14,8 +14,8 @@
     double _percentComplete;
 }
 
-@property(readonly, nonatomic) double percentComplete; // @synthesize percentComplete=_percentComplete;
-@property(nonatomic) long long operation; // @synthesize operation=_operation;
+@property (nonatomic, readonly) double percentComplete; // @synthesize percentComplete=_percentComplete;
+@property (nonatomic) long long operation; // @synthesize operation=_operation;
 - (BOOL)navigationController:(id)arg1 shouldBeginInteractivePopFromViewController:(id)arg2 toViewController:(id)arg3;
 - (id)navigationController:(id)arg1 animationControllerForOperation:(long long)arg2 fromViewController:(id)arg3 toViewController:(id)arg4;
 - (id)navigationController:(id)arg1 interactionControllerForAnimationController:(id)arg2;

@@ -13,9 +13,9 @@
     void(^_completionHandler)(BOOL finished);
 }
 
-@property(readonly, nonatomic) void(^completionHandler)(BOOL finished); // @synthesize completionHandler=_completionHandler;
-@property(nonatomic) long long animationCount; // @synthesize animationCount=_animationCount;
-@property(retain, nonatomic) NSArray *viewAnimations; // @synthesize viewAnimations=_viewAnimations;
+@property (nonatomic, readonly) void(^completionHandler)(BOOL finished); // @synthesize completionHandler=_completionHandler;
+@property (nonatomic) long long animationCount; // @synthesize animationCount=_animationCount;
+@property (nonatomic, strong) NSArray *viewAnimations; // @synthesize viewAnimations=_viewAnimations;
 - (id)initWithCompletionHandler:(void(^)(BOOL))arg1;
 
 @end

@@ -10,12 +10,12 @@
 - (BOOL)isAnimating;
 - (void)stopAnimating;
 - (void)startAnimating;
-@property(retain, nonatomic) NSColor *color;
-@property(nonatomic) BOOL hidesWhenStopped;
-@property(nonatomic) long long activityIndicatorViewStyle;
+@property (nonatomic, strong) NSColor *color;
+@property (nonatomic) BOOL hidesWhenStopped;
+@property (nonatomic) long long activityIndicatorViewStyle;
 - (void)setProgress:(double)arg1 animated:(BOOL)arg2;
-@property(nonatomic) double progress;
-@property(nonatomic) long long progressViewStyle;
+@property (nonatomic) double progress;
+@property (nonatomic) long long progressViewStyle;
 - (id)initWithProgressViewStyle:(long long)arg1;
 - (id)initWithActivityIndicatorStyle:(long long)arg1;
 @end

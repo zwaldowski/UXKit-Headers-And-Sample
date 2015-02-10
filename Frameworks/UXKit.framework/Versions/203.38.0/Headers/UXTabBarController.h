@@ -14,10 +14,10 @@
     NSSegmentedControl *_segmentedControl;
 }
 
-@property(readonly, nonatomic) NSSegmentedControl *segmentedControl; // @synthesize segmentedControl=_segmentedControl;
-@property(nonatomic) __weak UXViewController *selectedViewController; // @synthesize selectedViewController=_selectedViewController;
-@property(copy, nonatomic) NSArray *viewControllers; // @synthesize viewControllers=_viewControllers;
-@property(nonatomic) unsigned long long selectedIndex;
+@property (nonatomic, readonly) NSSegmentedControl *segmentedControl; // @synthesize segmentedControl=_segmentedControl;
+@property (nonatomic, weak)  UXViewController *selectedViewController; // @synthesize selectedViewController=_selectedViewController;
+@property (nonatomic, copy) NSArray *viewControllers; // @synthesize viewControllers=_viewControllers;
+@property (nonatomic) unsigned long long selectedIndex;
 - (void)viewDidLoad;
 - (void)keyDown:(id)arg1;
 - (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;

@@ -7,6 +7,6 @@
 
 
 @protocol UXBarPositioning <NSObject>
-@property(readonly, nonatomic) long long barPosition;
+@property (nonatomic, readonly) long long barPosition;
 @end
 

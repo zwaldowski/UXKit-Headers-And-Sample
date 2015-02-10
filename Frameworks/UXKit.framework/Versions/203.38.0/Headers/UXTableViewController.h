@@ -14,7 +14,7 @@
 }
 
 + (Class)collectionViewClass;
-@property(readonly, nonatomic) id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;
+@property (nonatomic, readonly) id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;
 - (void)_updateContentInsetFromLayoutGuides;
 - (id)preferredFirstResponder;
 - (void)viewDidAppear;
@@ -22,7 +22,7 @@
 - (void)viewDidLoad;
 - (void)didUpdateLayoutGuides;
 - (void)viewDidLayoutSubviews;
-@property(readonly, nonatomic) UXTableView *tableView;
+@property (nonatomic, readonly) UXTableView *tableView;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 - (id)init;
 - (id)initWithStyle:(long long)arg1;

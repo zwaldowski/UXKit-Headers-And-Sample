@@ -18,17 +18,17 @@
     NSArray *_passthroughViews;
 }
 
-@property(copy, nonatomic) NSArray *passthroughViews; // @synthesize passthroughViews=_passthroughViews;
-@property(nonatomic) __weak id <UXPopoverControllerDelegate> delegate; // @synthesize delegate=_delegate;
+@property (nonatomic, copy) NSArray *passthroughViews; // @synthesize passthroughViews=_passthroughViews;
+@property (nonatomic, weak)  id <UXPopoverControllerDelegate> delegate; // @synthesize delegate=_delegate;
 - (void)dismissPopoverAnimated:(BOOL)arg1;
 - (void)dismissPopover;
 - (void)presentPopoverFromBarButtonItem:(id)arg1 permittedArrowDirections:(unsigned long long)arg2 animated:(BOOL)arg3;
 - (void)presentPopoverFromRect:(CGRect)arg1 inView:(id)arg2 preferredEdge:(unsigned long long)arg3;
-@property(retain, nonatomic) UXViewController *contentViewController;
-@property(nonatomic) CGSize popoverContentSize;
+@property (nonatomic, strong) UXViewController *contentViewController;
+@property (nonatomic) CGSize popoverContentSize;
 - (void)setPopoverContentSize:(CGSize)arg1 animated:(BOOL)arg2;
-@property(readonly, nonatomic, getter=isPopoverVisible) BOOL popoverVisible;
-@property(nonatomic) long long popoverBehavior;
+@property (nonatomic, readonly, getter=isPopoverVisible) BOOL popoverVisible;
+@property (nonatomic) long long popoverBehavior;
 - (void)popoverWillShow:(id)arg1;
 - (void)popoverDidClose:(id)arg1;
 - (id)popover;

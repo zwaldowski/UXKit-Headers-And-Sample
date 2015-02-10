@@ -19,7 +19,7 @@
     } _reusableViewFlags;
 }
 
-@property(readonly, copy, nonatomic) NSString *reuseIdentifier; // @synthesize reuseIdentifier=_reuseIdentifier;
+@property (nonatomic, copy, readonly) NSString *reuseIdentifier; // @synthesize reuseIdentifier=_reuseIdentifier;
 - (CGImageRef)_snapshot:(BOOL)arg1;
 - (BOOL)_wasDequeued;
 - (void)_markAsDequeued;

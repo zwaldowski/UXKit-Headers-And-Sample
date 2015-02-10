@@ -26,12 +26,12 @@
 + (id)defaultSpringAnimationForKey:(id)arg1 mass:(double)arg2 stiffness:(double)arg3 damping:(double)arg4 velocity:(double)arg5;
 + (long long)_contentModeForLayerContentsGravity:(id)arg1;
 + (Class)layerClass;
-@property(retain, nonatomic) NSMutableArray *internalTrackers; // @synthesize internalTrackers=_internalTrackers;
-@property(nonatomic) __weak UXViewController *viewControllerProxy; // @synthesize viewControllerProxy=_viewControllerProxy;
-@property(readonly) NSVisualEffectView *_visualEffectsView; // @synthesize _visualEffectsView=__visualEffectsView;
-@property(nonatomic) BOOL accessibilityChildrenHidden; // @synthesize accessibilityChildrenHidden=_accessibilityChildrenHidden;
-@property(nonatomic) BOOL userInteractionEnabled; // @synthesize userInteractionEnabled=_userInteractionEnabled;
-@property(nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch; // @synthesize exclusiveTouch=_exclusiveTouch;
+@property (nonatomic, strong) NSMutableArray *internalTrackers; // @synthesize internalTrackers=_internalTrackers;
+@property (nonatomic, weak)  UXViewController *viewControllerProxy; // @synthesize viewControllerProxy=_viewControllerProxy;
+@property (readonly) NSVisualEffectView *_visualEffectsView; // @synthesize _visualEffectsView=__visualEffectsView;
+@property (nonatomic) BOOL accessibilityChildrenHidden; // @synthesize accessibilityChildrenHidden=_accessibilityChildrenHidden;
+@property (nonatomic) BOOL userInteractionEnabled; // @synthesize userInteractionEnabled=_userInteractionEnabled;
+@property (nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch; // @synthesize exclusiveTouch=_exclusiveTouch;
 - (id)accessibilityChildren;
 - (id)menuForEvent:(id)arg1;
 - (id)snapshotViewFromRect:(CGRect)arg1;
@@ -39,8 +39,8 @@
 - (id)snapshotForRect:(CGRect)arg1;
 - (void)sendSubviewToBack:(id)arg1;
 - (void)bringSubviewToFront:(id)arg1;
-@property(readonly, nonatomic) CGPoint center;
-@property(readonly, nonatomic) NSArray *eventTrackers;
+@property (nonatomic, readonly) CGPoint center;
+@property (nonatomic, readonly) NSArray *eventTrackers;
 - (void)removeEventTracker:(id)arg1;
 - (void)addEventTracker:(id)arg1;
 - (void)_applyTintColorIfNotUXView:(id)arg1;
@@ -71,7 +71,7 @@
 - (void)mouseDown:(id)arg1;
 - (BOOL)canBecomeKeyView;
 - (id)hitTest:(CGPoint)arg1;
-@property(nonatomic) long long contentMode;
+@property (nonatomic) long long contentMode;
 - (void)addSubview:(id)arg1 positioned:(long long)arg2 relativeTo:(id)arg3;
 - (void)addSubview:(id)arg1;
 - (void)viewWillMoveToSuperview:(id)arg1;

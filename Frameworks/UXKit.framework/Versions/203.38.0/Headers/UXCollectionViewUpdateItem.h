@@ -14,9 +14,9 @@
     id _gap;
 }
 
-@property(readonly, nonatomic) long long updateAction; // @synthesize updateAction=_updateAction;
-@property(readonly, retain, nonatomic) NSIndexPath *indexPathAfterUpdate; // @synthesize indexPathAfterUpdate=_finalIndexPath;
-@property(readonly, retain, nonatomic) NSIndexPath *indexPathBeforeUpdate; // @synthesize indexPathBeforeUpdate=_initialIndexPath;
+@property (nonatomic, readonly) long long updateAction; // @synthesize updateAction=_updateAction;
+@property (nonatomic, strong, readonly) NSIndexPath *indexPathAfterUpdate; // @synthesize indexPathAfterUpdate=_finalIndexPath;
+@property (nonatomic, strong, readonly) NSIndexPath *indexPathBeforeUpdate; // @synthesize indexPathBeforeUpdate=_initialIndexPath;
 - (long long)inverseCompareIndexPaths:(id)arg1;
 - (long long)compareIndexPaths:(id)arg1;
 - (BOOL)_isSectionOperation;

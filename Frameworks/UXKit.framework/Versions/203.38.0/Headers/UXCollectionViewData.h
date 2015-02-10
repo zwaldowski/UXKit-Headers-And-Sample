@@ -34,9 +34,9 @@
 }
 
 + (void)initialize;
-@property(readonly, nonatomic) NSArray *clonedLayoutAttributes; // @synthesize clonedLayoutAttributes=_clonedLayoutAttributes;
-@property(nonatomic, getter=isLayoutLocked) BOOL layoutLocked;
-@property(readonly, nonatomic) BOOL layoutIsPrepared;
+@property (nonatomic, readonly) NSArray *clonedLayoutAttributes; // @synthesize clonedLayoutAttributes=_clonedLayoutAttributes;
+@property (nonatomic, getter=isLayoutLocked) BOOL layoutLocked;
+@property (nonatomic, readonly) BOOL layoutIsPrepared;
 - (id)layoutAttributesForDecorationViewOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)layoutAttributesForSupplementaryElementOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)knownDecorationElementKinds;

@@ -26,7 +26,7 @@
     double _scale;
 }
 
-@property(nonatomic) double scale; // @synthesize scale=_scale;
+@property (nonatomic) double scale; // @synthesize scale=_scale;
 - (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
 - (CGPoint)locationOfTouch:(id)arg1;
 - (id)_touchForTouchIdentity:(id)arg1;

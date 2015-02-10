@@ -9,8 +9,8 @@
 
 @interface NSWindow (UXKitAppearance) <UXKitAppearance>
 - (void)tintColorDidChange;
-@property(nonatomic) long long tintAdjustmentMode;
-@property(retain, nonatomic) NSColor *tintColor;
+@property (nonatomic) long long tintAdjustmentMode;
+@property (nonatomic, strong) NSColor *tintColor;
 
 @end
 

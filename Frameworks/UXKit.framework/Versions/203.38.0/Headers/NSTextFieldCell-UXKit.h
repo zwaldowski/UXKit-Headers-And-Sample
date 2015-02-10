@@ -7,6 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSTextFieldCell (UXKit)
-@property(nonatomic) BOOL centerVertically;
+@property (nonatomic) BOOL centerVertically;
 @end
 

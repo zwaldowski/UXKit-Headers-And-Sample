@@ -12,7 +12,7 @@
     NSSet *_possibleTitles;
 }
 
-@property(copy, nonatomic) NSSet *possibleTitles; // @synthesize possibleTitles=_possibleTitles;
+@property (nonatomic, copy) NSSet *possibleTitles; // @synthesize possibleTitles=_possibleTitles;
 - (id)initWithTitle:(id)arg1;
 
 @end

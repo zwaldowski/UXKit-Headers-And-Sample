@@ -9,13 +9,13 @@
 @protocol UITextInputTraits <NSObject>
 
 @optional
-@property(nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
-@property(nonatomic) BOOL enablesReturnKeyAutomatically;
-@property(nonatomic) long long returnKeyType;
-@property(nonatomic) long long keyboardAppearance;
-@property(nonatomic) long long keyboardType;
-@property(nonatomic) long long spellCheckingType;
-@property(nonatomic) long long autocorrectionType;
-@property(nonatomic) long long autocapitalizationType;
+@property (nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
+@property (nonatomic) BOOL enablesReturnKeyAutomatically;
+@property (nonatomic) long long returnKeyType;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long spellCheckingType;
+@property (nonatomic) long long autocorrectionType;
+@property (nonatomic) long long autocapitalizationType;
 @end
 

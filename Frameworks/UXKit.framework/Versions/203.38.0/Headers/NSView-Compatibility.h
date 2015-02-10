@@ -11,7 +11,7 @@
 - (float)contentCompressionResistancePriorityForAxis:(long long)arg1;
 - (void)setContentHuggingPriority:(float)arg1 forAxis:(long long)arg2;
 - (float)contentHuggingPriorityForAxis:(long long)arg1;
-@property(nonatomic) double alpha;
+@property (nonatomic) double alpha;
 - (BOOL)pointInside:(CGPoint)arg1 withEvent:(id)arg2;
 - (void)layoutIfNeeded;
 - (void)layoutSubviews;
@@ -20,6 +20,6 @@
 - (void)setNeedsDisplay;
 - (void)setNeedsLayout;
 - (void)didMoveToWindow;
-@property(readonly, nonatomic, getter=isHidden) BOOL hidden;
+@property (nonatomic, readonly, getter=isHidden) BOOL hidden;
 @end
 

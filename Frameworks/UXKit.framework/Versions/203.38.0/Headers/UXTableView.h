@@ -43,14 +43,14 @@
 
 + (unsigned long long)collectionViewScrollPositionFromScrollPosition:(long long)arg1;
 + (Class)documentClass;
-@property(nonatomic, setter=_setFloatingHeadersDisabled:) BOOL _floatingHeadersDisabled; // @synthesize _floatingHeadersDisabled=__floatingHeadersDisabled;
-@property(nonatomic) NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
-@property(copy, nonatomic) NSColor *separatorColor; // @synthesize separatorColor=_separatorColor;
-@property(nonatomic) long long separatorStyle; // @synthesize separatorStyle=_separatorStyle;
-@property(nonatomic) double rowHeight; // @synthesize rowHeight=_rowHeight;
-@property(nonatomic) __weak id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;
-@property(nonatomic) __weak id <UXTableViewDataSource> tableViewDataSource; // @synthesize tableViewDataSource=_tableViewDataSource;
-@property(nonatomic) double alpha;
+@property (nonatomic, setter=_setFloatingHeadersDisabled:) BOOL _floatingHeadersDisabled; // @synthesize _floatingHeadersDisabled=__floatingHeadersDisabled;
+@property (nonatomic) NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
+@property (nonatomic, copy) NSColor *separatorColor; // @synthesize separatorColor=_separatorColor;
+@property (nonatomic) long long separatorStyle; // @synthesize separatorStyle=_separatorStyle;
+@property (nonatomic) double rowHeight; // @synthesize rowHeight=_rowHeight;
+@property (nonatomic, weak)  id <UXTableViewDelegate> tableViewDelegate; // @synthesize tableViewDelegate=_tableViewDelegate;
+@property (nonatomic, weak)  id <UXTableViewDataSource> tableViewDataSource; // @synthesize tableViewDataSource=_tableViewDataSource;
+@property (nonatomic) double alpha;
 - (void)_checkForAccessoryViewsInScrollerAreas;
 - (void)collectionView:(id)arg1 layout:(id)arg2 supplementaryViewDidEndFloatingAtIndexPath:(id)arg3 kind:(id)arg4;
 - (void)collectionView:(id)arg1 layout:(id)arg2 supplementaryViewDidBeginFloatingAtIndexPath:(id)arg3 kind:(id)arg4;
@@ -103,7 +103,7 @@
 - (id)initWithFrame:(CGRect)arg1 style:(long long)arg2;
 - (id)initWithFrame:(CGRect)arg1 collectionViewLayout:(id)arg2;
 - (void)setNeedsDisplay:(BOOL)arg1;
-@property(nonatomic, getter=isUserInteractionEnabled) BOOL userInteractionEnabled;
+@property (nonatomic, getter=isUserInteractionEnabled) BOOL userInteractionEnabled;
 
 @end
 

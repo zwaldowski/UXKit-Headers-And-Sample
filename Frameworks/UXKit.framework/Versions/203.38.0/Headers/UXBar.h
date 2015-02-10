@@ -22,15 +22,15 @@
     UXView *_nextItemContainer;
 }
 
-@property(retain, nonatomic) UXView *nextItemContainer; // @synthesize nextItemContainer=_nextItemContainer;
-@property(nonatomic) double percent; // @synthesize percent=_percent;
-@property(nonatomic) BOOL isInteractiveTransitioning; // @synthesize isInteractiveTransitioning=_isInteractiveTransitioning;
-@property(retain, nonatomic) UXView *barItemsContainer; // @synthesize barItemsContainer=_barItemsContainer;
-@property(nonatomic) double height; // @synthesize height=_height;
-@property(nonatomic) double interitemSpacing; // @synthesize interitemSpacing=_interitemSpacing;
-@property(retain, nonatomic) NSColor *barTintColor; // @synthesize barTintColor=_barTintColor;
+@property (nonatomic, strong) UXView *nextItemContainer; // @synthesize nextItemContainer=_nextItemContainer;
+@property (nonatomic) double percent; // @synthesize percent=_percent;
+@property (nonatomic) BOOL isInteractiveTransitioning; // @synthesize isInteractiveTransitioning=_isInteractiveTransitioning;
+@property (nonatomic, strong) UXView *barItemsContainer; // @synthesize barItemsContainer=_barItemsContainer;
+@property (nonatomic) double height; // @synthesize height=_height;
+@property (nonatomic) double interitemSpacing; // @synthesize interitemSpacing=_interitemSpacing;
+@property (nonatomic, strong) NSColor *barTintColor; // @synthesize barTintColor=_barTintColor;
 - (void)_updateBarPostion;
-@property(readonly, nonatomic) long long barPosition;
+@property (nonatomic, readonly) long long barPosition;
 - (CGSize)intrinsicContentSize;
 - (void)_completeInteractiveTransition:(BOOL)arg1;
 - (void)_finishInteractiveTransition:(BOOL)arg1 completion:(void(^)(BOOL finished))arg2;
@@ -38,8 +38,8 @@
 - (void)_beginInteractiveTransitionToItemContainer:(id)arg1;
 - (void)_animateTransitionFromContainer:(id)arg1 toContainer:(id)arg2 transition:(unsigned long long)arg3 duration:(double)arg4 fromValue:(double)arg5 toValue:(double)arg6 completion:(void(^)(BOOL finished))arg7;
 - (void)_transitionToContainer:(id)arg1 transition:(unsigned long long)arg2 duration:(double)arg3;
-@property(retain, nonatomic) NSColor *borderColor;
-@property(nonatomic) BOOL bordered;
+@property (nonatomic, strong) NSColor *borderColor;
+@property (nonatomic) BOOL bordered;
 - (void)viewWillMoveToSuperview:(id)arg1;
 - (id)initWithFrame:(CGRect)arg1;
 

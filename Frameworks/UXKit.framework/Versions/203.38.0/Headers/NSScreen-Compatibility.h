@@ -7,6 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSScreen (Compatibility)
-@property(readonly, nonatomic) double scale;
+@property (nonatomic, readonly) double scale;
 @end
 

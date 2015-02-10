@@ -37,12 +37,12 @@
 + (Class)layoutAccessibilityClass;
 + (Class)invalidationContextClass;
 + (Class)layoutAttributesClass;
-@property(retain, nonatomic) NSString *accessibilityRoleDescription; // @synthesize accessibilityRoleDescription=_accessibilityRoleDescription;
-@property(retain, nonatomic) NSString *accessibilityLabel; // @synthesize accessibilityLabel=_accessibilityLabel;
-@property(retain, nonatomic) NSString *accessibilityIdentifier; // @synthesize accessibilityIdentifier=_accessibilityIdentifier;
-@property(readonly, nonatomic) UXCollectionViewLayoutAccessibility *layoutAccessibility; // @synthesize layoutAccessibility=_layoutAccessibility;
-@property(readonly, nonatomic) __weak UXCollectionView *collectionView; // @synthesize collectionView=_collectionView;
-@property(readonly, nonatomic) NSArray *accessibilityChildren; // @synthesize accessibilityChildren=_accessibilityChildren;
+@property (nonatomic, strong) NSString *accessibilityRoleDescription; // @synthesize accessibilityRoleDescription=_accessibilityRoleDescription;
+@property (nonatomic, strong) NSString *accessibilityLabel; // @synthesize accessibilityLabel=_accessibilityLabel;
+@property (nonatomic, strong) NSString *accessibilityIdentifier; // @synthesize accessibilityIdentifier=_accessibilityIdentifier;
+@property (nonatomic, readonly) UXCollectionViewLayoutAccessibility *layoutAccessibility; // @synthesize layoutAccessibility=_layoutAccessibility;
+@property (nonatomic, weak, readonly) UXCollectionView *collectionView; // @synthesize collectionView=_collectionView;
+@property (nonatomic, readonly) NSArray *accessibilityChildren; // @synthesize accessibilityChildren=_accessibilityChildren;
 - (id)indexPathOfItemBelow:(id)arg1;
 - (id)indexPathOfItemAbove:(id)arg1;
 - (id)indexPathOfItemAfter:(id)arg1;

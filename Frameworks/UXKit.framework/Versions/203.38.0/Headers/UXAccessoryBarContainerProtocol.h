@@ -7,7 +7,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol UXAccessoryBarContainer <NSObject>
-@property(readonly, nonatomic) double _accessoryBarHeight;
+@property (nonatomic, readonly) double _accessoryBarHeight;
 - (void)_setAccessoryBarHidden:(BOOL)arg1;
 @end
 

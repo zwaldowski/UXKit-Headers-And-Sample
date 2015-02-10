@@ -31,11 +31,11 @@
 }
 
 + (Class)viewClass;
-@property(retain, nonatomic) UXView *presentedViewControllerContainerView; // @synthesize presentedViewControllerContainerView=_presentedViewControllerContainerView;
-@property(nonatomic) BOOL automaticallyAdjustsScrollViewInsets; // @synthesize automaticallyAdjustsScrollViewInsets=_automaticallyAdjustsScrollViewInsets;
-@property(nonatomic) unsigned long long edgesForExtendedLayout; // @synthesize edgesForExtendedLayout=_edgesForExtendedLayout;
-@property(nonatomic) long long modalPresentationStyle; // @synthesize modalPresentationStyle=_modalPresentationStyle;
-@property(nonatomic) BOOL isEditing; // @synthesize isEditing=_isEditing;
+@property (nonatomic, strong) UXView *presentedViewControllerContainerView; // @synthesize presentedViewControllerContainerView=_presentedViewControllerContainerView;
+@property (nonatomic) BOOL automaticallyAdjustsScrollViewInsets; // @synthesize automaticallyAdjustsScrollViewInsets=_automaticallyAdjustsScrollViewInsets;
+@property (nonatomic) unsigned long long edgesForExtendedLayout; // @synthesize edgesForExtendedLayout=_edgesForExtendedLayout;
+@property (nonatomic) long long modalPresentationStyle; // @synthesize modalPresentationStyle=_modalPresentationStyle;
+@property (nonatomic) BOOL isEditing; // @synthesize isEditing=_isEditing;
 - (id)menuForEvent:(id)arg1;
 - (id)bottomLayoutGuide;
 - (id)topLayoutGuide;
@@ -52,7 +52,7 @@
 - (void)setEditing:(BOOL)arg1 animated:(BOOL)arg2;
 - (void)dismissViewControllerAnimated:(BOOL)arg1 completion:(void(^)(void))arg2;
 - (void)presentViewController:(id)arg1 animated:(BOOL)arg2 completion:(void(^)(BOOL))arg3;
-@property(readonly, nonatomic) UXViewController *presentedViewController;
+@property (nonatomic, readonly) UXViewController *presentedViewController;
 - (void)didMoveToParentViewController:(id)arg1;
 - (void)willMoveToParentViewController:(id)arg1;
 - (void)removeFromParentViewController;
@@ -72,17 +72,17 @@
 - (CGRect)_defaultInitialFrame;
 - (BOOL)acceptsFirstResponder;
 - (void)awakeFromNib;
-@property(readonly, nonatomic) NSResponder *preferredFirstResponder;
-@property(copy) NSString *title;
+@property (nonatomic, readonly) NSResponder *preferredFirstResponder;
+@property (copy) NSString *title;
 - (void)setView:(id)arg1;
-@property(readonly, nonatomic) UXView *uxView;
+@property (nonatomic, readonly) UXView *uxView;
 - (void)_loadViewIfNotLoaded;
 - (void)_setupResponderChainIfNecessary;
 - (void)_prepareForAnimationInContext:(id)arg1 completion:(void(^)(void))arg2;
 - (id)initWithCoder:(id)arg1;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 - (id)init;
-@property(nonatomic) BOOL hidesBottomBarWhenPushed;
+@property (nonatomic) BOOL hidesBottomBarWhenPushed;
 - (long long)preferredToolbarPosition;
 - (id)toolbarViewController;
 - (void)setToolbarViewController:(id)arg1;
@@ -93,26 +93,26 @@
 - (void)setAccessoryBarItems:(id)arg1;
 - (id)accessoryViewController;
 - (void)setAccessoryViewController:(id)arg1;
-@property(readonly, nonatomic) UXNavigationItem *navigationItem;
-@property(readonly, nonatomic) UXNavigationController *navigationController;
+@property (nonatomic, readonly) UXNavigationItem *navigationItem;
+@property (nonatomic, readonly) UXNavigationController *navigationController;
 - (id)tabBarController;
 - (id)tabBarItem;
 - (id)popoverController;
 - (void)updateViewConstraints;
 - (void)prepareForTransitionWithContext:(id)arg1 completion:(void(^)(void))arg2;
-@property(readonly, nonatomic) long long interfaceOrientation;
+@property (nonatomic, readonly) long long interfaceOrientation;
 - (void)viewDidDisappear:(BOOL)arg1;
 - (void)viewWillDisappear:(BOOL)arg1;
 - (void)viewDidAppear:(BOOL)arg1;
 - (void)viewWillAppear:(BOOL)arg1;
-@property(nonatomic) BOOL hidesSourceListWhenPushed;
+@property (nonatomic) BOOL hidesSourceListWhenPushed;
 - (BOOL)isTransitory;
 - (void)setTransitory:(BOOL)arg1;
 - (void)viewControllersForNavigationDestination:(id)arg1 completion:(void(^)(id unknown, NSArray *viewControllers))arg2;
 - (void)willEncodeNavigationDestination:(id)arg1;
 - (id)navigationDestination;
 - (id)navigationIdentifier;
-@property(readonly, nonatomic) UXSourceController *sourceController;
+@property (nonatomic, readonly) UXSourceController *sourceController;
 
 @end
 

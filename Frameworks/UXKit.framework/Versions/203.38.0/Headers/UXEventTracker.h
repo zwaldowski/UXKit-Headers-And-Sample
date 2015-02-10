@@ -24,22 +24,22 @@
     NSMapTable *_selectorsByTarget;
 }
 
-@property(retain, nonatomic) NSMapTable *selectorsByTarget; // @synthesize selectorsByTarget=_selectorsByTarget;
-@property(copy, nonatomic) void(^eventTrackerDidBeginHandler)(UXEventTracker *);
-@property(copy, nonatomic) void(^eventTrackerDidChangeHandler)(UXEventTracker *);
-@property(copy, nonatomic) void(^eventTrackerDidEndHandler)(UXEventTracker *);
-@property(nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
-@property(nonatomic) BOOL cancelsEventsInView; // @synthesize cancelsEventsInView=_cancelsEventsInView;
-@property(nonatomic) unsigned long long ignoredModifiers; // @synthesize ignoredModifiers=_ignoredModifiers;
-@property(nonatomic) double velocity; // @synthesize velocity=_velocity;
-@property(nonatomic) unsigned long long modifiers; // @synthesize modifiers=_modifiers;
-@property(retain, nonatomic) NSEvent *trackingEvent; // @synthesize trackingEvent=_trackingEvent;
-@property(nonatomic) __weak UXView *view; // @synthesize view=_view;
-@property(nonatomic) long long state; // @synthesize state=_state;
+@property (nonatomic, strong) NSMapTable *selectorsByTarget; // @synthesize selectorsByTarget=_selectorsByTarget;
+@property (nonatomic, copy) void(^eventTrackerDidBeginHandler)(UXEventTracker *);
+@property (nonatomic, copy) void(^eventTrackerDidChangeHandler)(UXEventTracker *);
+@property (nonatomic, copy) void(^eventTrackerDidEndHandler)(UXEventTracker *);
+@property (nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
+@property (nonatomic) BOOL cancelsEventsInView; // @synthesize cancelsEventsInView=_cancelsEventsInView;
+@property (nonatomic) unsigned long long ignoredModifiers; // @synthesize ignoredModifiers=_ignoredModifiers;
+@property (nonatomic) double velocity; // @synthesize velocity=_velocity;
+@property (nonatomic) unsigned long long modifiers; // @synthesize modifiers=_modifiers;
+@property (nonatomic, strong) NSEvent *trackingEvent; // @synthesize trackingEvent=_trackingEvent;
+@property (nonatomic, weak)  UXView *view; // @synthesize view=_view;
+@property (nonatomic) long long state; // @synthesize state=_state;
 - (id)description;
 - (BOOL)eventTrackerRequiresTouches;
 - (void)reset;
-@property(readonly, nonatomic) unsigned long long numberOfTouches;
+@property (nonatomic, readonly) unsigned long long numberOfTouches;
 - (CGPoint)locationOfTouch:(unsigned long long)arg1 inView:(id)arg2;
 - (CGPoint)locationInView:(id)arg1;
 - (void)cancelTracking;

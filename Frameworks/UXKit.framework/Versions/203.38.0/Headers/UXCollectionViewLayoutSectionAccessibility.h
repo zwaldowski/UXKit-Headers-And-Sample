@@ -43,9 +43,9 @@
 - (void)accessibilityInvalidateLayout;
 - (void)accessibilityPrepareForCollectionViewUpdates;
 - (void)accessibilityDidEndScrolling;
-@property(readonly, nonatomic) unsigned long long sectionIndex;
-@property(readonly, nonatomic) __weak UXCollectionView *collectionView;
-@property(readonly, nonatomic) __weak UXCollectionViewLayoutAccessibility *layoutAccessibility;
+@property (readonly, nonatomic) unsigned long long sectionIndex;
+@property (nonatomic, weak, readonly) UXCollectionView *collectionView;
+@property (nonatomic, weak, readonly) UXCollectionViewLayoutAccessibility *layoutAccessibility;
 - (id)initWithLayoutAccessibility:(id)arg1;
 
 @end

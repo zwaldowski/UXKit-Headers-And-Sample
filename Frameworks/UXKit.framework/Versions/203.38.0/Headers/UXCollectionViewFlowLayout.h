@@ -40,13 +40,13 @@
 }
 
 + (Class)invalidationContextClass;
-@property(nonatomic) NSEdgeInsets sectionInset; // @synthesize sectionInset=_sectionInset;
-@property(nonatomic) CGSize footerReferenceSize; // @synthesize footerReferenceSize=_footerReferenceSize;
-@property(nonatomic) CGSize headerReferenceSize; // @synthesize headerReferenceSize=_headerReferenceSize;
-@property(nonatomic) CGSize itemSize; // @synthesize itemSize=_itemSize;
-@property(nonatomic) double minimumInteritemSpacing; // @synthesize minimumInteritemSpacing=_interitemSpacing;
-@property(nonatomic) double minimumLineSpacing; // @synthesize minimumLineSpacing=_lineSpacing;
-@property(nonatomic) long long scrollDirection;
+@property (nonatomic) NSEdgeInsets sectionInset; // @synthesize sectionInset=_sectionInset;
+@property (nonatomic) CGSize footerReferenceSize; // @synthesize footerReferenceSize=_footerReferenceSize;
+@property (nonatomic) CGSize headerReferenceSize; // @synthesize headerReferenceSize=_headerReferenceSize;
+@property (nonatomic) CGSize itemSize; // @synthesize itemSize=_itemSize;
+@property (nonatomic) double minimumInteritemSpacing; // @synthesize minimumInteritemSpacing=_interitemSpacing;
+@property (nonatomic) double minimumLineSpacing; // @synthesize minimumLineSpacing=_lineSpacing;
+@property (nonatomic) long long scrollDirection;
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1;
 - (id)indexPathsForItemsInRect:(CGRect)arg1;
 - (id)_layoutAttributesForItemsInRect:(CGRect)arg1;
@@ -92,7 +92,7 @@
 - (void)_updateItemsLayout;
 - (void)_getSizingInfos;
 - (void)_updateDelegateFlags;
-@property(retain, nonatomic, setter=_setRowAlignmentsOptions:) NSDictionary *_rowAlignmentOptions;
+@property (nonatomic, strong, setter=_setRowAlignmentsOptions:) NSDictionary *_rowAlignmentOptions;
 
 @end
 

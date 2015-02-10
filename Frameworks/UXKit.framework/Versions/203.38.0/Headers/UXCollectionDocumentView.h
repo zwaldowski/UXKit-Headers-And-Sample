@@ -13,7 +13,7 @@
     UXCollectionView *_collectionView;
 }
 
-@property(nonatomic) __weak UXCollectionView *collectionView; // @synthesize collectionView=_collectionView;
+@property (nonatomic, weak)  UXCollectionView *collectionView; // @synthesize collectionView=_collectionView;
 - (id)accessibilityHitTest:(CGPoint)arg1;
 - (BOOL)acceptsFirstResponder;
 - (void)prepareContentInRect:(CGRect)arg1;

@@ -9,8 +9,8 @@
 @class UXAuxiliaryNavigationStore;
 
 @protocol UXNavigationDestination <NSObject, NSSecureCoding>
-@property(readonly, nonatomic) UXAuxiliaryNavigationStore *auxiliaryNavigationStore;
-@property(readonly, nonatomic) NSString *destinationTitle;
-@property(readonly, nonatomic) NSString *destinationType;
+@property (nonatomic, readonly) UXAuxiliaryNavigationStore *auxiliaryNavigationStore;
+@property (nonatomic, readonly) NSString *destinationTitle;
+@property (nonatomic, readonly) NSString *destinationType;
 @end
 

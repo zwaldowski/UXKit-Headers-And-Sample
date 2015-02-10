@@ -33,16 +33,16 @@
 + (id)layoutAttributesForDecorationViewOfKind:(id)arg1 withIndexPath:(id)arg2;
 + (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 withIndexPath:(id)arg2;
 + (id)layoutAttributesForCellWithIndexPath:(id)arg1;
-@property(retain, nonatomic) NSIndexPath *indexPath; // @synthesize indexPath=_indexPath;
-@property(nonatomic) BOOL isFloatingPinned; // @synthesize isFloatingPinned=_isFloatingPinned;
-@property(nonatomic) CGRect floatingFrame; // @synthesize floatingFrame=_floatingFrame;
-@property(nonatomic) BOOL isFloating; // @synthesize isFloating=_isFloating;
-@property(nonatomic) long long zIndex; // @synthesize zIndex=_zIndex;
-@property(nonatomic) double alpha; // @synthesize alpha=_alpha;
-@property(nonatomic) CGSize size; // @synthesize size=_size;
-@property(nonatomic) CGPoint center; // @synthesize center=_center;
-@property(readonly, nonatomic) NSString *representedElementKind; // @synthesize representedElementKind=_representedElementKind;
-@property(readonly, nonatomic) unsigned long long representedElementCategory;
+@property (nonatomic, strong) NSIndexPath *indexPath; // @synthesize indexPath=_indexPath;
+@property (nonatomic) BOOL isFloatingPinned; // @synthesize isFloatingPinned=_isFloatingPinned;
+@property (nonatomic) CGRect floatingFrame; // @synthesize floatingFrame=_floatingFrame;
+@property (nonatomic) BOOL isFloating; // @synthesize isFloating=_isFloating;
+@property (nonatomic) long long zIndex; // @synthesize zIndex=_zIndex;
+@property (nonatomic) double alpha; // @synthesize alpha=_alpha;
+@property (nonatomic) CGSize size; // @synthesize size=_size;
+@property (nonatomic) CGPoint center; // @synthesize center=_center;
+@property (nonatomic, readonly) NSString *representedElementKind; // @synthesize representedElementKind=_representedElementKind;
+@property (nonatomic, readonly) unsigned long long representedElementCategory;
 - (BOOL)_isSupplementaryView;
 - (BOOL)_isDecorationView;
 - (BOOL)_isCell;
@@ -51,8 +51,8 @@
 - (BOOL)_isEquivalentTo:(id)arg1;
 - (BOOL)isEqual:(id)arg1;
 - (id)description;
-@property(nonatomic) CGRect frame; // @synthesize frame=_frame;
-@property(nonatomic) CGRect bounds;
+@property (nonatomic) CGRect frame; // @synthesize frame=_frame;
+@property (nonatomic) CGRect bounds;
 - (id)copyWithZone:(NSZone *)arg1;
 - (void)_setIndexPath:(id)arg1;
 - (id)_reuseIdentifier;
@@ -61,7 +61,7 @@
 - (void)_setElementKind:(id)arg1;
 - (BOOL)_isClone;
 - (void)_setIsClone:(BOOL)arg1;
-@property(nonatomic, getter=isHidden) BOOL hidden;
+@property (nonatomic, getter=isHidden) BOOL hidden;
 - (id)init;
 
 @end

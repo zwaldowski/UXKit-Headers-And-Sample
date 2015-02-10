@@ -8,7 +8,7 @@
 
 @interface NSIndexPath (UXCollectionViewAdditions)
 + (id)indexPathForItem:(long long)arg1 inSection:(long long)arg2;
-@property(readonly, nonatomic) long long section;
-@property(readonly, nonatomic) long long item;
+@property (nonatomic, readonly) long long section;
+@property (nonatomic, readonly) long long item;
 @end
 

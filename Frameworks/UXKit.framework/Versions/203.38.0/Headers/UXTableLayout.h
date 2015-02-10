@@ -27,8 +27,8 @@
     NSMutableDictionary *_headerAttributesByIndexPath;
 }
 
-@property(readonly, nonatomic) NSMutableDictionary *headerAttributesByIndexPath; // @synthesize headerAttributesByIndexPath=_headerAttributesByIndexPath;
-@property(readonly, nonatomic) NSMutableArray *layoutAttributesArray; // @synthesize layoutAttributesArray=_layoutAttributesArray;
+@property (nonatomic, readonly) NSMutableDictionary *headerAttributesByIndexPath; // @synthesize headerAttributesByIndexPath=_headerAttributesByIndexPath;
+@property (nonatomic, readonly) NSMutableArray *layoutAttributesArray; // @synthesize layoutAttributesArray=_layoutAttributesArray;
 - (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2;
 - (id)layoutAttributesForElementsInRect:(CGRect)arg1;
 - (void)invalidateLayoutWithContext:(id)arg1;
@@ -37,10 +37,10 @@
 - (void)prepareLayout;
 - (BOOL)_wantsHeaderForSection:(unsigned long long)arg1;
 - (NSEdgeInsets)insetForSection:(long long)arg1;
-@property(nonatomic) BOOL showsSectionFooterForSingleSection;
-@property(nonatomic) BOOL showsSectionHeaderForSingleSection;
-@property(nonatomic) BOOL floatingHeadersDisabled;
-@property(readonly, nonatomic) id <UXCollectionViewDelegateFlowLayout> delegateFlowLayout;
+@property (nonatomic) BOOL showsSectionFooterForSingleSection;
+@property (nonatomic) BOOL showsSectionHeaderForSingleSection;
+@property (nonatomic) BOOL floatingHeadersDisabled;
+@property (nonatomic, readonly) id <UXCollectionViewDelegateFlowLayout> delegateFlowLayout;
 - (void)_setCollectionView:(id)arg1;
 - (id)init;
 

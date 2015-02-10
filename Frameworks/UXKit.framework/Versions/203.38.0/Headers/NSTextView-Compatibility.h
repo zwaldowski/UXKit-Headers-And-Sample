@@ -9,16 +9,16 @@
 @interface NSTextView (Compatibility) <UITextInputTraits>
 - (NSEdgeInsets)__textContainerInset;
 - (void)__setTextContainerInset:(NSEdgeInsets)arg1;
-@property(nonatomic) unsigned long long textAlignment;
+@property (nonatomic) unsigned long long textAlignment;
 - (CGSize)sizeThatFits:(CGSize)arg1;
-@property(copy, nonatomic) NSString *text;
-@property(nonatomic) long long autocapitalizationType;
-@property(nonatomic) long long autocorrectionType;
-@property(nonatomic) BOOL enablesReturnKeyAutomatically;
-@property(nonatomic) long long keyboardAppearance;
-@property(nonatomic) long long keyboardType;
-@property(nonatomic) long long returnKeyType;
-@property(nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
-@property(nonatomic) long long spellCheckingType;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) long long autocorrectionType;
+@property (nonatomic) BOOL enablesReturnKeyAutomatically;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long returnKeyType;
+@property (nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
+@property (nonatomic) long long spellCheckingType;
 @end
 

@@ -7,8 +7,8 @@
 #import <Cocoa/Cocoa.h>
 
 @protocol UXKitAppearance <NSObject>
-@property(nonatomic) long long tintAdjustmentMode;
-@property(retain, nonatomic) NSColor *tintColor;
+@property (nonatomic) long long tintAdjustmentMode;
+@property (nonatomic, strong) NSColor *tintColor;
 - (void)tintColorDidChange;
 @end
 

@@ -13,8 +13,8 @@
     BOOL _selected;
 }
 
-@property(readonly, nonatomic) NSView *contentView; // @synthesize contentView=_contentView;
-@property(nonatomic, getter=isSelected) BOOL selected; // @synthesize selected=_selected;
+@property (nonatomic, readonly) NSView *contentView; // @synthesize contentView=_contentView;
+@property (nonatomic, getter=isSelected) BOOL selected; // @synthesize selected=_selected;
 - (void)_setSelected:(BOOL)arg1 animated:(BOOL)arg2;
 - (void)prepareForReuse;
 - (void)resizeSubviewsWithOldSize:(CGSize)arg1;

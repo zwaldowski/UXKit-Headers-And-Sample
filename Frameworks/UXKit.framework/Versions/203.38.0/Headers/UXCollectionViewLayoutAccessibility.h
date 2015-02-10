@@ -17,19 +17,19 @@
 }
 
 + (Class)sectionAccessibilityClass;
-@property(retain, nonatomic) NSMutableArray *_sectionCache; // @synthesize _sectionCache=__sectionCache;
-@property(nonatomic) unsigned long long _sectionCacheOffset; // @synthesize _sectionCacheOffset=__sectionCacheOffset;
-@property(nonatomic) __weak UXCollectionViewLayout *layout; // @synthesize layout=_layout;
+@property (nonatomic, strong) NSMutableArray *_sectionCache; // @synthesize _sectionCache=__sectionCache;
+@property (nonatomic) unsigned long long _sectionCacheOffset; // @synthesize _sectionCacheOffset=__sectionCacheOffset;
+@property (nonatomic, weak)  UXCollectionViewLayout *layout; // @synthesize layout=_layout;
 - (id)_dequeueSectionWithIndex:(unsigned long long)arg1;
 - (void)_trimSectionCacheToVisibleSections:(id)arg1;
 - (id)_visibleSections;
 - (void)accessibilityPostNotification:(id)arg1;
-@property(copy, nonatomic) NSArray *accessibilitySelectedCells; // @dynamic accessibilitySelectedCells;
+@property (nonatomic, copy) NSArray *accessibilitySelectedCells; // @dynamic accessibilitySelectedCells;
 - (id)accessibilityArrayAttributeValues:(id)arg1 index:(unsigned long long)arg2 maxCount:(unsigned long long)arg3;
 - (unsigned long long)accessibilityArrayAttributeCount:(id)arg1;
 - (unsigned long long)accessibilityIndexOfChild:(id)arg1;
 - (id)accessibilityChildren;
-@property(readonly, copy, nonatomic) NSArray *accessibilityVisibleChildren; // @synthesize accessibilityVisibleChildren=_accessibilityVisibleChildren;
+@property (nonatomic, copy, readonly) NSArray *accessibilityVisibleChildren; // @synthesize accessibilityVisibleChildren=_accessibilityVisibleChildren;
 - (CGRect)accessibilityFrameInParentSpace;
 - (CGRect)accessibilityFrame;
 - (long long)accessibilityColumnCount;
@@ -50,7 +50,7 @@
 - (void)accessibilityInvalidateLayout;
 - (void)accessibilityDidEndScrolling;
 - (void)accessibilityPrepareForCollectionViewUpdates:(id)arg1;
-@property(readonly, nonatomic) __weak UXCollectionView *collectionView;
+@property (nonatomic, weak, readonly) UXCollectionView *collectionView;
 - (id)initWithLayout:(id)arg1;
 
 @end

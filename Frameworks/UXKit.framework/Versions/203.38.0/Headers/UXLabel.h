@@ -18,12 +18,12 @@
     CGSize _shadowOffset;
 }
 
-@property(nonatomic, getter=isHighlighted) BOOL highlighted; // @synthesize highlighted=_highlighted;
-@property(retain, nonatomic) NSColor *highlightedTextColor; // @synthesize highlightedTextColor=_highlightedTextColor;
-@property(nonatomic) long long numberOfLines; // @synthesize numberOfLines=_numberOfLines;
-@property(nonatomic) CGSize shadowOffset; // @synthesize shadowOffset=_shadowOffset;
-@property(retain, nonatomic) NSColor *shadowColor; // @synthesize shadowColor=_shadowColor;
-@property(retain, nonatomic) NSColor *textColor; // @synthesize textColor=_textColor;
+@property (nonatomic, getter=isHighlighted) BOOL highlighted; // @synthesize highlighted=_highlighted;
+@property (nonatomic, strong) NSColor *highlightedTextColor; // @synthesize highlightedTextColor=_highlightedTextColor;
+@property (nonatomic) long long numberOfLines; // @synthesize numberOfLines=_numberOfLines;
+@property (nonatomic) CGSize shadowOffset; // @synthesize shadowOffset=_shadowOffset;
+@property (nonatomic, strong) NSColor *shadowColor; // @synthesize shadowColor=_shadowColor;
+@property (nonatomic, strong) NSColor *textColor; // @synthesize textColor=_textColor;
 - (id)accessibilityRoleDescription;
 - (void)setAccessibilityRoleDescription:(id)arg1;
 - (id)accessibilityRole;
@@ -31,14 +31,14 @@
 - (void)setAccessibilityLabel:(id)arg1;
 - (id)accessibilityValue;
 - (id)textFieldCell;
-@property(nonatomic) BOOL selectable;
-@property(nonatomic) BOOL centerVertically;
-@property(nonatomic) double preferredMaxLayoutWidth;
-@property(nonatomic) unsigned long long textAlignment;
-@property(nonatomic) unsigned long long lineBreakMode;
-@property(copy, nonatomic) NSAttributedString *attributedText;
-@property(copy, nonatomic) NSString *text;
-@property(retain, nonatomic) NSFont *font;
+@property (nonatomic) BOOL selectable;
+@property (nonatomic) BOOL centerVertically;
+@property (nonatomic) double preferredMaxLayoutWidth;
+@property (nonatomic) unsigned long long textAlignment;
+@property (nonatomic) unsigned long long lineBreakMode;
+@property (nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic, copy) NSString *text;
+@property (nonatomic, strong) NSFont *font;
 - (CGSize)intrinsicContentSize;
 - (CGSize)sizeThatFits:(CGSize)arg1;
 - (void)sizeToFit;

@@ -16,12 +16,12 @@
     SEL _action;
 }
 
-@property(nonatomic) BOOL ignoresMultiClick; // @synthesize ignoresMultiClick=_ignoresMultiClick;
-@property(nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
-@property(nonatomic, getter=isSelected) BOOL selected; // @synthesize selected=_selected;
-@property(nonatomic, getter=isHighlighted) BOOL highlighted; // @synthesize highlighted=_highlighted;
-@property(nonatomic) SEL action; // @synthesize action=_action;
-@property(nonatomic) __weak id target; // @synthesize target=_target;
+@property (nonatomic) BOOL ignoresMultiClick; // @synthesize ignoresMultiClick=_ignoresMultiClick;
+@property (nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
+@property (nonatomic, getter=isSelected) BOOL selected; // @synthesize selected=_selected;
+@property (nonatomic, getter=isHighlighted) BOOL highlighted; // @synthesize highlighted=_highlighted;
+@property (nonatomic) SEL action; // @synthesize action=_action;
+@property (nonatomic, weak)  id target; // @synthesize target=_target;
 - (void)setTarget:(id)arg1 action:(SEL)arg2;
 - (void)mouseDown:(id)arg1;
 - (BOOL)sendAction:(SEL)arg1 to:(id)arg2;

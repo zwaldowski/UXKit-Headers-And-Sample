@@ -15,11 +15,11 @@
     long long _tag;
 }
 
-@property(nonatomic) long long tag; // @synthesize tag=_tag;
-@property(retain, nonatomic) NSImage *image; // @synthesize image=_image;
-@property(copy, nonatomic) NSString *accessibilityLabel; // @synthesize accessibilityLabel=_accessibilityLabel;
-@property(retain, nonatomic) NSString *title; // @synthesize title=_title;
-@property(nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
+@property (nonatomic) long long tag; // @synthesize tag=_tag;
+@property (nonatomic, strong) NSImage *image; // @synthesize image=_image;
+@property (nonatomic, copy) NSString *accessibilityLabel; // @synthesize accessibilityLabel=_accessibilityLabel;
+@property (nonatomic, strong) NSString *title; // @synthesize title=_title;
+@property (nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
 - (id)init;
 
 @end
