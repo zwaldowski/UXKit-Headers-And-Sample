@@ -7,6 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSMenuItem (Compatibility)
-- (id)initWithTitle:(id)arg1 action:(SEL)arg2;
+- (instancetype)initWithTitle:(id)arg1 action:(SEL)arg2;
 @end
 

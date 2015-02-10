@@ -12,7 +12,6 @@
 
 @interface UXNavigationController : UXViewController <UXToolbarDelegate>
 
-+ (id)keyPathsForValuesAffectingPreferredContentSize;
 @property (nonatomic, readonly) UXEventTracker *interactivePopEventTracker;
 @property (nonatomic, weak) id <UXNavigationControllerDelegate> delegate;
 @property (nonatomic, getter=isToolbarHidden) BOOL toolbarHidden;
@@ -34,21 +33,8 @@
 - (void)setToolbarHidden:(BOOL)arg1 animated:(BOOL)arg2;
 - (void)setNavigationBarHidden:(BOOL)arg1 animated:(BOOL)arg2;
 @property (nonatomic, copy) NSArray *viewControllers;
-- (void)setEdgesForExtendedLayout:(unsigned long long)arg1;
-- (id)transitionCoordinator;
-- (void)invalidateIntrinsicLayoutInsets;
-- (NSEdgeInsets)intrinsicLayoutInsets;
-- (CGSize)preferredContentSize;
-- (id)preferredFirstResponder;
-- (void)updateViewConstraints;
-- (void)viewDidAppear;
-- (void)viewWillAppear;
-- (void)viewDidLoad;
-- (void)scrollWheel:(id)arg1;
-- (BOOL)wantsForwardedScrollEventsForAxis:(long long)arg1;
-- (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
-- (id)initWithNibName:(id)arg1 bundle:(id)arg2;
-- (id)initWithRootViewController:(id)arg1;
+
+- (instancetype)initWithRootViewController:(id)arg1;
 
 @end
 

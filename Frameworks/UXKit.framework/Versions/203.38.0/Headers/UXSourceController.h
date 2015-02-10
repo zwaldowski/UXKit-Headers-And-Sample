@@ -11,9 +11,6 @@
 
 @interface UXSourceController : UXViewController <UXNavigationControllerDelegate>
 
-@property (readonly) NSOperationQueue *viewControllerOperations;
-@property (nonatomic, readonly) NSMapTable *transitionControllerClassByToViewControllerClass;
-@property (nonatomic, readonly) NSMapTable *navigationControllerByRootViewController;
 @property (nonatomic, readonly) NSSplitView *splitView;
 @property (nonatomic, readonly) NSSegmentedControl *segmentedControl;
 @property (nonatomic, copy) NSString *sourceListAutosaveName;
@@ -28,25 +25,17 @@
 - (void)navigationController:(id)arg1 didShowViewController:(id)arg2;
 - (void)navigationController:(id)arg1 willShowViewController:(id)arg2;
 - (void)sourceSplitView:(id)arg1 didResizeMasterWidth:(CGFloat)arg2;
-- (id)transitionCoordinator;
 - (void)dismissViewControllerAnimated:(BOOL)arg1 completion:(void(^)(void))arg2;
 - (void)presentViewController:(id)arg1 animated:(BOOL)arg2 completion:(void(^)(void))arg3;
 - (void)removeDestination:(id)arg1 animated:(BOOL)arg2 completion:(void(^)(BOOL finished))arg3;
 - (void)navigateToDestination:(id)arg1 animated:(BOOL)arg2 completion:(void(^)(BOOL finished))arg3;
-- (id)preferredFirstResponder;
-- (void)viewWillAppear;
-- (void)viewDidLoad;
-- (void)keyDown:(id)arg1;
-- (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (void)didChangeSelectedViewController;
 - (void)willAddNavigationController:(id)arg1;
-- (void)segmentChanged:(id)arg1;
 @property (nonatomic) NSUInteger selectedIndex;
 - (void)setSelectedIndex:(NSUInteger)arg1 animated:(BOOL)arg2;
 - (void)setSelectedViewController:(id)arg1 animated:(BOOL)arg2;
 - (void)setRootViewControllers:(id)arg1 destination:(id)arg2 completion:(void(^)(BOOL finished))arg3;
 @property (nonatomic, readonly) BOOL alternateTitleEnabled;
-- (id)tabBarView;
 - (void)unregisterTransitionControllerForTransitionToViewControllerClass:(Class)arg1;
 - (void)registerTranistionControllerClass:(Class)arg1 forViewControllerClass:(Class)arg2;
 - (void)registerTransitionControllerClass:(Class)arg1 forViewControllerClass:(Class)arg2;
@@ -58,7 +47,6 @@
 - (void)removeRootViewControllerAtIndex:(NSInteger)arg1;
 - (void)insertRootViewController:(id)arg1 atIndex:(NSInteger)arg2;
 - (void)addRootViewController:(id)arg1;
-- (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 
 @end
 

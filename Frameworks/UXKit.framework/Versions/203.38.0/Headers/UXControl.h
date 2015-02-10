@@ -15,10 +15,6 @@
 @property (nonatomic) SEL action;
 @property (nonatomic, weak) id target;
 - (void)setTarget:(id)arg1 action:(SEL)arg2;
-- (void)mouseDown:(id)arg1;
-- (BOOL)sendAction:(SEL)arg1 to:(id)arg2;
-- (BOOL)isFlipped;
-- (id)initWithFrame:(CGRect)arg1;
 
 @end
 

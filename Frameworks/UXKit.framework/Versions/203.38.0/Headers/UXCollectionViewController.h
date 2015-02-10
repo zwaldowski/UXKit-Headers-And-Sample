@@ -19,9 +19,7 @@
 - (id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2;
 - (NSInteger)collectionView:(id)arg1 numberOfItemsInSection:(CGFloat)arg2;
 - (NSInteger)numberOfSectionsInCollectionView:(id)arg1;
-- (id)preferredFirstResponder;
-- (void)viewDidLoad;
-- (id)initWithCollectionViewLayout:(id)arg1;
+- (instancetype)initWithCollectionViewLayout:(id)arg1;
 
 @end
 

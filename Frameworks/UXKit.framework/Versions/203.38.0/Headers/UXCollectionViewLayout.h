@@ -24,7 +24,7 @@
 - (id)firstSelectableItemIndexPath;
 - (NSEdgeInsets)insetsForScrollingItemAtIndexPath:(id)arg1 toScrollPosition:(NSUInteger)arg2; // TODO: enum
 - (CGRect)backingAlignedRect:(CGRect)arg1 options:(NSUInteger)arg2; // TODO: enum
-- (NSInteger)userInterfaceLayoutDirection; // TODO: enum
+- (NSUserInterfaceLayoutDirection)userInterfaceLayoutDirection;
 - (CGPoint)updatesContentOffsetForProposedContentOffset:(CGPoint)arg1;
 - (CGPoint)transitionContentOffsetForProposedContentOffset:(CGPoint)arg1 keyItemIndexPath:(id)arg2;
 - (void)finalizeLayoutTransition;

@@ -12,15 +12,9 @@
 
 + (Class)collectionViewClass;
 @property (nonatomic, readonly) id <UXTableViewDelegate> tableViewDelegate;
-- (id)preferredFirstResponder;
-- (void)viewDidAppear;
-- (void)viewWillAppear;
-- (void)viewDidLoad;
-- (void)didUpdateLayoutGuides;
-- (void)viewDidLayoutSubviews;
 @property (nonatomic, readonly) UXTableView *tableView;
-- (id)initWithNibName:(id)arg1 bundle:(id)arg2;
-- (id)initWithStyle:(NSInteger)arg1; // TODO: enum
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithStyle:(NSInteger)arg1; // TODO: enum
+
 
 @end
-

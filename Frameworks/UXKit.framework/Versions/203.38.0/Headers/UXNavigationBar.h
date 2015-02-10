@@ -35,12 +35,7 @@
 - (void)pushNavigationItem:(id)arg1 animated:(BOOL)arg2;
 @property (nonatomic, readonly) UXNavigationItem *backItem;
 @property (nonatomic, readonly) UXNavigationItem *topItem;
-- (void)mouseDown:(id)arg1;
-- (void)viewDidEndLiveResize;
-- (void)layout;
-- (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (NSInteger)barPosition; // TODO: enum
-- (id)initWithFrame:(CGRect)arg1;
 
 @end
 

@@ -12,9 +12,6 @@
 @property (nonatomic) CGFloat trackingThreshold;
 @property (nonatomic, readonly) CGPoint zeroingDelta;
 @property (nonatomic, readonly) CGPoint delta;
-- (void)mouseUp:(id)arg1;
-- (void)mouseDragged:(id)arg1;
-- (void)mouseDown:(id)arg1;
 - (void)reset;
 
 @end

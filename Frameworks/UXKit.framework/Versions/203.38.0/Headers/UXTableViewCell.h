@@ -24,16 +24,12 @@
 @property (nonatomic, strong) UXView *selectedBackgroundView;
 @property (nonatomic, strong) UXView *backgroundView;
 @property (nonatomic) NSInteger style; // TODO: enum
-- (id)accessibilityLabel;
 @property (nonatomic, readonly) UXView *lowerSpace;
 @property (nonatomic, readonly) UXView *upperSpace;
 @property (nonatomic, readonly) UXView *defaultSelectedBackgroundView;
-- (void)prepareForReuse;
-- (void)setSelected:(BOOL)arg1;
-- (void)updateConstraints;
-- (void)viewDidMoveToWindow;
-- (id)initWithFrame:(CGRect)arg1;
-- (id)initWithStyle:(NSInteger)arg1 reuseIdentifier:(id)arg2; // TODO: enum
+
+- (instancetype)initWithFrame:(CGRect)arg1 NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithStyle:(NSInteger)arg1 reuseIdentifier:(NSString *)arg2 NS_DESIGNATED_INITIALIZER; // TODO: enum
 
 @end
 

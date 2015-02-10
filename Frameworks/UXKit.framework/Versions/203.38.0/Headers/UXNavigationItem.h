@@ -31,8 +31,9 @@
 - (void)setRightBarButtonItem:(id)arg1 animated:(BOOL)arg2;
 - (void)setLeftBarButtonItems:(id)arg1 animated:(BOOL)arg2;
 - (void)setLeftBarButtonItem:(id)arg1 animated:(BOOL)arg2;
-- (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
-- (id)initWithTitle:(id)arg1;
+
+- (instancetype)initWithTitle:(id)arg1 NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_DESIGNATED_INITIALIZER;
 
 @end
 

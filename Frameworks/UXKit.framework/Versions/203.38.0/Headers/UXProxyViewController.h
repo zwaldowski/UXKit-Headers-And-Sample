@@ -10,8 +10,6 @@
 
 @interface UXProxyViewController : UXViewController
 
-- (void)didMoveToParentViewController:(id)arg1;
-- (BOOL)isViewLoaded;
 - (UXView *)view;
 - (id)initWithView:(UXView *)arg1;
 

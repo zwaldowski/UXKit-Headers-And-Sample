@@ -10,7 +10,7 @@
 @interface UXTabBarItem : UXBarItem
 
 @property (nonatomic, copy) NSSet *possibleTitles;
-- (id)initWithTitle:(id)arg1;
+- (instancetype)initWithTitle:(NSString *)arg1;
 
 @end
 

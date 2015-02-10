@@ -8,10 +8,12 @@
 #import <UXKit/UXNavigationDestination-Protocol.h>
 
 @protocol UXSourceList <NSObject>
+
 @property (readonly) CGFloat maxSourceListWidth;
 @property (readonly) CGFloat minSourceListWidth;
 @property BOOL collapsed;
 - (void)updateSelection;
 - (void)selectNavigationDestination:(id <UXNavigationDestination>)arg1;
+
 @end
 

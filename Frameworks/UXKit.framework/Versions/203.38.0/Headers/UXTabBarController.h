@@ -12,12 +12,7 @@
 @property (nonatomic, readonly) NSSegmentedControl *segmentedControl;
 @property (nonatomic, weak) UXViewController *selectedViewController;
 @property (nonatomic, copy) NSArray *viewControllers;
-- (void)viewDidLoad;
 @property (nonatomic) NSUInteger selectedIndex;
-- (void)keyDown:(id)arg1;
-- (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
-- (void)segmentChanged:(id)arg1;
-- (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 
 @end
 

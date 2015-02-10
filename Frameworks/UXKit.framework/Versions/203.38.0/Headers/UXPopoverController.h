@@ -21,11 +21,8 @@
 @property (nonatomic) CGSize popoverContentSize;
 - (void)setPopoverContentSize:(CGSize)arg1 animated:(BOOL)arg2;
 @property (nonatomic, readonly, getter=isPopoverVisible) BOOL popoverVisible;
-- (void)popoverWillShow:(id)arg1;
-- (void)popoverDidClose:(id)arg1;
 @property (nonatomic) NSInteger popoverBehavior;  // TODO: enum
 @property (nonatomic, readonly) NSPopover *popover;
-- (void)observeValueForKeyPath:(id)arg1 ofObject:(id)arg2 change:(id)arg3 context:(void *)arg4;
 - (id)initWithContentViewController:(id)arg1;
 
 @end

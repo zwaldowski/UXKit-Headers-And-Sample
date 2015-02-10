@@ -10,7 +10,6 @@
 
 @interface UXEventTracker : NSResponder
 
-@property (nonatomic, strong) NSMapTable *selectorsByTarget;
 @property (nonatomic, copy) void(^eventTrackerDidBeginHandler)(UXEventTracker *);
 @property (nonatomic, copy) void(^eventTrackerDidChangeHandler)(UXEventTracker *);
 @property (nonatomic, copy) void(^eventTrackerDidEndHandler)(UXEventTracker *);

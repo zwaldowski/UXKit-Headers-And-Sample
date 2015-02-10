@@ -15,13 +15,7 @@
 @property (nonatomic) CGSize shadowOffset;
 @property (nonatomic, strong) NSColor *shadowColor;
 @property (nonatomic, strong) NSColor *textColor;
-- (id)accessibilityRoleDescription;
-- (void)setAccessibilityRoleDescription:(id)arg1;
-- (id)accessibilityRole;
-- (id)accessibilityLabel;
-- (void)setAccessibilityLabel:(id)arg1;
-- (id)accessibilityValue;
-- (id)textFieldCell;
+@property (nonatomic, readonly) NSTextFieldCell *textFieldCell;
 @property (nonatomic) BOOL selectable;
 @property (nonatomic) BOOL centerVertically;
 @property (nonatomic) CGFloat preferredMaxLayoutWidth;
@@ -30,11 +24,6 @@
 @property (nonatomic, copy) NSAttributedString *attributedText;
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, strong) NSFont *font;
-- (CGSize)intrinsicContentSize;
-- (CGSize)sizeThatFits:(CGSize)arg1;
-- (void)sizeToFit;
-- (void)setBackgroundColor:(id)arg1;
-- (id)initWithFrame:(CGRect)arg1;
 
 @end
 

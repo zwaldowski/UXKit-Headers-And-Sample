@@ -11,14 +11,6 @@
 
 @property (nonatomic, readonly) NSView *contentView;
 @property (nonatomic, getter=isSelected) BOOL selected;
-- (void)prepareForReuse;
-- (void)resizeSubviewsWithOldSize:(CGSize)arg1;
-- (BOOL)wantsUpdateLayer;
-- (id)initWithFrame:(CGRect)arg1;
-- (void)setAccessibilitySelected:(BOOL)arg1;
-- (BOOL)isAccessibilitySelectorAllowed:(SEL)arg1;
-- (BOOL)isAccessibilitySelected;
-- (BOOL)accessibilityPerformPress;
 
 @end
 

@@ -18,20 +18,16 @@
 @property (nonatomic, weak) id target;
 @property (nonatomic) SEL action;
 @property (nonatomic, strong) NSView *customView;
-- (void)setImage:(id)arg1;
-- (void)setEnabled:(BOOL)arg1;
-- (void)setTitle:(id)arg1;
-- (void)tintColorDidChange;
 @property (nonatomic) CGFloat width;
 @property (nonatomic) NSInteger style; // TODO: enum
 @property (nonatomic) NSInteger tintAdjustmentMode; // TODO: enum
 @property (nonatomic, strong) NSColor *tintColor;
-- (id)initWithStyle:(NSInteger)arg1 target:(id)arg2 action:(SEL)arg3; // TODO: enum
-- (id)initWithContentViewController:(id)arg1;
-- (id)initWithCustomView:(id)arg1;
-- (id)initWithBarButtonSystemItem:(NSInteger)arg1 target:(id)arg2 action:(SEL)arg3; // TODO: enum
-- (id)initWithTitle:(id)arg1 style:(NSInteger)arg2 target:(id)arg3 action:(SEL)arg4; // TODO: enum
-- (id)initWithImage:(id)arg1 style:(NSInteger)arg2 target:(id)arg3 action:(SEL)arg4; // TODO: enum
+- (instancetype)initWithStyle:(NSInteger)arg1 target:(id)arg2 action:(SEL)arg3; // TODO: enum
+- (instancetype)initWithContentViewController:(id)arg1;
+- (instancetype)initWithCustomView:(id)arg1;
+- (instancetype)initWithBarButtonSystemItem:(NSInteger)arg1 target:(id)arg2 action:(SEL)arg3; // TODO: enum
+- (instancetype)initWithTitle:(id)arg1 style:(NSInteger)arg2 target:(id)arg3 action:(SEL)arg4; // TODO: enum
+- (instancetype)initWithImage:(id)arg1 style:(NSInteger)arg2 target:(id)arg3 action:(SEL)arg4; // TODO: enum
 
 @end
 

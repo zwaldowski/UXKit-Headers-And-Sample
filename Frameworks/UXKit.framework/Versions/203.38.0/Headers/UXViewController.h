@@ -24,7 +24,6 @@
 - (void)invalidateIntrinsicLayoutInsets;
 - (NSEdgeInsets)intrinsicLayoutInsets;
 - (CGSize)preferredContentSizeCappedToSize:(CGSize)arg1;
-@property CGSize preferredContentSize;
 - (id)transitionCoordinator;
 - (void)setEditing:(BOOL)arg1 animated:(BOOL)arg2;
 - (void)dismissViewControllerAnimated:(BOOL)arg1 completion:(void(^)(void))arg2;
@@ -32,43 +31,25 @@
 @property (nonatomic, readonly) UXViewController *presentedViewController;
 - (void)didMoveToParentViewController:(id)arg1;
 - (void)willMoveToParentViewController:(id)arg1;
-- (void)removeFromParentViewController;
-- (void)removeChildViewControllerAtIndex:(NSInteger)arg1;
-- (void)addChildViewController:(id)arg1;
 - (void)viewDidLiveResize;
 - (void)viewWillLiveResize;
 - (void)viewDidLayoutSubviews;
 - (void)viewWillLayoutSubviews;
 - (void)viewUpdateLayer;
-- (void)viewDidDisappear;
-- (void)viewWillDisappear;
-- (void)viewDidAppear;
-- (void)viewWillAppear;
-- (void)loadView;
-- (BOOL)acceptsFirstResponder;
-- (void)awakeFromNib;
 @property (nonatomic, readonly) NSResponder *preferredFirstResponder;
-@property (copy) NSString *title;
-- (void)setView:(id)arg1;
 @property (nonatomic, readonly) UXView *uxView;
-- (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 @property (nonatomic) BOOL hidesBottomBarWhenPushed;
 - (NSInteger)preferredToolbarPosition; // TODO: enum
-- (id)toolbarViewController;
-- (void)setToolbarViewController:(id)arg1;
-- (id)toolbarItems;
+@property (nonatomic, strong) id toolbarViewController;
+@property (nonatomic, strong) id toolbarItems;
 - (void)setToolbarItems:(id)arg1 animated:(BOOL)arg2;
-- (void)setToolbarItems:(id)arg1;
-- (id)accessoryBarItems;
-- (void)setAccessoryBarItems:(id)arg1;
-- (id)accessoryViewController;
-- (void)setAccessoryViewController:(id)arg1;
+@property (nonatomic, strong) id accessoryBarItems;
+@property (nonatomic, strong) UXViewController *accessoryViewController;
 @property (nonatomic, readonly) UXNavigationItem *navigationItem;
 @property (nonatomic, readonly) UXNavigationController *navigationController;
 @property (nonatomic, readonly) UXTabBarController *tabBarController;
 @property (nonatomic, readonly) UXTabBarItem *tabBarItem;
 @property (nonatomic, readonly) UXPopoverController *popoverController;
-- (void)updateViewConstraints;
 - (void)prepareForTransitionWithContext:(id)arg1 completion:(void(^)(void))arg2;
 @property (nonatomic, readonly) NSInteger interfaceOrientation; // TODO: enum
 - (void)viewDidDisappear:(BOOL)arg1;
@@ -83,6 +64,8 @@
 - (id)navigationDestination;
 - (id)navigationIdentifier;
 @property (nonatomic, readonly) UXSourceController *sourceController;
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil NS_DESIGNATED_INITIALIZER;
 
 @end
 

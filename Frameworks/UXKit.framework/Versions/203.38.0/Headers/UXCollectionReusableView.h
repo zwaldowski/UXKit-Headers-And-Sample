@@ -15,16 +15,6 @@
 - (void)willTransitionFromLayout:(id)arg1 toLayout:(id)arg2;
 - (void)applyLayoutAttributes:(UXCollectionViewLayoutAttributes *)arg1;
 - (void)prepareForReuse;
-- (BOOL)wantsUpdateLayer;
-- (id)initWithFrame:(CGRect)arg1;
-- (BOOL)accessibilityPerformScrollToVisible;
-- (void)accessibilityPerformAction:(id)arg1;
-- (id)accessibilityActionDescription:(id)arg1;
-- (id)accessibilityActionNames;
-- (id)accessibilityAttributeValue:(id)arg1;
-- (id)accessibilityAttributeNames;
-- (id)accessibilityRole;
-- (id)accessibilityParent;
 
 @end
 

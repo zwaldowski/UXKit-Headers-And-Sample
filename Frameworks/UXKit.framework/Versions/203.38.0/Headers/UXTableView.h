@@ -9,6 +9,8 @@
 #import <UXKit/UXTableView.h>
 #import <UXKit/UXCollectionViewDataSource-Protocol.h>
 
+@class UXCollectionViewLayout;
+
 @interface UXTableView : UXCollectionView
 
 + (NSUInteger)collectionViewScrollPositionFromScrollPosition:(NSInteger)arg1; // TODO: enums
@@ -18,7 +20,6 @@
 @property (nonatomic) CGFloat rowHeight;
 @property (nonatomic, weak) id <UXTableViewDelegate> tableViewDelegate;
 @property (nonatomic, weak) id <UXTableViewDataSource> tableViewDataSource;
-@property (nonatomic) double alpha;
 - (void)collectionView:(id)arg1 layout:(id)arg2 supplementaryViewDidEndFloatingAtIndexPath:(id)arg3 kind:(id)arg4;
 - (void)collectionView:(id)arg1 layout:(id)arg2 supplementaryViewDidBeginFloatingAtIndexPath:(id)arg3 kind:(id)arg4;
 - (CGSize)collectionView:(id)arg1 layout:(id)arg2 sizeForItemAtIndexPath:(id)arg3;
@@ -29,14 +30,6 @@
 - (id)collectionView:(id)arg1 cellForItemAtIndexPath:(id)arg2;
 - (NSInteger)collectionView:(id)arg1 numberOfItemsInSection:(NSInteger)arg2;
 - (id)collectionView:(id)arg1 viewForSupplementaryElementOfKind:(id)arg2 atIndexPath:(id)arg3;
-- (void)deleteWordBackward:(id)arg1;
-- (void)moveRight:(id)arg1;
-- (void)keyDown:(id)arg1;
-- (void)mouseDragged:(id)arg1;
-- (void)mouseUp:(id)arg1;
-- (void)mouseDown:(id)arg1;
-- (BOOL)acceptsFirstResponder;
-- (id)menuForEvent:(id)arg1;
 - (void)deselectRowAtIndexPath:(id)arg1 animated:(BOOL)arg2;
 - (void)selectRowAtIndexPath:(id)arg1 animated:(BOOL)arg2 scrollPosition:(NSInteger)arg3; // TODO: enum
 - (id)indexPathForSelectedRow;
@@ -50,23 +43,19 @@
 - (void)endUpdates;
 - (void)beginUpdates;
 - (id)indexPathsForVisibleRows;
-- (void)sizeToFit;
-- (CGSize)sizeThatFits:(CGSize)arg1;
 - (NSInteger)numberOfRowsInSection:(NSInteger)arg1;
 - (id)dequeueReusableHeaderFooterViewWithReuseIdentifier:(id)arg1 forSection:(NSInteger)arg2;
 - (id)dequeueReusableCellWithReuseIdentifier:(id)arg1 forIndexPath:(id)arg2;
 - (id)dequeueReusableCellWithIdentifier:(id)arg1 forIndexPath:(id)arg2;
 - (void)registerClass:(Class)arg1 forCellReuseIdentifier:(id)arg2;
 - (id)cellForRowAtIndexPath:(id)arg1;
-- (void)setDelegate:(id)arg1;
-- (void)setDataSource:(id)arg1;
 - (BOOL)overdrawEnabled;
 - (void)setOverdrawEnabled:(BOOL)arg1;
-- (id)initWithFrame:(CGRect)arg1;
-- (id)initWithFrame:(CGRect)arg1 style:(NSInteger)arg2; // TODO: enum
-- (id)initWithFrame:(CGRect)arg1 collectionViewLayout:(id)arg2;
-- (void)setNeedsDisplay:(BOOL)arg1;
 @property (nonatomic, getter=isUserInteractionEnabled) BOOL userInteractionEnabled;
+
+- (instancetype)initWithFrame:(CGRect)arg1 NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithFrame:(CGRect)arg1 style:(NSInteger)arg2; // TODO: enum
+- (instancetype)initWithFrame:(CGRect)arg1 collectionViewLayout:(UXCollectionViewLayout *)arg2;
 
 @end
 

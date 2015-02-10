@@ -15,31 +15,17 @@
 
 @interface UXCollectionView : NSScrollView
 
-+ (BOOL)isCompatibleWithResponsiveScrolling;
-+ (Class)documentClass;
 @property (nonatomic, readonly, getter=isDecelerating) BOOL decelerating;
 @property (nonatomic, readonly, getter=isScrolling) BOOL scrolling;
 @property (nonatomic) BOOL allowsPaintingSelection;
 @property (nonatomic) BOOL allowsLassoSelection;
 @property (nonatomic) BOOL allowsContinuousSelection;
 @property (nonatomic, strong) UXCollectionViewLayout *collectionViewLayout;
-- (id)accessibilityHitTest:(CGPoint)arg1;
 @property (nonatomic) BOOL lassoInvertsSelection;
 - (BOOL)accessibilityPerformPressWithItemAtIndexPath:(id)arg1;
-- (id)accessibilityChildren;
 - (id)accessibilityContentSiblingCellFromIndexPath:(id)arg1 direction:(id)arg2;
-- (void)keyDown:(id)arg1;
-- (void)mouseUp:(id)arg1;
-- (void)mouseDragged:(id)arg1;
-- (void)rightMouseDown:(id)arg1;
 - (void)accessibilitySelectItemsAtIndexPaths:(id)arg1;
 - (void)accessibilitySelected:(BOOL)arg1 itemAtIndexPath:(id)arg2;
-- (void)mouseDown:(id)arg1;
-- (id)menuForEvent:(id)arg1;
-- (BOOL)resignFirstResponder;
-- (BOOL)becomeFirstResponder;
-- (BOOL)acceptsFirstResponder;
-- (BOOL)canBecomeKeyView;
 - (void)performBatchUpdates:(void(^)(void))arg1 completion:(void(^)(BOOL finished))arg2;
 - (void)moveItemAtIndexPath:(id)arg1 toIndexPath:(id)arg2;
 - (void)reloadItemsAtIndexPaths:(id)arg1;
@@ -97,25 +83,14 @@
 - (void)touchesBeganWithEvent:(id)arg1;
 - (void)scrollViewDidEndLiveScrollNotification:(id)arg1;
 - (void)scrollViewWillStartLiveScrollNotification:(id)arg1;
-- (void)scrollWheel:(id)arg1;
 - (void)setContentOffset:(CGPoint)arg1 animated:(BOOL)arg2;
 - (void)setContentOffset:(CGPoint)arg1;
 @property (atomic, readwrite) CGSize contentSize;
 @property (nonatomic) CGRect documentBounds;
 - (CGSize)documentSize;
 - (CGPoint)contentOffset;
-- (BOOL)wantsUpdateLayer;
-- (BOOL)isOpaque;
-- (void)viewWillMoveToSuperview:(id)arg1;
-- (void)viewDidMoveToWindow;
-- (void)viewWillMoveToWindow:(id)arg1;
-- (id)_doubleSidedAnimationsForView:(id)arg1 withStartingLayoutAttributes:(id)arg2 startingLayout:(id)arg3 endingLayoutAttributes:(id)arg4 endingLayout:(id)arg5 withAnimationSetup:(void(^)(void))arg6 animationCompletion:(void(^)(BOOL finished))arg7 enableCustomAnimations:(BOOL)arg8 customAnimationsType:(unsigned long long)arg9; // probably SPI
 - (CGPoint)layoutPointForCollectionViewPoint:(CGPoint)arg1;
 - (CGPoint)collectionViewPointForLayoutPoint:(CGPoint)arg1;
-- (void)setScrollerStyle:(long long)arg1;
-- (void)setContentInsets:(NSEdgeInsets)arg1;
-- (void)setFrame:(CGRect)arg1;
-- (void)setBounds:(CGRect)arg1;
 - (BOOL)isBusy;
 - (void)reloadData;
 - (void)setNeedsLayout;
@@ -133,31 +108,11 @@
 - (BOOL)selectableItemAtIndexPath:(id)arg1;
 - (NSUInteger)numberOfSelectedItems;
 - (id)indexPathsForSelectedItems;
-@property (nonatomic, weak) NSObject<UXCollectionViewDataSource> *dataSource;
-@property (nonatomic, weak) NSObject<UXCollectionViewDelegate> *delegate;
-- (id)initWithFrame:(CGRect)arg1 collectionViewLayout:(id)arg2;
-- (id)initWithFrame:(CGRect)arg1;
-- (void)updateDraggingItemsForDrag:(id)arg1;
-- (BOOL)wantsPeriodicDraggingUpdates;
-- (void)draggingEnded:(id)arg1;
-- (void)concludeDragOperation:(id)arg1;
-- (BOOL)performDragOperation:(id)arg1;
-- (BOOL)prepareForDragOperation:(id)arg1;
-- (void)draggingExited:(id)arg1;
-- (unsigned long long)draggingUpdated:(id)arg1;
-- (unsigned long long)draggingEntered:(id)arg1;
-- (void)draggingSession:(id)arg1 endedAtPoint:(CGPoint)arg2 operation:(unsigned long long)arg3;
-- (void)draggingSession:(id)arg1 movedToPoint:(CGPoint)arg2;
-- (void)draggingSession:(id)arg1 willBeginAtPoint:(CGPoint)arg2;
-- (unsigned long long)draggingSession:(id)arg1 sourceOperationMaskForDraggingContext:(long long)arg2;
-- (void)rearrangingCoordinatorReloadLayout_;
-@property (nonatomic, readonly) BOOL isRearranging_;
-@property (nonatomic) double rearrangingPreviewDelay_;
-@property (nonatomic) BOOL rearrangingContinuouslyUpdateInsideCells_;
-@property (nonatomic) long long rearrangingInitiationMode_;
-@property (nonatomic) BOOL rearrangingExternalDropEnabled_;
-@property (nonatomic) BOOL rearrangingAllowAutoscroll_;
-@property (nonatomic) BOOL rearrangingEnabled_;
+@property (nonatomic, weak) id<UXCollectionViewDataSource> dataSource;
+@property (nonatomic, weak) id<UXCollectionViewDelegate> delegate;
+
+- (id)initWithFrame:(CGRect)arg1 collectionViewLayout:(id)arg2 NS_DESIGNATED_INITIALIZER;
+- (id)initWithFrame:(CGRect)arg1 NS_DESIGNATED_INITIALIZER;
 
 @end
 

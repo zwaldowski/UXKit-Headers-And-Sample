@@ -12,13 +12,11 @@
 + (void)animateWithDuration:(CGFloat)arg1 animations:(void(^)(void))arg2;
 + (void)animateWithDuration:(CGFloat)arg1 animations:(void(^)(void))arg2 completion:(void(^)(BOOL finished))arg3;
 + (void)animateWithDuration:(CGFloat)arg1 delay:(CGFloat)arg2 options:(NSInteger)arg3 animations:(void(^)(void))arg4 completion:(void(^)(BOOL finished))arg5; // TODO: enum
-+ (id)defaultSpringAnimationForKey:(id)arg1 mass:(CGFloat)arg2 stiffness:(CGFloat)arg3 damping:(CGFloat)arg4 velocity:(CGFloat)arg5;
 + (Class)layerClass;
 @property (nonatomic) BOOL accessibilityChildrenHidden;
 @property (nonatomic) BOOL userInteractionEnabled;
 @property (nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch;
 - (id)accessibilityChildren;
-- (id)menuForEvent:(id)arg1;
 - (id)snapshotViewFromRect:(CGRect)arg1;
 - (id)snapshotView;
 - (id)snapshotForRect:(CGRect)arg1;
@@ -28,49 +26,8 @@
 @property (nonatomic, readonly) NSArray *eventTrackers;
 - (void)removeEventTracker:(id)arg1;
 - (void)addEventTracker:(id)arg1;
-- (void)touchesCancelledWithEvent:(id)arg1;
-- (void)touchesEndedWithEvent:(id)arg1;
-- (void)touchesMovedWithEvent:(id)arg1;
-- (void)touchesBeganWithEvent:(id)arg1;
-- (void)smartMagnifyWithEvent:(id)arg1;
-- (void)endGestureWithEvent:(id)arg1;
-- (void)beginGestureWithEvent:(id)arg1;
-- (void)swipeWithEvent:(id)arg1;
-- (void)rotateWithEvent:(id)arg1;
-- (void)magnifyWithEvent:(id)arg1;
-- (void)tabletProximity:(id)arg1;
-- (void)tabletPoint:(id)arg1;
-- (void)flagsChanged:(id)arg1;
-- (void)mouseExited:(id)arg1;
-- (void)mouseEntered:(id)arg1;
-- (void)otherMouseDragged:(id)arg1;
-- (void)rightMouseDragged:(id)arg1;
-- (void)scrollWheel:(id)arg1;
-- (void)mouseDragged:(id)arg1;
-- (void)otherMouseUp:(id)arg1;
-- (void)rightMouseUp:(id)arg1;
-- (void)mouseUp:(id)arg1;
-- (void)otherMouseDown:(id)arg1;
-- (void)rightMouseDown:(id)arg1;
-- (void)mouseDown:(id)arg1;
-- (BOOL)canBecomeKeyView;
-- (id)hitTest:(CGPoint)arg1;
 @property (nonatomic) NSInteger contentMode; // TODO: enum
-- (void)addSubview:(id)arg1 positioned:(NSInteger)arg2 relativeTo:(id)arg3; // TODO: enum
-- (void)addSubview:(id)arg1;
-- (void)viewWillMoveToSuperview:(id)arg1;
-- (void)updateConstraintsForSubtreeIfNeeded;
-- (void)viewDidEndLiveResize;
-- (void)viewWillStartLiveResize;
-- (void)layout;
-- (void)updateLayer;
-- (BOOL)wantsUpdateLayer;
-- (id)makeBackingLayer;
-- (id)actionForLayer:(id)arg1 forKey:(id)arg2;
-- (id)initWithFrame:(CGRect)arg1;
-- (BOOL)blurEnabled;
-- (void)setBlurEnabled:(BOOL)arg1;
-- (id)recursiveDescription;
+@property (nonatomic) BOOL blurEnabled;
 
 @end
 

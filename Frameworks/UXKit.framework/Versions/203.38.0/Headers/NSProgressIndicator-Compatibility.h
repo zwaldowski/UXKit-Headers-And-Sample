@@ -16,7 +16,7 @@
 - (void)setProgress:(double)arg1 animated:(BOOL)arg2;
 @property (nonatomic) double progress;
 @property (nonatomic) NSInteger progressViewStyle; // TODO: enum
-- (id)initWithProgressViewStyle:(NSInteger)arg1; // TODO: enum
-- (id)initWithActivityIndicatorStyle:(NSInteger)arg1; // TODO: enum
+- (instancetype)initWithProgressViewStyle:(NSInteger)arg1; // TODO: enum
+- (instancetype)initWithActivityIndicatorStyle:(NSInteger)arg1; // TODO: enum
 @end
 

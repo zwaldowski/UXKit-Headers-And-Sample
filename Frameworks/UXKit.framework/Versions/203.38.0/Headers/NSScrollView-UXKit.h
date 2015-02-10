@@ -7,7 +7,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSScrollView (UXKit)
-@property (nonatomic, weak) id scrollViewDelegate;
+@property (nonatomic, weak) id scrollViewDelegate; // TODO: delegate
 @property (nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;
 @property (nonatomic) BOOL pagingEnabled;
 @end

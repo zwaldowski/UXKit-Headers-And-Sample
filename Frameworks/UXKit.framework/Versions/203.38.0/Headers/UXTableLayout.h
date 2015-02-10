@@ -12,12 +12,6 @@
 
 @interface UXTableLayout : UXCollectionViewFlowLayout
 
-- (id)layoutAttributesForSupplementaryViewOfKind:(id)arg1 atIndexPath:(id)arg2;
-- (id)layoutAttributesForElementsInRect:(CGRect)arg1;
-- (void)invalidateLayoutWithContext:(id)arg1;
-- (id)invalidationContextForBoundsChange:(CGRect)arg1;
-- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1;
-- (void)prepareLayout;
 - (NSEdgeInsets)insetForSection:(NSInteger)arg1;
 @property (nonatomic) BOOL showsSectionFooterForSingleSection;
 @property (nonatomic) BOOL showsSectionHeaderForSingleSection;

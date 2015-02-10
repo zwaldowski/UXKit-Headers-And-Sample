@@ -10,13 +10,8 @@
 @interface UXImageView : UXView <NSAccessibilityImage>
 
 @property (nonatomic, strong) NSImage *image;
-- (void)sizeToFit;
-- (void)setFrameSize:(CGSize)arg1;
-- (void)viewWillMoveToWindow:(id)arg1;
-- (void)viewDidChangeBackingProperties;
-- (CGSize)intrinsicContentSize;
-- (id)initWithImage:(id)arg1;
-- (id)initWithFrame:(CGRect)arg1;
+- (instancetype)initWithImage:(NSImage *)arg1 NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithFrame:(CGRect)arg1 NS_DESIGNATED_INITIALIZER;
 
 @end
 

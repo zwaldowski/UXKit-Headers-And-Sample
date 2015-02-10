@@ -18,11 +18,8 @@
 @property (nonatomic) CGFloat interitemSpacing;
 @property (nonatomic, strong) NSColor *barTintColor;
 @property (nonatomic, readonly) NSInteger barPosition; // TODO: enum
-- (CGSize)intrinsicContentSize;
 @property (nonatomic, strong) NSColor *borderColor;
 @property (nonatomic) BOOL bordered;
-- (void)viewWillMoveToSuperview:(id)arg1;
-- (id)initWithFrame:(CGRect)arg1;
 
 @end
 
