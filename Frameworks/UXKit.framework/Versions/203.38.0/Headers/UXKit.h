@@ -9,7 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 #import "MissingTypes.h"
-#import "CDStructures.h"
 #import "NSViewController-UXViewController.h"
 #import <UXKit/UXCollectionViewUpdateItem.h>
 #import <UXKit/UXViewControllerTransitionCoordinator-Protocol.h>

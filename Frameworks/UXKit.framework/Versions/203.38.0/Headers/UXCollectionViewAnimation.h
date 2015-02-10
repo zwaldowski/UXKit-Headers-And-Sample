@@ -17,7 +17,7 @@
     unsigned long long _viewType;
     NSMutableArray *_completionHandlers;
     NSMutableArray *_startupHandlers;
-    CDUnknownBlockType _animationBlock;
+    void(^_animationBlock)(void(^completion)(BOOL finished));
     struct {
         unsigned int animateFromCurrentPosition:1;
         unsigned int deleteAterAnimation:1;
@@ -31,15 +31,15 @@
 @property(readonly, nonatomic) UXCollectionViewLayoutAttributes *finalLayoutAttributes; // @synthesize finalLayoutAttributes=_finalLayoutAttributes;
 @property(readonly, nonatomic) unsigned long long viewType; // @synthesize viewType=_viewType;
 @property(readonly, nonatomic) UXCollectionReusableView *view; // @synthesize view=_view;
-- (void)addStartupHandler:(CDUnknownBlockType)arg1;
-- (void)addCompletionHandler:(CDUnknownBlockType)arg1;
+- (void)addStartupHandler:(void(^)(void))arg1;
+- (void)addCompletionHandler:(void(^)(BOOL finished))arg1;
 - (void)start;
 @property(nonatomic) BOOL resetRasterizationAfterAnimation;
 @property(nonatomic) BOOL rasterizeAfterAnimation;
 @property(readonly, nonatomic) BOOL deleteAfterAnimation;
 @property(readonly, nonatomic) BOOL animateFromCurrentPosition;
 - (id)description;
-- (id)initWithView:(id)arg1 viewType:(unsigned long long)arg2 finalLayoutAttributes:(id)arg3 startFraction:(double)arg4 endFraction:(double)arg5 animateFromCurrentPosition:(BOOL)arg6 deleteAfterAnimation:(BOOL)arg7 customAnimations:(CDUnknownBlockType)arg8;
+- (id)initWithView:(id)arg1 viewType:(unsigned long long)arg2 finalLayoutAttributes:(id)arg3 startFraction:(double)arg4 endFraction:(double)arg5 animateFromCurrentPosition:(BOOL)arg6 deleteAfterAnimation:(BOOL)arg7 customAnimations:(void(^)(void(^completion)(BOOL finished)))arg8;
 
 @end
 

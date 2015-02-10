@@ -8,8 +8,8 @@
 
 @interface NSGestureRecognizer (UXKit)
 - (void)__stateChange:(id)arg1;
-- (void)setGestureDidEndHandler:(CDUnknownBlockType)arg1;
-- (void)setGestureDidChangeHandler:(CDUnknownBlockType)arg1;
-- (void)setGestureDidBeginHandler:(CDUnknownBlockType)arg1;
+- (void)setGestureDidEndHandler:(void (^)(id /* NSGestureRecognizer* */))arg1;
+- (void)setGestureDidChangeHandler:(void (^)(id /* NSGestureRecognizer* */))arg1;
+- (void)setGestureDidBeginHandler:(void (^)(id /* NSGestureRecognizer* */))arg1;
 @end
 

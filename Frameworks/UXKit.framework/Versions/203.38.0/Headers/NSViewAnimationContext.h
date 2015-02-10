@@ -12,13 +12,13 @@
 {
     NSArray *_viewAnimations;
     long long _animationCount;
-    id _completionHandler;
+    void(^_completionHandler)(BOOL finished);
 }
 
-@property(readonly, nonatomic) CDUnknownBlockType completionHandler; // @synthesize completionHandler=_completionHandler;
+@property(readonly, nonatomic) void(^completionHandler)(BOOL finished); // @synthesize completionHandler=_completionHandler;
 @property(nonatomic) long long animationCount; // @synthesize animationCount=_animationCount;
 @property(retain, nonatomic) NSArray *viewAnimations; // @synthesize viewAnimations=_viewAnimations;
-- (id)initWithCompletionHandler:(CDUnknownBlockType)arg1;
+- (id)initWithCompletionHandler:(void(^)(BOOL))arg1;
 
 @end
 

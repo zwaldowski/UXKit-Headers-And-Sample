@@ -103,7 +103,7 @@
 - (void)_beginTransitionWithContext:(id)arg1 operation:(long long)arg2;
 - (void)_removeConstraintsForContainedView:(id)arg1;
 - (void)_addConstraintsForContainedView:(id)arg1 leftInset:(double)arg2;
-- (void)_prepareViewController:(id)arg1 forAnimationInContext:(id)arg2 completion:(CDUnknownBlockType)arg3;
+- (void)_prepareViewController:(id)arg1 forAnimationInContext:(id)arg2 completion:(void(^)(void))arg3;
 - (id)_popToViewController:(id)arg1 transition:(unsigned long long)arg2;
 - (void)_pushViewController:(id)arg1 transition:(unsigned long long)arg2;
 - (id)popToViewController:(id)arg1 animated:(BOOL)arg2;
@@ -130,7 +130,7 @@
 - (void)setEdgesForExtendedLayout:(unsigned long long)arg1;
 - (id)transitionCoordinator;
 - (BOOL)_requiresWindowForTransitionPreparation;
-- (void)_prepareForAnimationInContext:(id)arg1 completion:(CDUnknownBlockType)arg2;
+- (void)_prepareForAnimationInContext:(id)arg1 completion:(void(^)(void))arg2;
 - (struct NSEdgeInsets)_intrinsicLayoutInsetsForChildViewController:(id)arg1;
 - (id)_verticalToolbarLayoutConstraint;
 - (void)invalidateIntrinsicLayoutInsets;

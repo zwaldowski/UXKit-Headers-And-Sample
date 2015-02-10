@@ -39,6 +39,9 @@
 
 - (void)next
 {
+    [self viewControllersForNavigationDestination:nil completion:^{
+        NSLog(@"!");
+    }];
     UXViewController *vc = [[JMKTableViewController alloc] init];
     vc.title = @"Table View Controller";
     [self.navigationController pushViewController:vc animated:YES];

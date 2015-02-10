@@ -18,16 +18,16 @@
     unsigned long long _modifiers;
     double _velocity;
     unsigned long long _ignoredModifiers;
-    CDUnknownBlockType _eventTrackerDidBeginHandler;
-    CDUnknownBlockType _eventTrackerDidChangeHandler;
-    CDUnknownBlockType _eventTrackerDidEndHandler;
+    void(^_eventTrackerDidBeginHandler)(UXEventTracker *);
+    void(^_eventTrackerDidChangeHandler)(UXEventTracker *);
+    void(^_eventTrackerDidEndHandler)(UXEventTracker *);
     NSMapTable *_selectorsByTarget;
 }
 
 @property(retain, nonatomic) NSMapTable *selectorsByTarget; // @synthesize selectorsByTarget=_selectorsByTarget;
-@property(copy, nonatomic) CDUnknownBlockType eventTrackerDidEndHandler; // @synthesize eventTrackerDidEndHandler=_eventTrackerDidEndHandler;
-@property(copy, nonatomic) CDUnknownBlockType eventTrackerDidChangeHandler; // @synthesize eventTrackerDidChangeHandler=_eventTrackerDidChangeHandler;
-@property(copy, nonatomic) CDUnknownBlockType eventTrackerDidBeginHandler; // @synthesize eventTrackerDidBeginHandler=_eventTrackerDidBeginHandler;
+@property(copy, nonatomic) void(^eventTrackerDidBeginHandler)(UXEventTracker *);
+@property(copy, nonatomic) void(^eventTrackerDidChangeHandler)(UXEventTracker *);
+@property(copy, nonatomic) void(^eventTrackerDidEndHandler)(UXEventTracker *);
 @property(nonatomic, getter=isEnabled) BOOL enabled; // @synthesize enabled=_enabled;
 @property(nonatomic) BOOL cancelsEventsInView; // @synthesize cancelsEventsInView=_cancelsEventsInView;
 @property(nonatomic) unsigned long long ignoredModifiers; // @synthesize ignoredModifiers=_ignoredModifiers;

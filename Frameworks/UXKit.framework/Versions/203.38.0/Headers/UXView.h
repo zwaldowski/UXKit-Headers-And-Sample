@@ -19,10 +19,10 @@
     NSMutableArray *_internalTrackers;
 }
 
-+ (void)animateWithDuration:(double)arg1 delay:(double)arg2 usingSpringWithDamping:(double)arg3 initialSpringVelocity:(double)arg4 options:(unsigned long long)arg5 animations:(CDUnknownBlockType)arg6 completion:(CDUnknownBlockType)arg7;
-+ (void)animateWithDuration:(double)arg1 animations:(CDUnknownBlockType)arg2;
-+ (void)animateWithDuration:(double)arg1 animations:(CDUnknownBlockType)arg2 completion:(CDUnknownBlockType)arg3;
-+ (void)animateWithDuration:(double)arg1 delay:(double)arg2 options:(unsigned long long)arg3 animations:(CDUnknownBlockType)arg4 completion:(CDUnknownBlockType)arg5;
++ (void)animateWithDuration:(double)arg1 delay:(double)arg2 usingSpringWithDamping:(double)arg3 initialSpringVelocity:(double)arg4 options:(unsigned long long)arg5 animations:(void(^)(void))arg6 completion:(void(^)(BOOL finished))arg7;
++ (void)animateWithDuration:(double)arg1 animations:(void(^)(void))arg2;
++ (void)animateWithDuration:(double)arg1 animations:(void(^)(void))arg2 completion:(void(^)(BOOL finished))arg3;
++ (void)animateWithDuration:(double)arg1 delay:(double)arg2 options:(unsigned long long)arg3 animations:(void(^)(void))arg4 completion:(void(^)(BOOL finished))arg5;
 + (id)defaultSpringAnimationForKey:(id)arg1 mass:(double)arg2 stiffness:(double)arg3 damping:(double)arg4 velocity:(double)arg5;
 + (long long)_contentModeForLayerContentsGravity:(id)arg1;
 + (Class)layerClass;

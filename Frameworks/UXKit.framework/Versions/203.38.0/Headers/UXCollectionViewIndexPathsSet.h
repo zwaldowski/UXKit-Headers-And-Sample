@@ -4,9 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-
-
 @class NSMutableDictionary, NSMutableIndexSet;
+
+@class _UXCollectionViewSectionItemIndexes;
 
 @interface UXCollectionViewIndexPathsSet : NSObject <NSCopying, NSMutableCopying>
 {
@@ -19,7 +19,7 @@
 + (id)indexPathsSetWithIndexPath:(id)arg1;
 + (id)indexPathsSet;
 - (BOOL)containsIndexPath:(id)arg1;
-- (void)enumerateIndexPathsUsingBlock:(CDUnknownBlockType)arg1;
+- (void)enumerateIndexPathsUsingBlock:(void(^)(NSIndexPath *indexPath, BOOL *stop))arg1;
 - (id)lastIndexPath;
 - (id)firstIndexPath;
 - (id)allIndexPaths;
@@ -29,7 +29,7 @@
 - (unsigned long long)count;
 - (void)_removeOneIndexPath:(id)arg1;
 - (void)_addOneIndexPath:(id)arg1;
-- (void)_enumerateSectionItemIndexesWithBlock:(CDUnknownBlockType)arg1;
+- (void)_enumerateSectionItemIndexesWithBlock:(void(^)(NSUInteger, _UXCollectionViewSectionItemIndexes *, BOOL *))arg1;
 - (void)_removeItemIndexesForSection:(unsigned long long)arg1;
 - (id)_itemIndexesForSection:(unsigned long long)arg1 allowingCreation:(BOOL)arg2;
 - (id)mutableCopyWithZone:(struct _NSZone *)arg1;

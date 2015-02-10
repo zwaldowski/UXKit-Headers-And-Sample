@@ -7,7 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 #import <UXKit/UXLayoutSupport-Protocol.h>
-#import "CDStructures.h"
 
 @class NSArray, NSResponder, NSString, UXNavigationController, UXNavigationItem, UXSourceController, UXTabBarItem, UXView;
 
@@ -52,8 +51,8 @@
 - (void)_animateView:(id)arg1 fromFrame:(struct CGRect)arg2 toFrame:(struct CGRect)arg3;
 - (id)transitionCoordinator;
 - (void)setEditing:(BOOL)arg1 animated:(BOOL)arg2;
-- (void)dismissViewControllerAnimated:(BOOL)arg1 completion:(CDUnknownBlockType)arg2;
-- (void)presentViewController:(id)arg1 animated:(BOOL)arg2 completion:(CDUnknownBlockType)arg3;
+- (void)dismissViewControllerAnimated:(BOOL)arg1 completion:(void(^)(void))arg2;
+- (void)presentViewController:(id)arg1 animated:(BOOL)arg2 completion:(void(^)(BOOL))arg3;
 @property(readonly, nonatomic) UXViewController *presentedViewController;
 - (void)didMoveToParentViewController:(id)arg1;
 - (void)willMoveToParentViewController:(id)arg1;
@@ -80,7 +79,7 @@
 @property(readonly, nonatomic) UXView *uxView;
 - (void)_loadViewIfNotLoaded;
 - (void)_setupResponderChainIfNecessary;
-- (void)_prepareForAnimationInContext:(id)arg1 completion:(CDUnknownBlockType)arg2;
+- (void)_prepareForAnimationInContext:(id)arg1 completion:(void(^)(void))arg2;
 - (id)initWithCoder:(id)arg1;
 - (id)initWithNibName:(id)arg1 bundle:(id)arg2;
 - (id)init;
@@ -101,7 +100,7 @@
 - (id)tabBarItem;
 - (id)popoverController;
 - (void)updateViewConstraints;
-- (void)prepareForTransitionWithContext:(id)arg1 completion:(CDUnknownBlockType)arg2;
+- (void)prepareForTransitionWithContext:(id)arg1 completion:(void(^)(void))arg2;
 @property(readonly, nonatomic) long long interfaceOrientation;
 - (void)viewDidDisappear:(BOOL)arg1;
 - (void)viewWillDisappear:(BOOL)arg1;
@@ -110,7 +109,7 @@
 @property(nonatomic) BOOL hidesSourceListWhenPushed;
 - (BOOL)isTransitory;
 - (void)setTransitory:(BOOL)arg1;
-- (void)viewControllersForNavigationDestination:(id)arg1 completion:(CDUnknownBlockType)arg2;
+- (void)viewControllersForNavigationDestination:(id)arg1 completion:(void(^)(id unknown, NSArray *viewControllers))arg2;
 - (void)willEncodeNavigationDestination:(id)arg1;
 - (id)navigationDestination;
 - (id)navigationIdentifier;

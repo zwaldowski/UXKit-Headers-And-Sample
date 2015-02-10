@@ -47,7 +47,7 @@
     NSMutableArray *_moveItems;
     NSArray *_originalInsertItems;
     NSArray *_originalDeleteItems;
-    CDUnknownBlockType _updateCompletionHandler;
+    void(^_updateCompletionHandler)(BOOL);
     NSMutableDictionary *_cellClassDict;
     NSMutableDictionary *_cellNibDict;
     NSMutableDictionary *_supplementaryViewClassDict;
@@ -170,7 +170,7 @@
 - (BOOL)becomeFirstResponder;
 - (BOOL)acceptsFirstResponder;
 - (BOOL)canBecomeKeyView;
-- (void)performBatchUpdates:(CDUnknownBlockType)arg1 completion:(CDUnknownBlockType)arg2;
+- (void)performBatchUpdates:(void(^)(void))arg1 completion:(void(^)(BOOL finished))arg2;
 - (void)_endUpdates;
 - (void)_beginUpdates;
 - (void)_updateAnimationDidStop:(id)arg1 finished:(id)arg2 context:(id)arg3;
@@ -229,8 +229,8 @@
 - (struct CGRect)documentContentRect;
 - (void)_addControlledSubview:(id)arg1 atZIndex:(long long)arg2;
 - (void)updateLayout;
-- (void)_setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2 isInteractive:(BOOL)arg3 completion:(CDUnknownBlockType)arg4;
-- (void)setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2 completion:(CDUnknownBlockType)arg3;
+- (void)_setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2 isInteractive:(BOOL)arg3 completion:(void(^)(BOOL finished))arg4; // probably void(^)(BOOL)
+- (void)setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2 completion:(void(^)(BOOL finished))arg3; // ditto
 - (void)setCollectionViewLayout:(id)arg1 animated:(BOOL)arg2;
 - (void)_reuseSupplementaryView:(id)arg1;
 - (void)_reuseCell:(id)arg1;
@@ -272,7 +272,7 @@
 - (void)viewWillMoveToWindow:(id)arg1;
 - (void)_viewPrepare;
 - (void)_viewCleanup;
-- (id)_doubleSidedAnimationsForView:(id)arg1 withStartingLayoutAttributes:(id)arg2 startingLayout:(id)arg3 endingLayoutAttributes:(id)arg4 endingLayout:(id)arg5 withAnimationSetup:(CDUnknownBlockType)arg6 animationCompletion:(CDUnknownBlockType)arg7 enableCustomAnimations:(BOOL)arg8 customAnimationsType:(unsigned long long)arg9;
+- (id)_doubleSidedAnimationsForView:(id)arg1 withStartingLayoutAttributes:(id)arg2 startingLayout:(id)arg3 endingLayoutAttributes:(id)arg4 endingLayout:(id)arg5 withAnimationSetup:(void(^)(void))arg6 animationCompletion:(void(^)(BOOL finished))arg7 enableCustomAnimations:(BOOL)arg8 customAnimationsType:(unsigned long long)arg9; // probably SPI
 - (void)_updateCellsInRect:(struct CGRect)arg1 createIfNecessary:(BOOL)arg2;
 - (void)_updateVisibleCellsNow:(BOOL)arg1;
 - (id)_createPreparedSupplementaryViewForElementOfKind:(id)arg1 atIndexPath:(id)arg2 withLayoutAttributes:(id)arg3 applyAttributes:(BOOL)arg4;

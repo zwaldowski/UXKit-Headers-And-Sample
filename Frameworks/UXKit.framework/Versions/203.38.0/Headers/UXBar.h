@@ -33,10 +33,10 @@
 @property(readonly, nonatomic) long long barPosition;
 - (struct CGSize)intrinsicContentSize;
 - (void)_completeInteractiveTransition:(BOOL)arg1;
-- (void)_finishInteractiveTransition:(BOOL)arg1 completion:(CDUnknownBlockType)arg2;
+- (void)_finishInteractiveTransition:(BOOL)arg1 completion:(void(^)(BOOL finished))arg2;
 - (void)_updateInteractiveTransition:(double)arg1;
 - (void)_beginInteractiveTransitionToItemContainer:(id)arg1;
-- (void)_animateTransitionFromContainer:(id)arg1 toContainer:(id)arg2 transition:(unsigned long long)arg3 duration:(double)arg4 fromValue:(double)arg5 toValue:(double)arg6 completion:(CDUnknownBlockType)arg7;
+- (void)_animateTransitionFromContainer:(id)arg1 toContainer:(id)arg2 transition:(unsigned long long)arg3 duration:(double)arg4 fromValue:(double)arg5 toValue:(double)arg6 completion:(void(^)(BOOL finished))arg7;
 - (void)_transitionToContainer:(id)arg1 transition:(unsigned long long)arg2 duration:(double)arg3;
 @property(retain, nonatomic) NSColor *borderColor;
 @property(nonatomic) BOOL bordered;

@@ -7,6 +7,6 @@
 
 
 @interface NSObject (UXCollectionView)
-- (void)performWithoutAnimation:(CDUnknownBlockType)arg1;
+- (void)performWithoutAnimation:(void (^)(void))arg1;
 @end
 
