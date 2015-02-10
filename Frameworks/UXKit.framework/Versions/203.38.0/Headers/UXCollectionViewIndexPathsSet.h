@@ -28,8 +28,6 @@
 - (void)_enumerateSectionItemIndexesWithBlock:(void(^)(NSUInteger, _UXCollectionViewSectionItemIndexes *, BOOL *))arg1;
 - (void)_removeItemIndexesForSection:(unsigned long long)arg1;
 - (id)_itemIndexesForSection:(unsigned long long)arg1 allowingCreation:(BOOL)arg2;
-- (id)mutableCopyWithZone:(NSZone *)arg1;
-- (id)copyWithZone:(NSZone *)arg1;
 - (void)_addIndexPathsSet:(id)arg1;
 - (id)description;
 - (BOOL)isEqual:(id)arg1;

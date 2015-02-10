@@ -31,7 +31,6 @@
 - (id)description;
 @property (nonatomic) CGRect frame; // @synthesize frame=_frame;
 @property (nonatomic) CGRect bounds;
-- (id)copyWithZone:(NSZone *)arg1;
 - (void)_setIndexPath:(id)arg1;
 - (id)_reuseIdentifier;
 - (void)_setReuseIdentifier:(id)arg1;

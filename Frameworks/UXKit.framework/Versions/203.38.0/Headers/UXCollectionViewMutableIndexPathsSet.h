@@ -27,7 +27,6 @@
 - (void)addIndexPathsSet:(id)arg1;
 - (void)addIndexPaths:(id)arg1;
 - (void)addIndexPath:(id)arg1;
-- (id)copyWithZone:(NSZone *)arg1;
 
 @end
 
