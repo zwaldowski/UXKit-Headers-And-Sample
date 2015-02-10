@@ -4,7 +4,9 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-@class NSArray, NSMutableDictionary, NSMutableIndexSet, NSString, UXCollectionView, UXCollectionViewLayoutAccessibility, UXCollectionViewLayoutInvalidationContext;
+#import <Cocoa/Cocoa.h>
+
+@class UXCollectionView, UXCollectionViewLayoutAccessibility, UXCollectionViewLayoutInvalidationContext;
 
 @interface UXCollectionViewLayout : NSObject
 {

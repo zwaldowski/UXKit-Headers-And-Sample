@@ -6,7 +6,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSEvent, NSMapTable, UXView;
+@class UXView;
 
 @interface UXEventTracker : NSResponder
 {

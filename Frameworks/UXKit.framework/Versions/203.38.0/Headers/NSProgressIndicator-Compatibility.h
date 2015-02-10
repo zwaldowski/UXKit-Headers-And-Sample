@@ -6,8 +6,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSColor;
-
 @interface NSProgressIndicator (Compatibility)
 - (BOOL)isAnimating;
 - (void)stopAnimating;

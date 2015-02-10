@@ -6,8 +6,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSString;
-
 @interface NSTextView (Compatibility) <UITextInputTraits>
 - (NSEdgeInsets)__textContainerInset;
 - (void)__setTextContainerInset:(NSEdgeInsets)arg1;

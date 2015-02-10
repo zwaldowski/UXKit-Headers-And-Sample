@@ -4,11 +4,10 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <UXKit/UXCollectionView.h>
 #import <UXKit/UXTableView.h>
 #import <UXKit/UXCollectionViewDataSource-Protocol.h>
-
-@class NSColor, NSIndexPath, NSMenu;
 
 @interface UXTableView : UXCollectionView
 {

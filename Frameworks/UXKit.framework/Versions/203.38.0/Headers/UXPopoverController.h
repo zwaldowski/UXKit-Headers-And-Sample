@@ -9,7 +9,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSArray, NSString, UXPopover;
+@class UXPopover;
 
 @interface UXPopoverController : UXViewController <NSPopoverDelegate>
 {

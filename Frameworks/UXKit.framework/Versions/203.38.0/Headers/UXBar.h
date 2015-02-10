@@ -8,7 +8,7 @@
 #import <UXKit/UXView.h>
 #import <UXKit/UXBarPositioning-Protocol.h>
 
-@class NSColor, NSString, _UXSinglePixelLine;
+@class _UXSinglePixelLine;
 
 @interface UXBar : UXView <NSAccessibilityGroup, UXBarPositioning>
 {

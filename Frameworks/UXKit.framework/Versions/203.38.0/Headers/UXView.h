@@ -6,7 +6,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSArray, NSMutableArray, NSVisualEffectView, UXViewController;
+@class UXViewController;
 
 @interface UXView : NSView
 {

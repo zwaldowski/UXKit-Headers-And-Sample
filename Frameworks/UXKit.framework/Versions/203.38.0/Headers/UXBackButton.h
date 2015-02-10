@@ -6,8 +6,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSLayoutConstraint;
-
 @interface UXBackButton : NSButton
 {
     BOOL _hidesTitle;

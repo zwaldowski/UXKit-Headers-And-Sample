@@ -6,8 +6,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSColor;
-
 @interface NSView (UXKit)
 @property(nonatomic) NSColor *backgroundColor;
 @end

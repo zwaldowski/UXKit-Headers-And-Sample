@@ -6,7 +6,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSArray, UXCollectionView, UXCollectionViewLayoutAccessibility;
+@class UXCollectionView, UXCollectionViewLayoutAccessibility;
 
 @interface UXCollectionViewLayoutSectionAccessibility : NSAccessibilityElement
 {

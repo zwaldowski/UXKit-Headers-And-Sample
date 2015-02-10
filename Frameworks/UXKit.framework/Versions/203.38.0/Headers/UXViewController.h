@@ -5,10 +5,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
 #import <UXKit/UXLayoutSupport-Protocol.h>
 
-@class NSArray, NSResponder, NSString, UXNavigationController, UXNavigationItem, UXSourceController, UXTabBarItem, UXView;
+@class UXNavigationController, UXNavigationItem, UXSourceController, UXTabBarItem, UXView;
 
 @interface UXViewController : NSViewController
 {

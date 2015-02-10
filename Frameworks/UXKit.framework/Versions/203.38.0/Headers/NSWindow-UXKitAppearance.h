@@ -5,10 +5,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
 #import <UXKit/UXKitAppearance-Protocol.h>
-
-@class NSColor, NSString;
 
 @interface NSWindow (UXKitAppearance) <UXKitAppearance>
 - (void)tintColorDidChange;

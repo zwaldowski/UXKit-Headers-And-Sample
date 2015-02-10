@@ -4,11 +4,12 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <UXKit/UXViewController.h>
 #import <UXKit/UXNavigationControllerDelegate-Protocol.h>
 #import <UXKit/UXSourceList-Protocol.h>
 
-@class NSArray, NSMapTable, NSOperationQueue, NSSegmentedControl, NSString, NSView, UXTransitionController, _UXSourceSplitView, _UXViewControllerOneToOneTransitionContext;
+@class UXTransitionController, _UXSourceSplitView, _UXViewControllerOneToOneTransitionContext;
 
 @interface UXSourceController : UXViewController <UXNavigationControllerDelegate>
 {

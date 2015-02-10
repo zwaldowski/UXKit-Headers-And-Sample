@@ -4,11 +4,11 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <UXKit/UXViewController.h>
-
 #import <UXKit/UXToolbarDelegate-Protocol.h>
 
-@class NSArray, NSLayoutConstraint, NSMutableArray, NSString, UXEventTracker, UXNavigationBar, UXToolbar, UXTransitionController, _UXContainerView, _UXViewControllerOneToOneTransitionContext;
+@class UXEventTracker, UXNavigationBar, UXToolbar, UXTransitionController, _UXContainerView, _UXViewControllerOneToOneTransitionContext;
 
 @interface UXNavigationController : UXViewController <UXToolbarDelegate>
 {

@@ -5,10 +5,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
 #import <UXKit/UXAccessoryBarContainerProtocol.h>
 
-@class NSString, NSTitlebarAccessoryViewController, NSToolbarItem, UXToolbar, UXViewController;
+@class UXToolbar, UXViewController;
 
 @interface UXWindowController : NSWindowController <NSToolbarDelegate, UXAccessoryBarContainer, NSWindowDelegate>
 {

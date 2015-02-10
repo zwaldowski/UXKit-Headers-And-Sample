@@ -6,7 +6,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class NSString, UXCollectionView, UXCollectionViewLayoutAttributes;
+@class UXCollectionView, UXCollectionViewLayoutAttributes;
 
 @interface UXCollectionReusableView : NSView
 {
