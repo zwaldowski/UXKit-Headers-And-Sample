@@ -10,12 +10,8 @@
 
 @interface UXAuxiliaryNavigationStore : NSObject <NSSecureCoding>
 
-+ (BOOL)supportsSecureCoding;
 @property (nonatomic, weak)  UXSourceController *sourceController; // @synthesize sourceController=_sourceController;
 - (id)_dictionaryForNamespace:(id)arg1;
-- (void)encodeWithCoder:(id)arg1;
-- (id)initWithCoder:(id)arg1;
-- (id)_allowedClassesForNSCoding;
 - (id)nextActionForNamespace:(id)arg1;
 - (void)setNextAction:(id)arg1 forNamespace:(id)arg2;
 - (id)valueForKey:(id)arg1 inNamespace:(id)arg2;

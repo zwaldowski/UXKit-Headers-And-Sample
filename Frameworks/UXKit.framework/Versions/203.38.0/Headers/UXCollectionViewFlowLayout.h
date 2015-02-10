@@ -42,8 +42,6 @@
 - (id)invalidationContextForBoundsChange:(CGRect)arg1;
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)arg1;
 - (void)invalidateLayoutWithContext:(id)arg1;
-- (void)encodeWithCoder:(id)arg1;
-- (id)initWithCoder:(id)arg1;
 - (id)init;
 - (void)_invalidateButKeepAllInfo;
 - (void)_invalidateButKeepDelegateInfo;

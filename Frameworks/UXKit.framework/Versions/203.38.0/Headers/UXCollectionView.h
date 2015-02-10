@@ -219,7 +219,6 @@
 - (void)_setObject:(id)arg1 inDictionary:(id)arg2 forKind:(id)arg3 indexPath:(id)arg4;
 - (id)_objectInDictionary:(id)arg1 forKind:(id)arg2 indexPath:(id)arg3;
 - (id)description;
-- (id)initWithCoder:(id)arg1;
 - (id)initWithFrame:(CGRect)arg1 collectionViewLayout:(id)arg2;
 - (id)initWithFrame:(CGRect)arg1;
 - (void)updateDraggingItemsForDrag:(id)arg1;

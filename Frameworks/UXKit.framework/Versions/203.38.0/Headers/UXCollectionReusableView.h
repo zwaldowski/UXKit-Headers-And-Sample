@@ -28,8 +28,6 @@
 - (void)applyLayoutAttributes:(id)arg1;
 - (void)prepareForReuse;
 - (BOOL)wantsUpdateLayer;
-- (void)encodeWithCoder:(id)arg1;
-- (id)initWithCoder:(id)arg1;
 - (id)initWithFrame:(CGRect)arg1;
 - (id)_layoutSectionAccessibility;
 - (id)_accessibilityIndexPath;

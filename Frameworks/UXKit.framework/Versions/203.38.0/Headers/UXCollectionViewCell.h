@@ -15,7 +15,6 @@
 - (void)prepareForReuse;
 - (void)resizeSubviewsWithOldSize:(CGSize)arg1;
 - (BOOL)wantsUpdateLayer;
-- (id)initWithCoder:(id)arg1;
 - (id)initWithFrame:(CGRect)arg1;
 - (id)_accessibilityIndexPath;
 - (id)_accessibilityDefaultRole;
