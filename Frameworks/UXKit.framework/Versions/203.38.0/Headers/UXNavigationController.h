@@ -70,7 +70,6 @@
 - (id)topViewController;
 - (void)setViewControllers:(id)arg1 animated:(BOOL)arg2;
 - (void)detachNavigationBar;
-- (void)__back:(id)arg1;
 @property (nonatomic, readonly) UXToolbar *toolbar;
 @property (nonatomic, readonly) UXToolbar *accessoryBar;
 @property (nonatomic, readonly, getter=isAccessoryBarHidden) BOOL accessoryBarHidden;

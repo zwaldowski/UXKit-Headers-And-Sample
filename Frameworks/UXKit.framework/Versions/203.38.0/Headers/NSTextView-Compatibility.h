@@ -7,8 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSTextView (Compatibility) <UITextInputTraits>
-- (NSEdgeInsets)__textContainerInset;
-- (void)__setTextContainerInset:(NSEdgeInsets)arg1;
 @property (nonatomic) unsigned long long textAlignment;
 - (CGSize)sizeThatFits:(CGSize)arg1;
 @property (nonatomic, copy) NSString *text;

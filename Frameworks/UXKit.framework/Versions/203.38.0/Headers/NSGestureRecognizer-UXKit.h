@@ -7,7 +7,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface NSGestureRecognizer (UXKit)
-- (void)__stateChange:(id)arg1;
 - (void)setGestureDidEndHandler:(void (^)(id /* NSGestureRecognizer* */))arg1;
 - (void)setGestureDidChangeHandler:(void (^)(id /* NSGestureRecognizer* */))arg1;
 - (void)setGestureDidBeginHandler:(void (^)(id /* NSGestureRecognizer* */))arg1;
