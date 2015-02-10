@@ -8,7 +8,6 @@
 
 @interface UXBackButton : NSButton
 
-@property (nonatomic, readonly) NSLayoutConstraint *widthConstraint; // @synthesize widthConstraint=_widthConstraint;
 @property (nonatomic) BOOL hidesTitle; // @synthesize hidesTitle=_hidesTitle;
 - (void)setTitle:(id)arg1;
 
