@@ -11,7 +11,6 @@
 
 @interface UXTableViewCell : UXCollectionViewCell
 
-@property (nonatomic, readonly) UXView *internalHighlightedBackgroundView; // @synthesize internalHighlightedBackgroundView=_internalHighlightedBackgroundView;
 @property (nonatomic) NSEdgeInsets separatorInset; // @synthesize separatorInset=_separatorInset;
 @property (nonatomic) double indentationWidth; // @synthesize indentationWidth=_indentationWidth;
 @property (nonatomic) long long indentationLevel; // @synthesize indentationLevel=_indentationLevel;

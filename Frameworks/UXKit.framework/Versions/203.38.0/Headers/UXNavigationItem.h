@@ -23,7 +23,6 @@
 @property (nonatomic, strong) NSArray *leftBarButtonItems;
 @property (nonatomic, strong) UXBarButtonItem *leftBarButtonItem;
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, readonly) UXLabel *internalTitleView;
 @property (nonatomic, strong) NSArray *trailingBarButtonItems;
 - (void)setTrailingBarButtonItems:(id)arg1 animated:(BOOL)arg2;
 @property (nonatomic, strong) NSArray *leadingBarButtonItems;
