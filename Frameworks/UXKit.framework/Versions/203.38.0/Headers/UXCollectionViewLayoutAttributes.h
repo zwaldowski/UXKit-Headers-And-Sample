@@ -21,8 +21,6 @@
 @property (nonatomic) CGPoint center; // @synthesize center=_center;
 @property (nonatomic, readonly) NSString *representedElementKind; // @synthesize representedElementKind=_representedElementKind;
 @property (nonatomic, readonly) unsigned long long representedElementCategory;
-- (unsigned long long)hash;
-- (BOOL)isEqual:(id)arg1;
 - (id)description;
 @property (nonatomic) CGRect frame; // @synthesize frame=_frame;
 @property (nonatomic) CGRect bounds;

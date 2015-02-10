@@ -24,7 +24,6 @@
 - (id)sections;
 - (unsigned long long)count;
 - (id)description;
-- (BOOL)isEqual:(id)arg1;
 - (id)initWithIndexPathsSet:(id)arg1;
 - (id)initWithIndexPaths:(id)arg1;
 - (id)initWithIndexPath:(id)arg1;
