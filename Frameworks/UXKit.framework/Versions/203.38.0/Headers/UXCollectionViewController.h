@@ -28,11 +28,5 @@
 - (void)_sendViewDidLoad;
 - (id)initWithCollectionViewLayout:(id)arg1;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) NSUInteger hash;
-@property(readonly) Class superclass;
-
 @end
 

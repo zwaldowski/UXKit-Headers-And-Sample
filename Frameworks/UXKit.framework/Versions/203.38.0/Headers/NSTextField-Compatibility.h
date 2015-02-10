@@ -10,19 +10,13 @@
 @property(nonatomic) unsigned long long textAlignment;
 @property(copy, nonatomic) NSString *placeholder;
 @property(copy, nonatomic) NSString *text;
-
-// Remaining properties
 @property(nonatomic) long long autocapitalizationType;
 @property(nonatomic) long long autocorrectionType;
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
 @property(nonatomic) BOOL enablesReturnKeyAutomatically;
-@property(readonly) NSUInteger hash;
 @property(nonatomic) long long keyboardAppearance;
 @property(nonatomic) long long keyboardType;
 @property(nonatomic) long long returnKeyType;
 @property(nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
 @property(nonatomic) long long spellCheckingType;
-@property(readonly) Class superclass;
 @end
 

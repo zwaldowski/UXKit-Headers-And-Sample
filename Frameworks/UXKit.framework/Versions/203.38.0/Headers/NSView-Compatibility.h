@@ -20,8 +20,6 @@
 - (void)setNeedsDisplay;
 - (void)setNeedsLayout;
 - (void)didMoveToWindow;
-
-// Remaining properties
 @property(readonly, nonatomic, getter=isHidden) BOOL hidden;
 @end
 

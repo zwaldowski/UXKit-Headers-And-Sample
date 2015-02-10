@@ -15,10 +15,6 @@
 @property(nonatomic) long long tintAdjustmentMode;
 @property(retain, nonatomic) NSColor *tintColor;
 
-// Remaining properties
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) NSUInteger hash;
-@property(readonly) Class superclass;
+
 @end
 

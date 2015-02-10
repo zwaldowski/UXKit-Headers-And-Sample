@@ -30,12 +30,5 @@
 - (id)initWithImage:(id)arg1;
 - (id)initWithFrame:(CGRect)arg1;
 
-// Remaining properties
-@property(retain, nonatomic) NSString *accessibilityLabel;
-@property(readonly, copy) NSString *debugDescription;
-@property(readonly, copy) NSString *description;
-@property(readonly) NSUInteger hash;
-@property(readonly) Class superclass;
-
 @end
 

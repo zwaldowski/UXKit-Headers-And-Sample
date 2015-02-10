@@ -9,8 +9,6 @@
 @interface NSIndexPath (UXTableView)
 + (id)indexPathForRow:(long long)arg1 inSection:(long long)arg2;
 @property(readonly, nonatomic) long long row;
-
-// Remaining properties
 @property(readonly, nonatomic) long long section;
 @end
 
