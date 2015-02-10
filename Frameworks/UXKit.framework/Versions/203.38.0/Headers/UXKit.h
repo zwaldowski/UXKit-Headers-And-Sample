@@ -47,7 +47,6 @@
 #import <UXKit/UXClickEventTracker.h>
 #import <UXKit/UXNavigationItem.h>
 #import <UXKit/NSImage-UXKit.h>
-#import <UXKit/UXCollectionClipView.h>
 #import <UXKit/UXNavigationRoot-Protocol.h>
 #import <UXKit/NSIndexPath-UXCollectionViewAdditions.h>
 #import <UXKit/UXCollectionDocumentView.h>
