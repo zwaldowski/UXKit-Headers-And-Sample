@@ -4,12 +4,42 @@
 //     class-dump is Copyright (C) 1997-1998, 2000-2001, 2004-2013 by Steve Nygard.
 //
 
-#import <Cocoa/Cocoa.h>
 #import <UXKit/UXCollectionView.h>
-#import <UXKit/UXTableView.h>
-#import <UXKit/UXCollectionViewDataSource-Protocol.h>
+#import <UXKit/UXTableViewCell.h>
 
 @class UXCollectionViewLayout;
+@class UXTableView;
+
+@protocol UXTableViewDataSource <NSObject>
+
+- (NSInteger)tableView:(UXTableView *)tableView numberOfRowsInSection:(NSInteger)section;
+- (UXTableViewCell *)tableView:(UXTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+@optional
+- (NSInteger)numberOfSectionsInTableView:(UXTableView *)tableView;
+
+- (BOOL)tableView:(UXTableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UXTableView *)tableView commitEditingStyle:(NSInteger)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath; // TODO: enum
+
+@end
+
+@protocol UXTableViewDelegate <NSObject>
+@optional
+- (NSString *)tableView:(UXTableView *)tableView titleForHeaderInSection:(NSInteger)section;
+- (NSView *)tableView:(UXTableView *)tableView viewForHeaderInSection:(NSInteger)section;
+
+- (CGFloat)tableView:(UXTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)tableView:(UXTableView *)tableView heightForHeaderInSection:(NSInteger)section;
+
+- (BOOL)tableView:(UXTableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UXTableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UXTableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)tableView:(UXTableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UXTableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (NSInteger)tableView:(UXTableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath; // TODO: enum
+@end
 
 @interface UXTableView : UXCollectionView
 

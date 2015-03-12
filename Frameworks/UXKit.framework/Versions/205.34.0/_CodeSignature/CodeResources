@@ -4,23 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/.DS_Store</key>
-		<data>
-		00La1VIGSiMXGQJ7qu/KryuEYng=
-		</data>
 		<key>Resources/Info.plist</key>
 		<data>
 		+OZQ7SWAzpgONy7oFXP39BcDDyg=
 		</data>
-		<key>Resources/ar.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fIfCn/PwTS1K+ckWFoIUPBne3V0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Resources/ar.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -640,10 +627,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/MissingTypes.h</key>
-		<data>
-		wIX37kiFWZDFejP8G8b/3kMwLgE=
-		</data>
 		<key>Headers/NSColor-Compatibility.h</key>
 		<data>
 		/8XNLGVBlIBK8pzg9A7RXTTIPh4=
@@ -862,7 +845,7 @@
 		</data>
 		<key>Headers/UXKit.h</key>
 		<data>
-		AaZLBVXjRzcjxF+/PkL/2oDosbQ=
+		rxCB3L85VZVaiufm8pAynxy3FmY=
 		</data>
 		<key>Headers/UXKitAppearance-Protocol.h</key>
 		<data>
@@ -882,7 +865,7 @@
 		</data>
 		<key>Headers/UXNavigationBar.h</key>
 		<data>
-		2mKq6p/0OavODBiW/04WYtSchMA=
+		Dx/Ob2S50Fn1v7BlO+YM07+PDs8=
 		</data>
 		<key>Headers/UXNavigationController.h</key>
 		<data>
@@ -950,7 +933,7 @@
 		</data>
 		<key>Headers/UXTableView.h</key>
 		<data>
-		jNU2xeGYyHnXAtcW/B/j+BUBFxQ=
+		zBJOwalQxl/dZHE7cKuXrSWfT/U=
 		</data>
 		<key>Headers/UXTableViewCell.h</key>
 		<data>

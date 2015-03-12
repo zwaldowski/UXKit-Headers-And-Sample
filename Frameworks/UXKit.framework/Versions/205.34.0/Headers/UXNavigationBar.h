@@ -7,8 +7,20 @@
 #import <Cocoa/Cocoa.h>
 #import <UXKit/UXBar.h>
 #import <UXKit/UXNavigationControllerDelegate-Protocol.h>
+#import <UXKit/UXBarPositioningDelegate-Protocol.h>
 
+@class UXNavigationBar;
 @class UXNavigationItem;
+
+@protocol UXNavigationBarDelegate <NSObject>
+
+@optional
+- (BOOL)navigationBar:(UXNavigationBar *)navigationBar shouldPushItem:(UXNavigationItem *)item;
+- (void)navigationBar:(UXNavigationBar *)navigationBar didPushItem:(UXNavigationItem *)item;
+- (BOOL)navigationBar:(UXNavigationBar *)navigationBar shouldPopItem:(UXNavigationItem *)item;
+- (void)navigationBar:(UXNavigationBar *)navigationBar didPopItem:(UXNavigationItem *)item;
+
+@end
 
 @interface UXNavigationBar : UXBar
 
