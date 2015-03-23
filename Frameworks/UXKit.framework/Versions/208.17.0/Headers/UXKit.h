@@ -65,7 +65,6 @@
 #import <UXKit/UXCollectionViewDelegate-Protocol.h>
 #import <UXKit/UXTabBarItem.h>
 #import <UXKit/UXCollectionViewFlowLayout.h>
-#import <UXKit/UXTableLayout.h>
 #import <UXKit/NSScreen-Compatibility.h>
 #import <UXKit/UXCollectionViewFlowLayoutInvalidationContext.h>
 #import <UXKit/UXTableView.h>
