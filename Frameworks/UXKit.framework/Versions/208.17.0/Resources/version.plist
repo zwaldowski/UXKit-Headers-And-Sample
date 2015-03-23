@@ -5,14 +5,14 @@
 	<key>BuildAliasOf</key>
 	<string>PhotoApp</string>
 	<key>BuildVersion</key>
-	<string>2</string>
+	<string>5</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>206.23.0</string>
+	<string>208.17.0</string>
 	<key>ProjectName</key>
 	<string>PhotoApp_SubFrameworks</string>
 	<key>SourceVersion</key>
-	<string>206023000000000</string>
+	<string>208017000000000</string>
 </dict>
 </plist>
